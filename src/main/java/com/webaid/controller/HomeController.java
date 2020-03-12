@@ -179,31 +179,38 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/menu01_01", method = RequestMethod.GET)
-	public String menu01_01(Locale locale, Model model) {
+	public String menu01_01(Model model) {
 		logger.info("menu01_01 get");
 		
 		return "sub2/menu01_01";
 	}
 	
 	@RequestMapping(value = "/menu01_02", method = RequestMethod.GET)
-	public String menu01_02(Locale locale, Model model) {
+	public String menu01_02(Model model) {
 		logger.info("menu01_02 get");
 		
 		return "sub2/menu01_02";
 	}
 	
 	@RequestMapping(value = "/menu01_03", method = RequestMethod.GET)
-	public String menu01_03(Locale locale, Model model) {
+	public String menu01_03(Model model) {
 		logger.info("menu01_03 get");
 		
 		return "sub2/menu01_03";
 	}
 	
 	@RequestMapping(value = "/menu01_04", method = RequestMethod.GET)
-	public String menu01_04(Locale locale, Model model) {
+	public String menu01_04(Model model) {
 		logger.info("menu01_04 get");
 		
 		return "sub2/menu01_04";
+	}
+	
+	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)
+	public String menu02_01(Model model) {
+		logger.info("menu02_01 get");
+		
+		return "sub2/menu02_01";
 	}
 	
 	

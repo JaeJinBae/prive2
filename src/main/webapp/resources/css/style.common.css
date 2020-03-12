@@ -51,7 +51,7 @@ input[type='password']{
 	width: 100%;
 }
 .pc-menu-wrap > .gnb-wrap{
-	width: 1205px;
+	width: 1075px;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
@@ -77,7 +77,7 @@ input[type='password']{
 	display: none;
 }
 .pc-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb{
-	padding: 5px 0;
+	padding: 10px 0;
 }
 
 .pc-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb > a{

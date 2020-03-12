@@ -5,51 +5,6 @@
 		<div class="logo-wrap">
 			<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/main/logo.png"></a>
 		</div>
-		<%-- <div class="pc-menu-wrap">
-			<ul class="gnb-wrap">
-				<li class="gnb">
-					<span class="gnb-txt">Prive 소개</span>
-					<ul class="lnb-wrap">
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_01">Prive란?</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_02">의료진 소개</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_03">진료시간/위치</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_04">Prive공간</a></li>
-					</ul>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu02_01"><span class="gnb-txt">리프팅</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu03_01"><span class="gnb-txt">스킨밸런스</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">맨즈케어</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu05_01"><span class="gnb-txt">볼륨</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu06_01"><span class="gnb-txt">소프트성형</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">메디컬스킨케어</span></a>
-				</li>
-				<li class="gnb">
-					<span class="gnb-txt">커뮤니티</span>
-					<ul class="lnb-wrap">
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_01">온라인상담</a></li>
-						<li class="lnb"><a href="http://pf.kakao.com/_HbkxkT/chat">카카오상담</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_03">공지사항</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_04">프라이브미디어</a></li>
-					</ul>
-				</li>
-			</ul>
-			<div class="sns_icon_wrap">
-				<a href="https://blog.naver.com/priveskin"><img src="${pageContext.request.contextPath}/resources/img/common/icon_b.png"></a>
-				<a href="https://www.instagram.com/priveskin"><img src="${pageContext.request.contextPath}/resources/img/common/icon_i.png"></a>
-				<a href="https://www.facebook.com/%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%94%BC%EB%B6%80%EA%B3%BC-113165293400268/"><img src="${pageContext.request.contextPath}/resources/img/common/icon_f.png"></a>
-			</div>
-		</div><!-- pc-menu-wrap --> --%>
 		<div class="pc-menu-wrap">
 			<ul class="gnb-wrap">
 				<li class="gnb">
@@ -81,11 +36,11 @@
 				<li class="gnb">
 					<span class="gnb-txt">대표시술</span>
 					<ul class="lnb-wrap">
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_01">울쎄라</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_02">써마지</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_03">튠페이스</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_04">실루엣소프트</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_05">남성관리</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing2">울쎄라</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing1">써마지</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/#none">튠페이스</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/#none">실루엣소프트</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/#none">남성관리</a></li>
 					</ul>
 				</li>
 				<li class="gnb">
@@ -121,46 +76,6 @@
 				<div class="bar"></div>
 			</div>
 		</div>
-		<%-- <div class="m-menu-wrap">
-			<ul class="gnb-wrap">
-				<li class="gnb">
-					<span class="gnb-txt">Prvie 소개</span><span class="arrow">∨</span>
-					<ul class="lnb-wrap">
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_01">Prive란?</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_02">의료진 소개</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_03">진료시간/위치</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_04">Prive공간</a></li>
-					</ul>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu02_01"><span class="gnb-txt">리프팅</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu03_01"><span class="gnb-txt">스킨밸런스</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">맨즈케어</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu05_01"><span class="gnb-txt">볼륨</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu06_01"><span class="gnb-txt">소프트성형</span></a>
-				</li>
-				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">메디컬스킨케어</span></a>
-				</li>
-				<li class="gnb">
-					<span class="gnb-txt">커뮤니티</span><span class="arrow">∨</span>
-					<ul class="lnb-wrap">
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_01">온라인상담</a></li>
-						<li class="lnb"><a href="http://pf.kakao.com/_HbkxkT/chat">카카오상담</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_03">공지사항</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu08_04">프라이브미디어</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div><!-- m-menu-wrap --> --%>
 		<div class="m-menu-wrap">
 			<ul class="gnb-wrap">
 				<li class="gnb">
