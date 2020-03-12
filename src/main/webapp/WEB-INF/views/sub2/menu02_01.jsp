@@ -179,7 +179,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>스킨밸런스</h2>
+					<h2>보톡스</h2>
 					<p>근본적으로 과하지않게 피부밸런스를 찾아갑니다.</p>
 				</div><!-- s1_txt end -->
 			</div>

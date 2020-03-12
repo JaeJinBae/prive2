@@ -43,6 +43,50 @@ section{
 .inner{
 	width: 100%;
 }
+.content_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.content_wrap > .item{
+	width: 357px;
+	display:inline-block;
+	text-align: center;
+	background: #fafafa;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	border: 1px solid #efefef;
+}
+.content_wrap > .item > .thumb{
+	width: 100%;
+}
+.content_wrap > .item > .thumb > img{
+	width: 100%;
+}
+.content_wrap > .item > .txt_wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+.content_wrap > .item > .txt_wrap > p{
+	margin: 0;
+}
+.content_wrap > .item > .txt_wrap > .txt_title{
+	width: 100%;
+	height: 90px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+.content_wrap > .item > .resbtn{
+	margin: 0;
+	background: #D4B689;
+	color: #fff;
+	padding: 15px 40px;
+	text-align: center;
+	font-size: 17px;
+	cursor: pointer;
+}
 @media only screen and (min-width:1200px){
 	.section1{
 		padding-top: 300px;
@@ -327,46 +371,50 @@ $(function(){
 					<h2>PRIVE MAGAZINE</h2>
 				</div>
 				<div class="formWrap">
-					<!-- 공지사항 게시판 시작 -->
-					<table class="board-notice-list pc">
-						<colgroup>
-							<col style="width: 100px;">
-							<col>
-							<col style="width: 120px;">
-							<col style="width: 120px;">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>번호</th>
-								<th>제목</th>
-								<th>등록일</th>
-								<th>조회수</th>
-							</tr>
-						</thead>
+					<div class="content_wrap">
+						<div class="item">
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="txt_wrap">
+								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
+							</div>
+							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+						</div>
+						<div class="item">
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="txt_wrap">
+								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
+							</div>
+							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+						</div>
+						<div class="item">
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="txt_wrap">
+								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
+							</div>
+							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+						</div>
+					
+						<!-- 공지사항 게시판 시작 -->
 						<c:choose>
 						    <c:when test="${fn:length(list) == 0}">
-					        	<tr>
-					        		<td colspan="4" style=" text-align: center;">등록된 게시물이 없습니다.</td>
-					        	</tr>
+					        		<!-- <h2>등록된 게시물이 없습니다.</h2> -->
 						    </c:when>
 						    
 						    <c:otherwise>
 						    	<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 						        <c:forEach var="item" items="${list}">
-									<tr>
-										<td>${num}</td>
-										<td class="subject">
-											<a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.title}</a>
-										</td>
-										<td class="date">${item.regdate}</td>
-										<td class="hit">${item.cnt}</td>
-									</tr>
+									<div class="slider">
+										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+										<div class="txt_wrap">
+											<p class="txt_title">${item.title}</p>
+										</div>
+										<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+									</div>
 									<c:set var="num" value="${num-1}"></c:set>	
 								</c:forEach>
 						    </c:otherwise> 
 						</c:choose>
-						
-					</table>
+					</div>	
 					<!-- 공지사항 게시판 끝 -->
 					
 					<div class="board-notice-list m">
