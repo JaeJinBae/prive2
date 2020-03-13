@@ -403,7 +403,7 @@ $(function(){
 						    <c:otherwise>
 						    	<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 						        <c:forEach var="item" items="${list}">
-									<div class="slider">
+									<div class="item">
 										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
 										<div class="txt_wrap">
 											<p class="txt_title">${item.title}</p>

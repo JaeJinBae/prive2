@@ -180,11 +180,22 @@ $(function(){
 			<div class="inner">
 				<div class="s1_txt">
 					<h2>보톡스</h2>
-					<p>근본적으로 과하지않게 피부밸런스를 찾아갑니다.</p>
+					<p>
+						보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여<br>
+						매끄러운 얼굴 라인을 만들어주는 시술입니다.<br>
+						불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이<br>
+						줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 탄력증대 효과가 있습니다.<br>
+						시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+					</p>
 				</div><!-- s1_txt end -->
+				
 			</div>
 		</section>
-		<section class="section2">
+		<section class="section2" style="background: #fff;">
+			<img style="width:100%;" src="${pageContext.request.contextPath}/resources/img/content/test_info1_2.jpg">
+			<img style="width:100%;" src="${pageContext.request.contextPath}/resources/img/content/test_info2.jpg">
+		</section>
+		<section class="section2"> 
 			<div class="inner">
 				<div class="s2_content_wrap">
 					<div class="s2_txt">

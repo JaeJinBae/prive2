@@ -32,6 +32,7 @@ input[type='password']{
 	width: 100%;
 	top: 18px;
 	z-index: 999;
+	font-weight: bold;
 }
 #pc-header{
 	display: none;
