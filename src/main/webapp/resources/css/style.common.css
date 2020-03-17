@@ -18,8 +18,61 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 /**********************************************************************/
 
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+
 *{
-	font-family: NanumSquare;
+	/* font-family: NanumSquare; */
+	font-family: Noto Sans KR;
 }
 input[type='password']{
 	font-family: serif;
@@ -32,7 +85,6 @@ input[type='password']{
 	width: 100%;
 	top: 18px;
 	z-index: 999;
-	font-weight: bold;
 }
 #pc-header{
 	display: none;
@@ -63,7 +115,11 @@ input[type='password']{
 	width: 150px;
 	padding: 40px 0;
 	cursor: pointer;
-	font-size: 17px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.pc-menu-wrap > .gnb-wrap > .gnb > a{
+	
 }
 .pc-menu-wrap > .gnb-wrap:hover{
 	color: #fff;
@@ -78,11 +134,13 @@ input[type='password']{
 	display: none;
 }
 .pc-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb{
-	padding: 10px 0;
+	padding: 7px 0;
 }
 
 .pc-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb > a{
 	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
 }
 .pc-menu-wrap > .gnb-wrap:hover > .gnb > a{
 	color: #fff;
@@ -299,7 +357,7 @@ input[type='password']{
 	.footer-wrap > .foot p{
 		font-size: 13px;
 		margin: 0;
-		line-height: 30px;
+		line-height: 25px;
 	}
 	
 	

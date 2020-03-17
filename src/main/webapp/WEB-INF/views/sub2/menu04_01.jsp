@@ -110,13 +110,16 @@ section{
 }
 .content_wrap > .slider_wrap > .slider > .resbtn{
 	margin: 0;
-	background: #D4B689;
-	color: #fff;
+	background: #a1888b;
 	padding: 15px 40px;
 	text-align: center;
 	font-size: 17px;
 	cursor: pointer;
 }
+.content_wrap > .slider_wrap > .slider > .resbtn > a{
+	color: #fff;
+}
+
 @media only screen and (min-width:1200px){
 	.section1{
 		padding-top: 300px;

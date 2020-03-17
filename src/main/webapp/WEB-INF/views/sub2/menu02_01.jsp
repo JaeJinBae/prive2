@@ -49,37 +49,67 @@ section{
 }
 @media only screen and (min-width:1200px){
 	.section1{
-		/* background: #e5ddc9; */
+		/* background: #e5ddc9;
 		background: url("${pageContext.request.contextPath}/resources/img/content/menu03_top_bg.jpg") no-repeat;
 		background-size: cover;
-		background-position: center;
+		background-position: center; */
+		height: auto;
+		padding-top: 250px;
+		padding-bottom: 100px;
 	}
 	.s1_txt{
-		position: absolute;
-		bottom: 10%;
-		left: 13%;
+		width: 100%;
+		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 30px;
+		font-size: 35px;
 	}
-	.s1_txt > p{
-		font-size: 17px;
+	.s1_txt > p.stick{
+		width: 7px;
+		height: 40px;
+		background: gray;
+		margin: 0 auto;
 	}
 	
 	.section2{
-		background: #f3efe3;
+		/* background: #f3efe3; */
 		height: auto;
-		padding-bottom: 100px;
+		padding: 100px 0;
 		
 	}
-	.s2_content_wrap{
+	.s_content_wrap{
 		width: 1200px;
 		margin: 0 auto;
+		overflow: hidden;
 	}
+	.aside_left{
+		width: 600px;
+		float:left;
+	}
+	.al_title{
+		width: 100%;
+		font-size: 25px;
+		font-weight: 600;
+		border-bottom: 5px solid #333;
+	}
+	
+	.al_content{
+		width: 100%;
+		font-size: 17px;
+	}
+	.aside_right{
+		width: 550px;
+		float:right;
+	}
+	.aside_right > img{
+		width: 100%;
+	}
+	
+	
+	
 	.s2_txt{
 		width: 100%;
 		text-align: center;
-		padding-top:100px;
 	}
 	.s2_txt > h2{
 		font-size: 30px;
@@ -111,7 +141,7 @@ section{
 		width: 130px;
 		margin: 0 auto;
 		padding: 15px 0;
-		background: #87ceeb;
+		background: #a1888b;
 	}
 	.s2_content > .clinic_item > .item_btn > a{
 		color: #fefefe;
@@ -124,7 +154,15 @@ section{
 	/* section3 css */
 	.section3{
 		height: auto;
-		margin-bottom: 100px;
+		padding: 100px 0;
+		background: #eeeeee;
+	}
+	
+	
+	/* section4 css */
+	.section4{
+		height: auto;
+		padding: 100px 0;
 	}
 	.s2_content > .table_wrap{
 		width: 100%;
@@ -139,14 +177,16 @@ section{
 		font-size: 19px;
 	}
 	.s2_content > .table_wrap > table .t_price{
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: 600;
 		text-align: right;
 		margin-right: 50px;
+		color: #333;
 	}
 	.s2_content > .table_wrap > table .t_btn{
-		font-size: 20px;
-		background: skyblue;
+		width: 130px;
+		font-size: 18px;
+		background: #a1888b;
 		padding: 15px 0;
 		text-align: center;
 		
@@ -180,24 +220,31 @@ $(function(){
 			<div class="inner">
 				<div class="s1_txt">
 					<h2>보톡스</h2>
-					<p>
-						보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여<br>
-						매끄러운 얼굴 라인을 만들어주는 시술입니다.<br>
-						불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이<br>
-						줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 탄력증대 효과가 있습니다.<br>
-						시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
-					</p>
+					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
 			</div>
 		</section>
-		<section class="section2" style="background: #fff;">
-			<img style="width:100%;" src="${pageContext.request.contextPath}/resources/img/content/test_info1_2.jpg">
-			<img style="width:100%;" src="${pageContext.request.contextPath}/resources/img/content/test_info2.jpg">
-		</section>
-		<section class="section2"> 
+		<section class="section2">
 			<div class="inner">
-				<div class="s2_content_wrap">
+				<div class="s_content_wrap">
+					<div class="aside_left">
+						<p class="al_title">보톡스란?</p>
+						<p class="al_content">
+							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
+							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
+							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+						</p>
+					</div>
+					<div class="aside_right">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_01_01.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section3"> 
+			<div class="inner">
+				<div class="s_content_wrap">
 					<div class="s2_txt">
 						<h2>인기 프로그램</h2>
 					</div>
@@ -221,9 +268,9 @@ $(function(){
 				</div><!-- s1_txt end -->
 			</div>
 		</section>
-		<section class="section3">
+		<section class="section4">
 			<div class="inner">
-				<div class="s2_content_wrap">
+				<div class="s_content_wrap">
 					<div class="s2_txt">
 						<h2>가격 안내</h2>
 					</div>
@@ -237,72 +284,72 @@ $(function(){
 								</colgroup>
 								<tr>
 									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000원</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">사각턱보톡스 (제오민) (수입) 1회</p></td>
-									<td><p class="t_price">120,000원</p></td>
+									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">턱보톡스+윤곽주사 1회</p></td>
-									<td><p class="t_price">60,000원</p></td>
+									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">V라인솔루션  (사각턱 보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000원</p></td>
+									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">측두근 보톡스 1회</p></td>
-									<td><p class="t_price">110,000원</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">귀밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">110,000원</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">턱밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">50,000원</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000원</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">사각턱보톡스 (제오민) (수입) 1회</p></td>
-									<td><p class="t_price">120,000원</p></td>
+									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">턱보톡스+윤곽주사 1회</p></td>
-									<td><p class="t_price">60,000원</p></td>
+									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">V라인솔루션  (사각턱 보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000원</p></td>
+									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">측두근 보톡스 1회</p></td>
-									<td><p class="t_price">110,000원</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">귀밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">110,000원</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 								<tr>
 									<td><p class="t_title">턱밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">50,000원</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
 								</tr>
 							</table>
