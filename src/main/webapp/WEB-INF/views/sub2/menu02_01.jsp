@@ -282,141 +282,101 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
-								<caption>■보톡스</caption>
-								<colgroup>
-									<col width="*">
-									<col width="20%">
-									<col width="15%">
-								</colgroup>
-								<c:choose >
-								
-								</c:choose>
-								<tr>
-									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">사각턱보톡스 (제오민) (수입) 1회</p></td>
-									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱보톡스+윤곽주사 1회</p></td>
-									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">V라인솔루션  (사각턱 보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">측두근 보톡스 1회</p></td>
-									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">귀밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">사각턱보톡스 (제오민) (수입) 1회</p></td>
-									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱보톡스+윤곽주사 1회</p></td>
-									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">V라인솔루션  (사각턱 보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">측두근 보톡스 1회</p></td>
-									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">귀밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱밑샘 보톡스 1회</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■더모톡신</caption>
-								<colgroup>
-									<col width="*">
-									<col width="20%">
-									<col width="15%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">사각턱보톡스 (제오민) (수입) 1회</p></td>
-									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱보톡스+윤곽주사 1회</p></td>
-									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">V라인솔루션  (사각턱 보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■다한증 보톡스</caption>
-								<colgroup>
-									<col width="*">
-									<col width="20%">
-									<col width="15%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■바디 보톡스</caption>
-								<colgroup>
-									<col width="*">
-									<col width="20%">
-									<col width="15%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
-									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p></td>
-								</tr>
-							</table>
+							<!-- 보톡스 -->
+							<c:choose >
+								<c:when test="${fn:length(list1) == 0}">
+									
+								</c:when>
+								<c:otherwise>
+									<table>
+										<caption>■보톡스</caption>
+										<colgroup>
+											<col width="*">
+											<col width="20%">
+											<col width="15%">
+										</colgroup>
+										<c:forEach var="item" items="${list1}">
+											<tr>
+												<td><p class="t_title">${item.name}</p></td>
+												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+											</tr>
+										</c:forEach>
+									</table>
+								</c:otherwise>
+							</c:choose>
+							
+							<!-- 더모톡스 -->
+							<c:choose >
+								<c:when test="${fn:length(list2) == 0}">
+									
+								</c:when>
+								<c:otherwise>
+									<table>
+										<caption>■더모톡스</caption>
+										<colgroup>
+											<col width="*">
+											<col width="20%">
+											<col width="15%">
+										</colgroup>
+										<c:forEach var="item" items="${list2}">
+											<tr>
+												<td><p class="t_title">${item.name}</p></td>
+												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+											</tr>
+										</c:forEach>
+									</table>
+								</c:otherwise>
+							</c:choose>
+							
+							<!-- 다한증 보톡스 -->
+							<c:choose >
+								<c:when test="${fn:length(list1) == 0}">
+									
+								</c:when>
+								<c:otherwise>
+									<table>
+										<caption>■다한증 보톡스</caption>
+										<colgroup>
+											<col width="*">
+											<col width="20%">
+											<col width="15%">
+										</colgroup>
+										<c:forEach var="item" items="${list1}">
+											<tr>
+												<td><p class="t_title">${item.name}</p></td>
+												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+											</tr>
+										</c:forEach>
+									</table>
+								</c:otherwise>
+							</c:choose>
+							
+							<!-- 바디 보톡스 -->
+							<c:choose >
+								<c:when test="${fn:length(list1) == 0}">
+									
+								</c:when>
+								<c:otherwise>
+									<table>
+										<caption>■바디 보톡스</caption>
+										<colgroup>
+											<col width="*">
+											<col width="20%">
+											<col width="15%">
+										</colgroup>
+										<c:forEach var="item" items="${list1}">
+											<tr>
+												<td><p class="t_title">${item.name}</p></td>
+												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+											</tr>
+										</c:forEach>
+									</table>
+								</c:otherwise>
+							</c:choose>
 						</div>
 					</div>
 				</div>
