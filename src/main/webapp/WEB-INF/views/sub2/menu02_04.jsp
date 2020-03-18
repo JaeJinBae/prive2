@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>리프팅</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,12 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">리프팅이란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							리프팅은 선천적 혹은 후천적으로 쳐진 부위를 끌어올려 탄력있는 얼굴을 만들어주는 시술입니다.
+							이프팅 종류는 크게 초음파 리프팅, 고주파 리프팅, 실리프팅 등으로 나눌 수 있으며 각각 작용하는 층과 효과가
+							다르기 때문에 복합시술이 보다 효과적입니다.
+							리프팅 시술로 탄력을 증가시키면, 작고 매끄러운 얼굴을 만들 수 있습니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -295,7 +296,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
+										<caption>■슈링크</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -319,7 +320,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■더모톡스</caption>
+										<caption>■울쎄라</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -343,7 +344,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■다한증 보톡스</caption>
+										<caption>■튠페이스</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -367,7 +368,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■바디 보톡스</caption>
+										<caption>■써마지FLX</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">

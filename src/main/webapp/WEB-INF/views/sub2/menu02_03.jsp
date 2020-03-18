@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>윤곽주사</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,12 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">윤곽주사란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							여러가지 성분을 이용하여 불필요한 지방세포와 과도한 섬유조직을 줄여주는 시술을 복합적으로 사용합니다.
+							프라이브피부과의원만의 윤곽 프로그램은, 여러 성분의 복합작용으로 지방을 분해하고 림프순환을 촉진시켜
+							지방분해산물과 노폐물을 함계 배출시키게 됩니다. 지방이 과도한 부위라면, 어느부위라도 시술이 가능합니다.
+							무너진 턱라인/심부볼/광대/이중턱 부분 등 어느 부위라도 성분에 따라, 타입에 따라 선택하실 수 있습니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -288,14 +289,14 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- 윤곽 프로그램 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
+										<caption>■윤곽 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -312,68 +313,20 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 더모톡스 -->
+							<!-- 윤곽주사 -->
 							<c:choose >
 								<c:when test="${fn:length(list2) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■더모톡스</caption>
+										<caption>■윤곽주사</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
 										<c:forEach var="item" items="${list2}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 다한증 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■다한증 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list3}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 바디 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■바디 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list4}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>

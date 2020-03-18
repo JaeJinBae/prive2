@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>필러</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,11 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">필러란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							하알루론산으로 구성된 필러는, 필요한 부분에 볼륨을 만들어주고, 깊게 패인 주름을 채우는 데 사용합니다.
+							필러시술은 재료가 같아도 시술자의 경험과 실력에 따라 결과가 많이 달라질 수 있습니다.
+							프라이브피부과의원에서는 다년간의 시술 경력이 있는 숙련된 전문의가 섬세하게 디자인하여 정성스럽게 시술합니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -288,92 +288,20 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- 필러 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
+										<caption>■필러</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
 										<c:forEach var="item" items="${list1}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 더모톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list2) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■더모톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list2}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 다한증 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■다한증 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list3}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 바디 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■바디 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list4}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>

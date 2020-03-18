@@ -212,10 +212,17 @@ public class HomeController {
 		logger.info("menu02_01 get");
 		
 		List<ClinicVO> listAll = cService.selectByKind1(1);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
 		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
 		
 		for(int i=0; i<listAll.size(); i++){
 			if(listAll.get(i).getKind2nm().equals("보톡스")){
@@ -229,6 +236,7 @@ public class HomeController {
 			}
 		}
 		
+		model.addAttribute("listPopular", listPopular);
 		model.addAttribute("list1", list1);
 		model.addAttribute("list2", list2);
 		model.addAttribute("list3", list3);
@@ -237,6 +245,423 @@ public class HomeController {
 		return "sub2/menu02_01";
 	}
 	
+	@RequestMapping(value = "/menu02_02", method = RequestMethod.GET)
+	public String menu02_02(Model model) {
+		logger.info("menu02_02 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(2);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_02";
+	}
+	
+	@RequestMapping(value = "/menu02_03", method = RequestMethod.GET)
+	public String menu02_03(Model model) {
+		logger.info("menu02_03 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(3);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_03";
+	}
+	
+	@RequestMapping(value = "/menu02_04", method = RequestMethod.GET)
+	public String menu02_04(Model model) {
+		logger.info("menu02_04 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(4);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_04";
+	}
+	
+	@RequestMapping(value = "/menu02_05", method = RequestMethod.GET)
+	public String menu02_05(Model model) {
+		logger.info("menu02_05 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(5);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_05";
+	}
+	
+	@RequestMapping(value = "/menu02_06", method = RequestMethod.GET)
+	public String menu02_06(Model model) {
+		logger.info("menu02_06 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(6);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_06";
+	}
+	
+	@RequestMapping(value = "/menu02_07", method = RequestMethod.GET)
+	public String menu02_07(Model model) {
+		logger.info("menu02_07 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(7);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_07";
+	}
+	
+	@RequestMapping(value = "/menu02_08", method = RequestMethod.GET)
+	public String menu02_08(Model model) {
+		logger.info("menu02_08 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(8);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_08";
+	}
+	
+	@RequestMapping(value = "/menu02_09", method = RequestMethod.GET)
+	public String menu02_09(Model model) {
+		logger.info("menu02_09 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(9);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_09";
+	}
+	
+	@RequestMapping(value = "/menu02_10", method = RequestMethod.GET)
+	public String menu02_10(Model model) {
+		logger.info("menu02_10 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(10);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_10";
+	}
+	
+	@RequestMapping(value = "/menu02_11", method = RequestMethod.GET)
+	public String menu02_11(Model model) {
+		logger.info("menu02_11 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(11);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_11";
+	}
+	
+	@RequestMapping(value = "/menu02_12", method = RequestMethod.GET)
+	public String menu02_12(Model model) {
+		logger.info("menu02_12 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(12);
+		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getPopular().equals("o")){
+				listPopular.add(listAll.get(i));
+			}
+		}
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("listPopular", listPopular);
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
+		
+		return "sub2/menu02_12";
+	}
 	
 	@RequestMapping(value = "/menu04_01", method = RequestMethod.GET)
 	public String menu04_01(Model model) {

@@ -349,7 +349,7 @@ $(function(){
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
-										<c:forEach var="item" items="${list3}">
+										<c:forEach var="item" items="${list1}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
@@ -373,7 +373,7 @@ $(function(){
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
-										<c:forEach var="item" items="${list4}">
+										<c:forEach var="item" items="${list1}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
