@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>모공/탄력/흉터</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,12 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">모공/탄력/흉터 프로그램?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							과거와 달리 피부를 깎는 레이저를 사용하지 않아도 좋은 효과를 기대할 수 있습니다.
+							프라이브피부과의원에서는 피부를 손상시키거나 예민하게 만드는 레이저 사용은 지양하고 있습니다.
+							모공/탄력/흉터 치료를 위해 융터의 종류나 모공/탄력 저하 정도에 따라 종류가 다른 레이저를 복합적으로
+							사용하며, 진피층부터 건강하게, 매끄럽고 탄력있는 피부를 만들 수 있습니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -288,86 +289,14 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- 모공/탄력/흉터 프로그램 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list1}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 더모톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list2) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■더모톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list2}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 다한증 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■다한증 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list1}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 바디 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■바디 보톡스</caption>
+										<caption>■모공/탄력/흉터 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">

@@ -255,16 +255,26 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
-							<p class="item_title">턱보톡스 1회 (리터치포함)</p>
+						<div class="clinic_item">
+							<p class="item_title">턱보톡스 1회</p>
 							<p class="item_price">50,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">턱라인 리프팅 보톡스</p>
+							<p class="item_price">100,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">더모톡신(얼굴전체)</p>
+							<p class="item_price">300,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
 						<c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
-								<div class="clinic_item">
+								<!-- <div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
-								</div>
+								</div> -->
 							</c:when>
 							<c:otherwise>
 								<c:forEach var="item" items="${listPopular}">
@@ -288,6 +298,124 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■보톡스</caption>
+								<colgroup>
+									<col width="*">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">턱보톡스</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">턱보톡스+윤곽주사</p></td>
+									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">V라인 솔루션(사각턱보톡스 50단위+윤곽주사+튠라이너)</p></td>
+									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">측두근 보톡스</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">귀밑샘 보톡스</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">턱밑샘 보톡스</p></td>
+									<td><p class="t_price">110,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">이마 보톡스</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">미간 보톡스</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">눈가 보톡스</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">자갈턱 보톡스</p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">입가주변 보톡스</p></td>
+									<td><p class="t_price">100,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">콧등/콧볼/입꼬리 보톡스</p></td>
+									<td><p class="t_price">30,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■더모톡신</caption>
+								<colgroup>
+									<col width="*">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">더모톡신(상/하부)</p></td>
+									<td><p class="t_price">150,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">더모톡신(얼굴전체)</p></td>
+									<td><p class="t_price">300,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">턱라인 리프팅 보톡스</p></td>
+									<td><p class="t_price">100,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■다한증 보톡스</caption>
+								<colgroup>
+									<col width="*">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">겨드랑이/손바닥/발바닥</p></td>
+									<td><p class="t_price">90,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■바디 보톡스</caption>
+								<colgroup>
+									<col width="*">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">승모근/팔뚝/허벅지/종아리</p></td>
+									<td><p class="t_price">180,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							
 							<!-- 보톡스 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">

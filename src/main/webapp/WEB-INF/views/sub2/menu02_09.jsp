@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>피부관리</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,7 +235,7 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">피부관리란?</p>
 						<p class="al_content">
 							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
 							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 

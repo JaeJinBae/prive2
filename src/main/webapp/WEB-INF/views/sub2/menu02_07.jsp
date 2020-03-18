@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>기미/색소/미백</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,12 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">기미/색소/미백 프로그램이란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							우리 얼굴의 색소는 크게 피부 윗층에 있는 표피성 색소와 피부 아랫층에 있는 진피성 색소로 나뉘어집니다.
+							프라이브피부과의원에서는 색소의 종류에 따라 적합한 레이저를 사용하여 치료합니다.
+							피부에 무리가 가지 않게 에너지를 조사하고, 색소 발생 원인에 따라 적합한 솔루션을 제공하고 있습니다.
+							색소의 종류에 맞는 레이저 치료와 전/후 관리를 병행하면 맑고 깨끗한 피부를 얻을 수 있습니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -288,14 +289,14 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- 레이저 토닝 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
+										<caption>■레이저 토닝</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -312,14 +313,14 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 더모톡스 -->
+							<!-- 겨드랑이 토닝 -->
 							<c:choose >
 								<c:when test="${fn:length(list2) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■더모톡스</caption>
+										<caption>■겨드랑이 토닝</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
@@ -336,20 +337,20 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 다한증 보톡스 -->
+							<!-- 색소 프로그램 -->
 							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
+								<c:when test="${fn:length(list3) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■다한증 보톡스</caption>
+										<caption>■색소 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
-										<c:forEach var="item" items="${list1}">
+										<c:forEach var="item" items="${list3}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
@@ -360,20 +361,20 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 바디 보톡스 -->
+							<!-- 홍조 프로그램 -->
 							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
+								<c:when test="${fn:length(list4) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■바디 보톡스</caption>
+										<caption>■홍조 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
 											<col width="15%">
 										</colgroup>
-										<c:forEach var="item" items="${list1}">
+										<c:forEach var="item" items="${list4}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>

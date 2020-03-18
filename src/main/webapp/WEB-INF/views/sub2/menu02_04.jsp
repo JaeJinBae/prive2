@@ -289,7 +289,7 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- ■슈링크 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
@@ -313,7 +313,7 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 더모톡스 -->
+							<!-- 울쎄라 -->
 							<c:choose >
 								<c:when test="${fn:length(list2) == 0}">
 									
@@ -337,9 +337,9 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 다한증 보톡스 -->
+							<!-- 튠페이스 -->
 							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
+								<c:when test="${fn:length(list3) == 0}">
 									
 								</c:when>
 								<c:otherwise>
@@ -361,9 +361,9 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 바디 보톡스 -->
+							<!-- 써마지FLX -->
 							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
+								<c:when test="${fn:length(list4) == 0}">
 									
 								</c:when>
 								<c:otherwise>

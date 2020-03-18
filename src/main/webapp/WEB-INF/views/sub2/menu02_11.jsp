@@ -225,7 +225,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>보톡스</h2>
+					<h2>레이저 제모</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -235,11 +235,12 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">보톡스란?</p>
+						<p class="al_title">레이저 제모란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							제모에 최적화된 파장을 가진 레이저를 이용하여 털의 모낭만을 선택적으로 파괴하여 주변조직의 열손상을
+							최소화하고 강력한 쿨링기능으로 통증 및 부작용까지 최소화한 반영구 제모입니다.
+							5~10회 정도의 시술을 받으면 원래 갖고있던 모발의 약 70~90%가 사멸, 간편하고 위생적으로 털을 제거할 수 있는
+							장점이 있으며, 잦은 면도나 왁싱으로 인한 인그로운 헤어도 치료할 수 있는 프리미엄 제모입니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -288,86 +289,14 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 보톡스 -->
+							<!-- 레이저 제모 -->
 							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list1}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 더모톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list2) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■더모톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list2}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 다한증 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■다한증 보톡스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="20%">
-											<col width="15%">
-										</colgroup>
-										<c:forEach var="item" items="${list1}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 바디 보톡스 -->
-							<c:choose >
-								<c:when test="${fn:length(list1) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■바디 보톡스</caption>
+										<caption>■레이저 제모</caption>
 										<colgroup>
 											<col width="*">
 											<col width="20%">
