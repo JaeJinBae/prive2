@@ -2,6 +2,7 @@ package com.webaid.controller;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
@@ -209,6 +210,29 @@ public class HomeController {
 	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)
 	public String menu02_01(Model model) {
 		logger.info("menu02_01 get");
+		
+		List<ClinicVO> listAll = cService.selectByKind1(1);
+		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		
+		for(int i=0; i<listAll.size(); i++){
+			if(listAll.get(i).getKind2nm().equals("보톡스")){
+				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("더모톡신")){
+				list2.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("바디 보톡스")){
+				list4.add(listAll.get(i));
+			}
+		}
+		
+		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
+		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
 		
 		return "sub2/menu02_01";
 	}
@@ -506,313 +530,6 @@ public class HomeController {
 		aService.delete(no);
 		return "redirect:/menu07_01";
 	}
-	
-	/*@RequestMapping(value = "/menu01_01", method = RequestMethod.GET)
-	public String menu01_01(Locale locale, Model model) {
-		logger.info("menu01_01 get");
-		
-		return "sub/menu01_01";
-	}
-	
-	@RequestMapping(value = "/menu01_02", method = RequestMethod.GET)
-	public String menu01_02(Locale locale, Model model) {
-		logger.info("menu01_02 get");
-		
-		return "sub/menu01_02";
-	}
-	
-	@RequestMapping(value = "/menu01_03", method = RequestMethod.GET)
-	public String menu01_03(Locale locale, Model model) {
-		logger.info("menu01_03 get");
-		
-		return "sub/menu01_03";
-	}
-	
-	@RequestMapping(value = "/menu01_04", method = RequestMethod.GET)
-	public String menu01_04(Locale locale, Model model) {
-		logger.info("menu01_04 get");
-		
-		return "sub/menu01_04";
-	}
-	
-	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)
-	public String menu02_01(Locale locale, Model model) {
-		logger.info("menu02_01 get");
-		
-		return "sub/menu02_01";
-	}
-	
-	@RequestMapping(value = "/menu03_01", method = RequestMethod.GET)
-	public String menu03_01(Locale locale, Model model) {
-		logger.info("menu03_01 get");
-		
-		return "sub/menu03_01";
-	}
-	
-	@RequestMapping(value = "/menu04_01", method = RequestMethod.GET)
-	public String menu04_01(Locale locale, Model model) {
-		logger.info("menu04_01 get");
-		
-		return "sub/menu04_01";
-	}
-	
-	@RequestMapping(value = "/menu05_01", method = RequestMethod.GET)
-	public String menu05_01(Locale locale, Model model) {
-		logger.info("menu05_01 get");
-		
-		return "sub/menu05_01";
-	}
-	
-	@RequestMapping(value = "/menu06_01", method = RequestMethod.GET)
-	public String menu06_01(Locale locale, Model model) {
-		logger.info("menu06_01 get");
-		
-		return "sub/menu06_01";
-	}
-	
-	@RequestMapping(value = "/menu07_01", method = RequestMethod.GET)
-	public String menu07_01(@ModelAttribute("cri") SearchCriteria cri, Model model) {
-		logger.info("menu07_01 get");
-		
-		return "sub/menu07_01";
-	}
-	
-	@RequestMapping(value = "/menu08_01", method = RequestMethod.GET)
-	public String menu08_01(@ModelAttribute("cri") SearchCriteria cri, Model model) {
-		logger.info("menu08_01 get");
-		
-		List<AdviceVO> list = aService.listSearch(cri);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(aService.listSearchCount(cri));
-		pageMaker.setFinalPage(aService.listSearchCount(cri));
-		
-		model.addAttribute("list", list);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_01";
-	}
-	
-	@RequestMapping(value = "/menu08_01read", method = RequestMethod.GET)
-	public String menu08_01read(int no, @ModelAttribute("cri") SearchCriteria cri, Model model) {
-		logger.info("menu08_01read get");
-		
-		AdviceVO vo = aService.selectOne(no);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(aService.listSearchCount(cri));
-
-		model.addAttribute("item", vo);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_01read";
-	}
-	
-	@RequestMapping(value = "/menu08_01register", method = RequestMethod.GET)
-	public String menu08_01register(Model model) {
-		logger.info("menu08_01register GET");
-		
-		return "sub/menu08_01register";
-	}
-	
-	@RequestMapping(value = "/menu08_01register", method = RequestMethod.POST)
-	public String menu08_01registerPost(MultipartHttpServletRequest mtfReq, Model model) {
-		logger.info("menu08_01register POST");
-		
-		AdviceVO vo = new AdviceVO();
-		
-		vo.setName(mtfReq.getParameter("name"));
-		vo.setPhone(mtfReq.getParameter("phone"));
-		vo.setRegdate(mtfReq.getParameter("regdate"));
-		vo.setEmail("");
-		vo.setState("상담예정");
-		vo.setSecret(mtfReq.getParameter("secret"));
-		vo.setPw(mtfReq.getParameter("pw"));
-		vo.setTitle(mtfReq.getParameter("title"));
-		vo.setContent(mtfReq.getParameter("content"));
-		vo.setReply("");
-		vo.setMemo("");
-		vo.setReply_date("");
-		vo.setAccess_url(mtfReq.getParameter("access_url"));
-		
-		aService.insert(vo);
-		
-		return "redirect:/menu08_01";
-	}
-	
-	@RequestMapping(value = "/menu08_01pwChk", method = RequestMethod.GET)
-	public String menu08_01pwChkGet(int no, @ModelAttribute("cri") SearchCriteria cri, Model model) {
-		logger.info("menu08_01pwChk GET");
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(aService.listSearchCount(cri));
-
-		model.addAttribute("pageMaker", pageMaker);
-		model.addAttribute("no", no);
-		return "sub/menu08_01pwChk";
-	}
-	
-	@RequestMapping(value = "/menu08_01pwChk", method = RequestMethod.POST)
-	public ResponseEntity<String> menu08_08pwChkPost(@RequestBody Map<String, String> info) {
-		logger.info("menu08_01pwChk GET");
-		ResponseEntity<String> entity = null;
-		AdviceVO vo = aService.selectOne(Integer.parseInt(info.get("no")));
-		if(vo.getPw().equals(info.get("pw"))){
-			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
-		}else{
-			entity = new ResponseEntity<String>("no", HttpStatus.OK);
-		}
-		
-		return entity;
-	}
-	
-	@RequestMapping(value = "/menu08_01update", method = RequestMethod.GET)
-	public String menu08_01update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
-		logger.info("menu08_01update GET");
-		
-		AdviceVO vo = aService.selectOne(no);
-
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(aService.listSearchCount(cri));
-
-		model.addAttribute("item", vo);
-		model.addAttribute("pageMaker", pageMaker);
-		return "sub/menu08_01update";
-	}
-	
-	@RequestMapping(value = "/menu08_01update", method = RequestMethod.POST)
-	public String menu08_01updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
-		logger.info("menu08_01update POST");
-		
-		AdviceVO vo = new AdviceVO();
-		AdviceVO prevVO = aService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
-		
-		vo.setNo(prevVO.getNo());
-		vo.setName(mtfReq.getParameter("name"));
-		vo.setPhone(mtfReq.getParameter("phone"));
-		vo.setEmail(prevVO.getEmail());
-		vo.setState(prevVO.getState());
-		vo.setSecret(prevVO.getSecret());
-		vo.setTitle(mtfReq.getParameter("title"));
-		vo.setContent(mtfReq.getParameter("content"));
-		vo.setReply(prevVO.getReply());
-		vo.setReply_date(prevVO.getReply_date());
-		vo.setMemo(prevVO.getMemo());
-		
-		aService.update(vo);
-		
-		rtts.addAttribute("no", mtfReq.getParameter("no"));
-
-		PageMaker pageMaker = new PageMaker();
-
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(page);
-		pageMaker.setTotalCount(aService.listSearchCount(cri));
-
-		rtts.addAttribute("page", page);
-		return "redirect:/menu08_01";
-	}
-	
-	@RequestMapping(value = "/menu08_01delete", method = RequestMethod.GET)
-	public String menu08_01delete(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
-		logger.info("menu08_01delete GET");
-		
-		aService.delete(no);
-		return "redirect:/menu08_01";
-	}
-	
-	@RequestMapping(value = "/menu08_03", method = RequestMethod.GET)
-	public String menu08_03(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
-		logger.info("menu08_03 get");
-		
-		List<NoticeVO> topList = nService.selectTopNotice("o");
-		List<NoticeVO> list = nService.listSearch(cri);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(nService.listSearchCount(cri));
-		pageMaker.setFinalPage(nService.listSearchCount(cri));
-		
-		model.addAttribute("topList", topList);
-		model.addAttribute("list", list);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_03";
-	}
-	
-	@RequestMapping(value = "/menu08_03read", method = RequestMethod.GET)
-	public String menu08_03read(int no, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
-		logger.info("menu08_03read GET");
-		
-		NoticeVO vo=nService.selectOne(no);
-		NoticeVO beforeVO = nService.selectBefore(no);
-		NoticeVO afterVO = nService.selectAfter(no);
-		
-		nService.updateCnt(no);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(nService.listSearchCount(cri));
-		pageMaker.setFinalPage(nService.listSearchCount(cri));
-		
-		model.addAttribute("item", vo);
-		model.addAttribute("beforeItem", beforeVO);
-		model.addAttribute("afterItem", afterVO);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_03read";
-	}
-	
-	@RequestMapping(value = "/menu08_04", method = RequestMethod.GET)
-	public String menu08_04(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
-		logger.info("menu08_04 get");
-		
-		List<MediaVO> list = mService.listSearch(cri);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(mService.listSearchCount(cri));
-		pageMaker.setFinalPage(mService.listSearchCount(cri));
-		
-		model.addAttribute("list", list);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_04";
-	}
-	
-	@RequestMapping(value = "/menu08_04read", method = RequestMethod.GET)
-	public String menu08_04read(int no, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
-		logger.info("menu08_04read GET");
-		
-		MediaVO vo=mService.selectOne(no);
-		MediaVO beforeVO = mService.selectBefore(no);
-		MediaVO afterVO = mService.selectAfter(no);
-		
-		mService.updateCnt(no);
-		
-		PageMaker pageMaker = new PageMaker();
-		pageMaker.setCri(cri);
-		pageMaker.makeSearch(cri.getPage());
-		pageMaker.setTotalCount(mService.listSearchCount(cri));
-		pageMaker.setFinalPage(mService.listSearchCount(cri));
-		
-		model.addAttribute("item", vo);
-		model.addAttribute("beforeItem", beforeVO);
-		model.addAttribute("afterItem", afterVO);
-		model.addAttribute("pageMaker", pageMaker);
-		
-		return "sub/menu08_04read";
-	}*/
 	
 	
 	

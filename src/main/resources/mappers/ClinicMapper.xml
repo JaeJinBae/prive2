@@ -12,6 +12,10 @@
 		select * from clinic where no=#{no}
 	</select>
 	
+	<select id="selectByKind1" resultType="ClinicVO">
+		select * from clinic where kind1=#{kind1}
+	</select>
+	
 	<insert id="insert">
 		insert into clinic values(0, #{kind1}, #{kind1nm}, #{kind2}, #{kind2nm}, #{name}, #{code}, #{price_before}, #{price_after}, #{discount}, #{popular})
 	</insert>

@@ -289,6 +289,9 @@ $(function(){
 									<col width="20%">
 									<col width="15%">
 								</colgroup>
+								<c:choose >
+								
+								</c:choose>
 								<tr>
 									<td><p class="t_title">사각턱보톡스(국산) 1회 (리터치포함)</p></td>
 									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>

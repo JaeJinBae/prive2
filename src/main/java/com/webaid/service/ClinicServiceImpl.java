@@ -14,7 +14,7 @@ public class ClinicServiceImpl implements ClinicService {
 
 	@Autowired
 	private ClinicDao dao;
-	
+
 	@Override
 	public List<ClinicVO> selectAll() {
 		return dao.selectAll();
@@ -23,6 +23,11 @@ public class ClinicServiceImpl implements ClinicService {
 	@Override
 	public ClinicVO selectOne(int no) {
 		return dao.selectOne(no);
+	}
+
+	@Override
+	public List<ClinicVO> selectByKind1(int kind1) {
+		return dao.selectByKind1(kind1);
 	}
 
 	@Override
