@@ -1319,6 +1319,7 @@ public class AdminController {
 		vo.setNo(0);
 		vo.setKind1(Integer.parseInt(mtfReq.getParameter("kind1")));
 		vo.setKind1nm(mtfReq.getParameter("kind1nm"));
+		vo.setKind2nm(mtfReq.getParameter("kind2nm"));
 		vo.setName(mtfReq.getParameter("name"));
 		vo.setCode(mtfReq.getParameter("code"));
 		vo.setPrice_before(Integer.parseInt(mtfReq.getParameter("price_before")));
@@ -1339,6 +1340,7 @@ public class AdminController {
 		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
 		vo.setKind1(Integer.parseInt(mtfReq.getParameter("kind1")));
 		vo.setKind1nm(mtfReq.getParameter("kind1nm"));
+		vo.setKind2nm(mtfReq.getParameter("kind2nm"));
 		vo.setName(mtfReq.getParameter("name"));
 		vo.setCode(mtfReq.getParameter("code"));
 		vo.setPrice_before(Integer.parseInt(mtfReq.getParameter("price")));

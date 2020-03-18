@@ -342,6 +342,7 @@ $(function(){
 										</select> &nbsp;&gt;&nbsp;
 										<input type="hidden" name="kind1" value="0">
 										<input type="hidden" name="kind1nm" value="">
+										<input type="text" name="kind2nm" value="" placeholder="카테고리2"> &nbsp;&gt;&nbsp;
 										<input type="text" name="name" value="" placeholder="시술명">
 									</td>
 									<td class="t_title">코드</td>
@@ -381,6 +382,7 @@ $(function(){
 										</select> &nbsp;&gt;&nbsp;
 										<input type="hidden" name="kind1" value="0">
 										<input type="hidden" name="kind1nm" value="">
+										<input type="text" name="kind2nm" value="" placeholder="카테고리2"> &nbsp;&gt;&nbsp;
 										<input type="text" name="name" value="" placeholder="시술명">
 									</td>
 									<td class="t_title">코드</td>

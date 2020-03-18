@@ -4,6 +4,8 @@ public class ClinicVO {
 	private int no;
 	private int kind1;
 	private String kind1nm;
+	private String kind2;
+	private String kind2nm;
 	private String name;
 	private String code;
 	private int price_before;
@@ -37,6 +39,22 @@ public class ClinicVO {
 
 	public void setKind1nm(String kind1nm) {
 		this.kind1nm = kind1nm;
+	}
+
+	public String getKind2() {
+		return kind2;
+	}
+
+	public void setKind2(String kind2) {
+		this.kind2 = kind2;
+	}
+
+	public String getKind2nm() {
+		return kind2nm;
+	}
+
+	public void setKind2nm(String kind2nm) {
+		this.kind2nm = kind2nm;
 	}
 
 	public String getName() {
@@ -89,9 +107,9 @@ public class ClinicVO {
 
 	@Override
 	public String toString() {
-		return "ClinicVO [no=" + no + ", kind1=" + kind1 + ", kind1nm=" + kind1nm + ", name=" + name + ", code=" + code
-				+ ", price_before=" + price_before + ", price_after=" + price_after + ", discount=" + discount
-				+ ", popular=" + popular + "]";
+		return "ClinicVO [no=" + no + ", kind1=" + kind1 + ", kind1nm=" + kind1nm + ", kind2=" + kind2 + ", kind2nm="
+				+ kind2nm + ", name=" + name + ", code=" + code + ", price_before=" + price_before + ", price_after="
+				+ price_after + ", discount=" + discount + ", popular=" + popular + "]";
 	}
 
 }
