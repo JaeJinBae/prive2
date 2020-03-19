@@ -19,196 +19,11 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/sub_menu02.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
-<style type="text/css">
-html{
-	width: 100%;
-	height: 100%;
-}
-body{
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-#main{
-	width: 100%;
-	height: 100%;
-}
-section{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-.inner{
-	width: 100%;
-	height: 100%;
-}
-@media only screen and (min-width:1200px){
-	.section1{
-		/* background: #e5ddc9;
-		background: url("${pageContext.request.contextPath}/resources/img/content/menu03_top_bg.jpg") no-repeat;
-		background-size: cover;
-		background-position: center; */
-		height: auto;
-		padding-top: 250px;
-		padding-bottom: 100px;
-	}
-	.s1_txt{
-		width: 100%;
-		text-align: center;
-	}
-	.s1_txt > h2{
-		font-size: 35px;
-	}
-	.s1_txt > p.stick{
-		width: 7px;
-		height: 40px;
-		background: gray;
-		margin: 0 auto;
-	}
-	
-	.section2{
-		/* background: #f3efe3; */
-		height: auto;
-		padding: 100px 0;
-		
-	}
-	.s_content_wrap{
-		width: 1200px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-	.aside_left{
-		width: 600px;
-		float:left;
-	}
-	.al_title{
-		width: 100%;
-		font-size: 25px;
-		font-weight: 600;
-		border-bottom: 5px solid #333;
-	}
-	
-	.al_content{
-		width: 100%;
-		font-size: 17px;
-	}
-	.aside_right{
-		width: 550px;
-		float:right;
-	}
-	.aside_right > img{
-		width: 100%;
-	}
-	
-	
-	
-	.s2_txt{
-		width: 100%;
-		text-align: center;
-	}
-	.s2_txt > h2{
-		font-size: 30px;
-		margin-bottom: 60px;
-	}
-	.s2_content{
-		width: 100%;
-	}
-	.s2_content > .clinic_item{
-		width: 350px;
-		background: #fafafa;
-		border: 1px solid #efefef;
-		text-align: center;
-		padding: 30px 20px;
-		display: inline-block;
-	}
-	.s2_content > .clinic_item > .item_title{
-		height: 55px;
-		font-size: 22px;
-		font-weight: bold;
-		margin: 40px 0;
-	}
-	.s2_content > .clinic_item > .item_price{
-		font-size: 20px;
-		margin: 30px 0;
-	}
-	.s2_content > .clinic_item > .item_btn{
-		font-size: 18px;
-		width: 130px;
-		margin: 0 auto;
-		padding: 15px 0;
-		background: #a1888b;
-	}
-	.s2_content > .clinic_item > .item_btn > a{
-		color: #fefefe;
-	}
-	.s2_content > .clinic_item > .item_btn > a:hover{
-		font-weight: bold;
-		text-decoration: none;
-	}
-	
-	/* section3 css */
-	.section3{
-		height: auto;
-		padding: 100px 0;
-		background: #eeeeee;
-	}
-	
-	
-	/* section4 css */
-	.section4{
-		height: auto;
-		padding: 100px 0;
-	}
-	.s2_content > .table_wrap{
-		width: 100%;
-	}
-	.s2_content > .table_wrap > table{
-		width: 100%;
-		margin-bottom: 50px;
-	}
-	.s2_content > .table_wrap > table caption{
-		font-size: 25px;
-		text-align: left;
-		color: #a1888b;
-	}
-	.s2_content > .table_wrap > table tr td{
-		border-bottom: 1px solid #ddd;
-	}
-	.s2_content > .table_wrap > table .t_title{
-		font-size: 19px;
-	}
-	.s2_content > .table_wrap > table .t_price{
-		font-size: 20px;
-		font-weight: 600;
-		text-align: right;
-		margin-right: 50px;
-		color: #333;
-	}
-	.s2_content > .table_wrap > table .t_btn{
-		width: 130px;
-		font-size: 18px;
-		background: #a1888b;
-		padding: 15px 0;
-		text-align: center;
-		
-	}
-	.s2_content > .table_wrap > table .t_btn > a{
-		color: #fff;
-	}
-	
-	
-	#footer{
-		height: 30%;
-	}
-	
-}
-	
-</style>
 <script>
 $(function(){
 	
@@ -299,8 +114,8 @@ $(function(){
 										<caption>■모공/탄력/흉터 프로그램</caption>
 										<colgroup>
 											<col width="*">
-											<col width="20%">
-											<col width="15%">
+											<col width="18%">
+											<col width="12%">
 										</colgroup>
 										<c:forEach var="item" items="${list1}">
 											<tr>
