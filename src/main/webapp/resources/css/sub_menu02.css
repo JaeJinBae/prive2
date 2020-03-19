@@ -71,6 +71,7 @@ section{
 	.al_content{
 		width: 100%;
 		font-size: 17px;
+		font-weight: 300;
 	}
 	.aside_right{
 		width: 550px;
@@ -233,6 +234,7 @@ section{
 	.al_content{
 		width: 100%;
 		font-size: 17px;
+		font-weight: 300;
 	}
 	.aside_right{
 		width: 95%;
@@ -392,6 +394,7 @@ section{
 	.al_content{
 		width: 100%;
 		font-size: 15px;
+		font-weight: 300;
 	}
 	.aside_right{
 		width: 95%;
