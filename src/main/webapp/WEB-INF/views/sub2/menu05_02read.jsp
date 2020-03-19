@@ -240,7 +240,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>프라이브미디어</h2>
+					<h2>PRIVE MAGAZINE</h2>
 				</div>
 				<div class="formWrap">
 					<!-- 공지사항 게시판 뷰 시작 -->
@@ -250,7 +250,7 @@ $(function(){
 							<col>
 							<col style="width: 120px;">
 							<col style="width: 120px;">
-						</colgroup>
+						</colgroup> 
 						<thead>
 							<tr>
 								<th>번호</th>

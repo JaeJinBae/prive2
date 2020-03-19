@@ -67,6 +67,7 @@ section{
 	.content_wrap{
 		width: 1200px;
 		margin: 0 auto;
+		text-align: center;
 	}
 	.content_wrap > .item{
 		width: 357px;
@@ -97,16 +98,18 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: bold;
+		font-weight: 600;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #D4B689;
-		color: #fff;
+		background: #a1888b;
 		padding: 15px 40px;
 		text-align: center;
 		font-size: 17px;
 		cursor: pointer;
+	}
+	.content_wrap > .item > .resbtn > a{
+		color: #fff;
 	}
 	
 	
@@ -161,7 +164,7 @@ section{
 	.search-box{width:640px; height:35px; margin:0 auto 100px auto;}
 	.search-box select, .search-box input, .search-box button{float:left; box-sizing:border-box; display:inline-block; height:35px; line-height:35px; font-size:13px;}
 	.search-box input[type="text"]{width:68%; margin:0 1%; border:1px solid #cfd1d4; text-align:left; padding:0 10px; background:url(../img/board/search.png) no-repeat 98% center; background-size:20px;}
-	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:700; cursor:pointer;}
+	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:500; cursor:pointer; border:0;}
 	.search-box select{width:15%; border:1px solid #cfd1d4; cursor:pointer; padding:0 10px; background:url(../img/common/arrow.png) no-repeat 98% center;}
 	/**********************************************************************/
 	
@@ -226,16 +229,19 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: bold;
+		font-weight: 600;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #D4B689;
+		background: #a1888b;
 		color: #fff;
 		padding: 15px 40px;
 		text-align: center;
 		font-size: 17px;
 		cursor: pointer;
+	}
+	.content_wrap > .item > .resbtn > a{
+		color: #fff;
 	}
 	
 	
@@ -290,7 +296,7 @@ section{
 	.search-box{width:640px; height:35px; margin:0 auto 100px auto;}
 	.search-box select, .search-box input, .search-box button{float:left; box-sizing:border-box; display:inline-block; height:35px; line-height:35px; font-size:13px;}
 	.search-box input[type="text"]{width:68%; margin:0 1%; border:1px solid #cfd1d4; text-align:left; padding:0 10px; background:url(../img/board/search.png) no-repeat 98% center; background-size:20px;}
-	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:700; cursor:pointer;}
+	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:500; cursor:pointer; border:0;}
 	.search-box select{width:15%; border:1px solid #cfd1d4; cursor:pointer; padding:0 10px; background:url(../img/common/arrow.png) no-repeat 98% center;}
 	/**********************************************************************/
 	
@@ -351,16 +357,19 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: bold;
+		font-weight: 600;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #D4B689;
+		background: #a1888b;
 		color: #fff;
 		padding: 15px 40px;
 		text-align: center;
 		font-size: 17px;
 		cursor: pointer;
+	}
+	.content_wrap > .item > .resbtn > a{
+		color: #fff;
 	}
 	
 	
@@ -398,8 +407,8 @@ section{
 	.search-box{width:100%; max-width:640px; height:35px; margin:0 auto 75px auto;}
 	.search-box select, .search-box input, .search-box button{float:left; box-sizing:border-box; display:inline-block; height:35px; line-height:35px; font-size:13px;}
 	.search-box input[type="text"]{width:58%; margin:0 1%; border:1px solid #cfd1d4; text-align:left; padding:0 10px; background:url(../../img/board/search.png) no-repeat 98% center; background-size:20px;}
-	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:700; cursor:pointer;}
-	.search-box select{width:25%; border:1px solid #cfd1d4; cursor:pointer; padding:0 10px; background:url(../../img/common/arrow.png) no-repeat 98% center;}
+	.search-box button{width:15%; background:#5b5b5b; color:#fff; font-weight:500; cursor:pointer; border: 0;}
+	.search-box select{width:25%; border:1px solid #cfd1d4; cursor:pointer; padding:0 10px; background:url(../../img/common/arrow.png) no-repeat 98% center;} 
 	/**********************************************************************/
 	
 	
@@ -473,7 +482,7 @@ $(function(){
 				</div>
 				<div class="formWrap">
 					<div class="content_wrap">
-						<div class="item">
+						<%-- <div class="item">
 							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
 							<div class="txt_wrap">
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
@@ -493,12 +502,12 @@ $(function(){
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
-						</div>
+						</div> --%>
 					
 						<!-- 공지사항 게시판 시작 -->
 						<c:choose>
 						    <c:when test="${fn:length(list) == 0}">
-					        		<!-- <h2>등록된 게시물이 없습니다.</h2> -->
+					        		<h2>등록된 게시물이 없습니다.</h2>
 						    </c:when>
 						    
 						    <c:otherwise>
@@ -517,44 +526,6 @@ $(function(){
 						</c:choose>
 					</div>	
 					<!-- 공지사항 게시판 끝 -->
-					
-					<%-- <div class="board-notice-list m">
-						<ul class="full">
-							<c:if test="${pageMaker.cri.page == 1}">
-							
-								<c:if test="${fn:length(topList) != 0}">
-									<c:forEach var="item" items="${topList}">
-										<li>
-											<a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">
-												<b> ${item.title}</b>
-												<i class="date">${item.regdate}</i>
-											</a>
-										</li>
-									</c:forEach>
-								</c:if>
-							</c:if>
-							<c:choose>
-							    <c:when test="${fn:length(list) == 0}">
-						        	<tr>
-						        		<td colspan="4" style=" text-align: center;">등록된 게시물이 없습니다.</td>
-						        	</tr>
-							    </c:when>
-							    
-							    <c:otherwise>
-							    	<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
-							        <c:forEach var="item" items="${list}">
-											<li>
-												<a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">
-													<b> ${item.title}</b>
-													<i class="date">${item.regdate}</i>
-												</a>
-											</li>
-										<c:set var="num" value="${num-1}"></c:set>	
-									</c:forEach>
-							    </c:otherwise> 
-							</c:choose>
-						</ul>
-					</div> --%>
 				
 					<!-- 페이징 시작 -->
 					<div id="board-pagenation" class="pc">
