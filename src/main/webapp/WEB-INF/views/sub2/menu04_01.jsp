@@ -215,7 +215,7 @@ $(function(){
 				</div>
 				<div class="content_wrap">
 					<div class="slider_wrap">
-						<div class="slider">
+						<%-- <div class="slider">
 							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/2003_event03.jpg"></div>
 							<div class="txt_wrap">
 								<p class="txt_title">피코웨이 토닝 도입 기념 트리플 모공패키지</p>
@@ -244,15 +244,15 @@ $(function(){
 								<h3 class="txt_price">190,000원</h3>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=000&no=${item.no}">예약하기</a></p>
-						</div>
+						</div> --%>
 						<c:choose>
 							<c:when test="${fn:length(eventList) == 0}">
-								<!-- <h3>현재 진행중인 이벤트가 없습니다.</h3> -->
+								<h3>현재 진행중인 이벤트가 없습니다.</h3>
 							</c:when>
 							<c:otherwise>
 								<c:forEach var="item" items="${eventList}">
 									<div class="slider">
-										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/2003_event03.jpg"></div>
+										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/${item.thumb_stored}"></div>
 										<div class="txt_wrap">
 											<p class="txt_title">${item.title}</p>
 											<p class="txt_date">${item.start_date} ~ ${item.end_date}</p>
