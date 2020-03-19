@@ -132,7 +132,9 @@ section{
 		padding: 100px 0;
 		background: #eeeeee;
 	}
-	
+	.section3 > .inner > .s_content_wrap{
+		text-align: center;
+	}
 	
 	/* section4 css */
 	.section4{

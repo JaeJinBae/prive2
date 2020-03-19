@@ -70,7 +70,7 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<div class="clinic_item">
+						<%-- <div class="clinic_item">
 							<p class="item_title">턱보톡스 1회</p>
 							<p class="item_price">50,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
@@ -84,7 +84,7 @@ $(function(){
 							<p class="item_title">더모톡신(얼굴전체)</p>
 							<p class="item_price">300,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
+						</div> --%>
 						<c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<!-- <div class="clinic_item">
@@ -113,7 +113,7 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
+							<%-- <table>
 								<caption>■보톡스</caption>
 								<colgroup>
 									<col width="*">
@@ -229,7 +229,7 @@ $(function(){
 									<td><p class="t_price">180,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
 								</tr>
-							</table>
+							</table> --%>
 							
 							<!-- 보톡스 -->
 							<c:choose >

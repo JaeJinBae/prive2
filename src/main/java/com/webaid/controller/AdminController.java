@@ -1343,7 +1343,7 @@ public class AdminController {
 		vo.setKind2nm(mtfReq.getParameter("kind2nm"));
 		vo.setName(mtfReq.getParameter("name"));
 		vo.setCode(mtfReq.getParameter("code"));
-		vo.setPrice_before(Integer.parseInt(mtfReq.getParameter("price")));
+		vo.setPrice_before(Integer.parseInt(mtfReq.getParameter("price_before")));
 		vo.setPrice_after(Integer.parseInt(mtfReq.getParameter("price_after")));
 		vo.setDiscount(mtfReq.getParameter("discount"));
 		vo.setPopular(mtfReq.getParameter("popular"));

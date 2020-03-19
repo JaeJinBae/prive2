@@ -185,6 +185,7 @@ $(function(){
 		var no = $(this).val();
 		var kind1 = $(this).parent().find("input[name='kind1']").val();
 		var kind1nm = $(this).parent().find("input[name='kind1nm']").val();
+		var kind2nm = $(this).parent().find("input[name='kind2nm']").val();
 		var name = $(this).parent().find("input[name='name']").val();
 		var code = $(this).parent().find("input[name='code']").val();
 		var price_before = $(this).parent().find("input[name='price_before']").val();
@@ -196,6 +197,7 @@ $(function(){
 		$("#clinicUpdate > div > table tr > td > select option[value='"+kind1+"']").attr("selected", true);
 		$("#clinicUpdate > div > table tr > td > input[name='kind1']").val(kind1);
 		$("#clinicUpdate > div > table tr > td > input[name='kind1nm']").val(kind1nm);
+		$("#clinicUpdate > div > table tr > td > input[name='kind2nm']").val(kind2nm);
 		$("#clinicUpdate > div > table tr > td > input[name='name']").val(name);
 		$("#clinicUpdate > div > table tr > td > input[name='code']").val(code);
 		$("#clinicUpdate > div > table tr > td > input[name='price_before']").val(price_before);
@@ -380,10 +382,12 @@ $(function(){
 												<option value="${item.no}">${item.name}</option>
 											</c:forEach>
 										</select> &nbsp;&gt;&nbsp;
+										<input type="hidden" name="no" value="">
 										<input type="hidden" name="kind1" value="0">
 										<input type="hidden" name="kind1nm" value="">
 										<input type="text" name="kind2nm" value="" placeholder="카테고리2"> &nbsp;&gt;&nbsp;
 										<input type="text" name="name" value="" placeholder="시술명">
+										
 									</td>
 									<td class="t_title">코드</td>
 									<td>
@@ -444,6 +448,7 @@ $(function(){
 											<input class="sel_chk_box" type="radio" name="sel_chk" value="${item.no}">
 											<input type="hidden" name="kind1" value="${item.kind1}">
 											<input type="hidden" name="kind1nm" value="${item.kind1nm}">
+											<input type="hidden" name="kind2nm" value="${item.kind2nm}">
 											<input type="hidden" name="name" value="${item.name}">
 											<input type="hidden" name="code" value="${item.code}">
 											<input type="hidden" name="price_before" value="${item.price_before}">
