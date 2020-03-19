@@ -356,10 +356,10 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.s1_txt > p.stick{
-		width: 7px;
+		width: 5px;
 		height: 40px;
 		background: gray;
 		margin: 0 auto;
@@ -382,7 +382,7 @@ section{
 	}
 	.al_title{
 		width: 100%;
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: 600;
 		border-bottom: 5px solid #333;
 	}

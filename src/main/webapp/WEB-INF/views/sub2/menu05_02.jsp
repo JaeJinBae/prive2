@@ -43,50 +43,7 @@ section{
 .inner{
 	width: 100%;
 }
-.content_wrap{
-	width: 1200px;
-	margin: 0 auto;
-}
-.content_wrap > .item{
-	width: 357px;
-	display:inline-block;
-	text-align: center;
-	background: #fafafa;
-	margin-left: 20px;
-	margin-bottom: 50px;
-	border: 1px solid #efefef;
-}
-.content_wrap > .item > .thumb{
-	width: 100%;
-}
-.content_wrap > .item > .thumb > img{
-	width: 100%;
-}
-.content_wrap > .item > .txt_wrap{
-	width: 80%;
-	margin: 0 auto;
-}
-.content_wrap > .item > .txt_wrap > p{
-	margin: 0;
-}
-.content_wrap > .item > .txt_wrap > .txt_title{
-	width: 100%;
-	height: 90px;
-	margin-top: 20px;
-	text-align: center;
-	font-size: 18px;
-	color: #333;
-	font-weight: bold;
-}
-.content_wrap > .item > .resbtn{
-	margin: 0;
-	background: #D4B689;
-	color: #fff;
-	padding: 15px 40px;
-	text-align: center;
-	font-size: 17px;
-	cursor: pointer;
-}
+
 @media only screen and (min-width:1200px){
 	.section1{
 		padding-top: 300px;
@@ -106,6 +63,52 @@ section{
 		font-size: 35px;
 		margin-bottom: 100px;
 	}
+	
+	.content_wrap{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.content_wrap > .item{
+		width: 357px;
+		display:inline-block;
+		text-align: center;
+		background: #fafafa;
+		margin-left: 20px;
+		margin-bottom: 50px;
+		border: 1px solid #efefef;
+	}
+	.content_wrap > .item > .thumb{
+		width: 100%;
+	}
+	.content_wrap > .item > .thumb > img{
+		width: 100%;
+	}
+	.content_wrap > .item > .txt_wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content_wrap > .item > .txt_wrap > p{
+		margin: 0;
+	}
+	.content_wrap > .item > .txt_wrap > .txt_title{
+		width: 100%;
+		height: 90px;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+	}
+	.content_wrap > .item > .resbtn{
+		margin: 0;
+		background: #D4B689;
+		color: #fff;
+		padding: 15px 40px;
+		text-align: center;
+		font-size: 17px;
+		cursor: pointer;
+	}
+	
 	
 	/**********************************************************************
 	* Descript : 버튼 스타일
@@ -188,6 +191,54 @@ section{
 		margin-bottom: 100px; 
 	}
 	
+	
+	.content_wrap{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.content_wrap > .item{
+		width: 335px;
+		display:inline-block;
+		text-align: center;
+		background: #fafafa;
+		margin-left: 20px;
+		margin-bottom: 50px;
+		border: 1px solid #efefef;
+	}
+	.content_wrap > .item > .thumb{
+		width: 100%;
+	}
+	.content_wrap > .item > .thumb > img{
+		width: 100%;
+	}
+	.content_wrap > .item > .txt_wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content_wrap > .item > .txt_wrap > p{
+		margin: 0;
+	}
+	.content_wrap > .item > .txt_wrap > .txt_title{
+		width: 100%;
+		height: 90px;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+	}
+	.content_wrap > .item > .resbtn{
+		margin: 0;
+		background: #D4B689;
+		color: #fff;
+		padding: 15px 40px;
+		text-align: center;
+		font-size: 17px;
+		cursor: pointer;
+	}
+	
+	
 	/**********************************************************************
 	* Descript : 버튼 스타일
 	***********************************************************************/
@@ -246,10 +297,13 @@ section{
 	#footer{
 		height: 30%;
 	}
+	#footer > .inner{
+		margin-bottom: 0;
+	}
 }
 @media only screen and (min-width:320px) and (max-width:767px){	
 	.section1{
-		padding: 0 5px;
+		padding: 0;
 		padding-top: 100px;
 	}
 	.pc{
@@ -262,6 +316,53 @@ section{
 	.s1_txt > h2{
 		font-size: 25px; 
 	}
+	
+	
+	.content_wrap{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.content_wrap > .item{
+		width: 335px;
+		margin: 0 auto;
+		text-align: center;
+		background: #fafafa;
+		margin-bottom: 50px;
+		border: 1px solid #efefef;
+	}
+	.content_wrap > .item > .thumb{
+		width: 100%;
+	}
+	.content_wrap > .item > .thumb > img{
+		width: 100%;
+	}
+	.content_wrap > .item > .txt_wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content_wrap > .item > .txt_wrap > p{
+		margin: 0;
+	}
+	.content_wrap > .item > .txt_wrap > .txt_title{
+		width: 100%;
+		height: 90px;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+	}
+	.content_wrap > .item > .resbtn{
+		margin: 0;
+		background: #D4B689;
+		color: #fff;
+		padding: 15px 40px;
+		text-align: center;
+		font-size: 17px;
+		cursor: pointer;
+	}
+	
 	
 	/**********************************************************************
 	* Descript : NEWS 게시판 스타일
@@ -417,7 +518,7 @@ $(function(){
 					</div>	
 					<!-- 공지사항 게시판 끝 -->
 					
-					<div class="board-notice-list m">
+					<%-- <div class="board-notice-list m">
 						<ul class="full">
 							<c:if test="${pageMaker.cri.page == 1}">
 							
@@ -453,7 +554,7 @@ $(function(){
 							    </c:otherwise> 
 							</c:choose>
 						</ul>
-					</div>
+					</div> --%>
 				
 					<!-- 페이징 시작 -->
 					<div id="board-pagenation" class="pc">
