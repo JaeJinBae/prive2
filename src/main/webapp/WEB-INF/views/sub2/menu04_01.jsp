@@ -215,16 +215,6 @@ $(function(){
 				</div>
 				<div class="content_wrap">
 					<div class="slider_wrap">
-						<%-- <div class="slider">
-							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/2003_event03.jpg"></div>
-							<div class="txt_wrap">
-								<p class="txt_title">피코웨이 토닝 도입 기념 트리플 모공패키지</p>
-								<p class="txt_date">2020-03-01 ~ 2020-03-25</p>
-								<p class="txt_content">피코레이저 + 시크릿 + 제네시스</p>
-								<h3 class="txt_price">190,000원</h3>
-							</div>
-							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=000&no=${item.no}">예약하기</a></p>
-						</div>
 						<div class="slider">
 							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/2003_event03.jpg"></div>
 							<div class="txt_wrap">
@@ -244,8 +234,18 @@ $(function(){
 								<h3 class="txt_price">190,000원</h3>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=000&no=${item.no}">예약하기</a></p>
-						</div> --%>
-						<c:choose>
+						</div>
+						<div class="slider">
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadEvent/2003_event03.jpg"></div>
+							<div class="txt_wrap">
+								<p class="txt_title">피코웨이 토닝 도입 기념 트리플 모공패키지</p>
+								<p class="txt_date">2020-03-01 ~ 2020-03-25</p>
+								<p class="txt_content">피코레이저 + 시크릿 + 제네시스</p>
+								<h3 class="txt_price">190,000원</h3>
+							</div>
+							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=000&no=${item.no}">예약하기</a></p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(eventList) == 0}">
 								<h3>현재 진행중인 이벤트가 없습니다.</h3>
 							</c:when>
@@ -263,7 +263,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div>
 			</div>
