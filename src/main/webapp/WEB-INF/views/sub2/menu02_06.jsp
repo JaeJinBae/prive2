@@ -52,14 +52,12 @@ $(function(){
 					<div class="aside_left">
 						<p class="al_title">스킨부스터란?</p>
 						<p class="al_content">
-							각종 외부 자극에 지치고, 노화된 피부에 영양분을 직접 공급하는 시술입니다. 스킨부스터 시술은 피부를
-							건강하게 재생시키고, 피부 장벽을 튼튼하게 만들어줍니다. 필로르가, 엑소좀, 쥬비덤 볼라이트 등 여러가지
-							종류가 있으며, 피부상태에 따라 다르게 선택할 수 있습니다.
-							피부가 건조한 분들에게 아주 좋으며, 매끄럽고 탄력있는 피부, 자연스럽게 광나는 피부를 만들어줍니다.
+							스킨부스터는 피부가 본래 가진 건강함을 되찾을 수 있도록 피부의 재생 능력을 높여 피부를 개선하고 피부장벽을 튼튼하게 만들어주는 시술로, 약물을 직접 투입하기 때문에 즉각적인 개선이 가능합니다.
+							필로르가, 엑소좀, 쥬비덤 볼라이트 등 여러 가지 종류가 있으며 피부상태에 따라 다르게 선택할 수 있습니다. 프라이브에서는 얼굴 혈관과 피부층에 대한 이해가 높고 임상경험이 풍부한 피부과 전문의가 시술하여 안전하고 만족도가 높습니다.
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_01_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_06_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -71,12 +69,22 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
-							<p class="item_title">턱보톡스 1회 (리터치포함)</p>
-							<p class="item_price">50,000원</p>
+						<div class="clinic_item">
+							<p class="item_title">샤넬주사+H-LDM</p>
+							<p class="item_price">200,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
-						<c:choose>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">엑소좀+코레지 관리 1회</p>
+							<p class="item_price">500,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">볼라이트+더모톡신+H-LDM</p>
+							<p class="item_price">600,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -91,7 +99,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -104,8 +112,67 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■NCTF135주사</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM(5회 진행시 1회)</p></td>
+									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM 1회</p></td>
+									<td><p class="t_price">350,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM 3회</p></td>
+									<td><p class="t_price">900,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■ASCE 엑소좀</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">ASCE엑소좀+코레지 관리 1회</p></td>
+									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">ASCE엑소좀+코레지 관리 3회</p></td>
+									<td><p class="t_price">1,300,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■볼라이트</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">볼라이트(2cc)+더모톡신+H-LDM</p></td>
+									<td><p class="t_price">600,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">볼라이트(3cc)+더모톡신+H-LDM</p></td>
+									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
 							<!-- NCTF135주사 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -174,7 +241,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

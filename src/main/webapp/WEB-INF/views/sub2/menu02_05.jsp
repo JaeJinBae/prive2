@@ -52,14 +52,13 @@ $(function(){
 					<div class="aside_left">
 						<p class="al_title">콜라겐 볼륨 프로그램이란?</p>
 						<p class="al_content">
-							콜라겐은 피부의 탄성과 유연성에 도움이 되는 물질이지만, 노화에 따라 피부는 점점 주름이 생기게 되고
-							피부 속 콜라겐이 사라지게 됩니다. 콜라겐 볼륨 프로그램은 노화로 인해 콜라겐이 감소한 피부에 시술을 통해
-							콜라겐을 자극시켜서 만들어주는 시술로 단순히 볼류믕ㄹ 채우는 필러 시술과는 다른 안티에이징 시술입니다.
-							프라이브피부과의원은 콜라겐 생성에 탁월한 효과를 보이는 제품들로만 구성하여 시술합니다.
+							콜라겐 볼륨 프로그램은 노화로 인해 콜라겐이 감소한 피부에 시술을 통해 콜라겐을 자극시켜서 콜라겐을 만들어주는 시술로 단순히 볼륨을 채우는 필러 시술과는 다른 안티에이징 시술입니다.
+							프라이브는 콜라겐 생성에 탁월한 효과를 보이는 제품들로만 구성하여 시술하며, 얼굴 혈관과 피부층에 대한 이해가 높고 임상경험이 풍부한 피부과 전문의가 국내외에서 안전성이 검증된
+							정품을 정량 사용하여 시술을 진행하여 안전하고 만족도가 높습니다.
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_01_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_05_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -71,12 +70,22 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
-							<p class="item_title">턱보톡스 1회 (리터치포함)</p>
-							<p class="item_price">50,000원</p>
+						<div class="clinic_item">
+							<p class="item_title">실루엣 소프트 4Line 1회</p>
+							<p class="item_price">800,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
-						<c:choose>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">이마 엘란쎄3cc</p>
+							<p class="item_price">1,400,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">스컬트라 3vial</p>
+							<p class="item_price">1,500,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div> 
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -91,7 +100,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -104,8 +113,88 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■엘란쎄</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">엘란쎄 1cc</p></td>
+									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">엘란쎄 2cc</p></td>
+									<td><p class="t_price">950,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">엘란쎄 3cc</p></td>
+									<td><p class="t_price">1,400,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">엘란쎄 4cc</p></td>
+									<td><p class="t_price">1,800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">엘란쎄 케어(목주름 전용) 3회</p></td>
+									<td><p class="t_price">2,700,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■실리프팅</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">실루엣 소프트 4Line(2줄)</p></td>
+									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">실루엣 소프트 8Line(4줄)</p></td>
+									<td><p class="t_price">1,500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">실루엣 소프트 12Line(6줄)</p></td>
+									<td><p class="t_price">2,200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■스컬트라</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">스컬트라 1vial</p></td>
+									<td><p class="t_price">600,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">스컬트라 2vial</p></td>
+									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">스컬트라 3vial</p></td>
+									<td><p class="t_price">1,500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							
 							<!-- 엘란쎄 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -174,7 +263,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

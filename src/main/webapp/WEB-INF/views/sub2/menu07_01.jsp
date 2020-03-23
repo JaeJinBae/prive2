@@ -113,7 +113,7 @@ section{
 
 .board-counsel-list{width:100%;border-top: 2px solid gray;}
 .board-counsel-list thead{background:#f8f8f8; border-top:2px solid #858585; border-bottom:1px solid #cfd1d4;}
-.board-counsel-list thead th{text-align:center; font-size:14px; font-weight:700; color:#222; padding:15px 0;}
+.board-counsel-list thead th{text-align:center; font-size:14px; font-weight:500; color:#222; padding:15px 0;}
 
 .board-counsel-list tbody td{background:#fff; border-bottom:1px solid #cfd1d4; text-align:center; padding:15px 0; font-size:13px;}
 .board-counsel-list tbody td i.notice{display:inline-block; padding:10px; background:#172b4d; color:#fff; border-radius:25px; font-size:11px; font-weight:700;}
@@ -202,7 +202,7 @@ section{
 
 .board-counsel-list{width:100%;border-top: 2px solid gray;}
 .board-counsel-list thead{background:#f8f8f8; border-top:2px solid #858585; border-bottom:1px solid #cfd1d4;}
-.board-counsel-list thead th{text-align:center; font-size:14px; font-weight:700; color:#222; padding:15px 0;}
+.board-counsel-list thead th{text-align:center; font-size:14px; font-weight:500; color:#222; padding:15px 0;}
 
 .board-counsel-list tbody td{background:#fff; border-bottom:1px solid #cfd1d4; text-align:center; padding:15px 0; font-size:13px;}
 .board-counsel-list tbody td i.notice{display:inline-block; padding:10px; background:#172b4d; color:#fff; border-radius:25px; font-size:11px; font-weight:700;}

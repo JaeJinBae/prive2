@@ -24,6 +24,74 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
+<style>
+@media only screen and (min-width:1200px){
+	.s2_content > .clinic_item{
+		width: 270px;
+		padding: 0px 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb{
+		margin-top: 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb > img{
+		width: 100%;
+	}
+	.s2_content > .clinic_item > .item_title{
+		height: auto;
+		margin: 0;
+		font-weight: 500;
+	}
+	.s2_content > .clinic_item > .item_price{
+		font-size: 17px;
+		margin: 18px 0;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+	.s2_content{
+		text-align: center;
+	}
+	.s2_content > .clinic_item{
+		width: 300px;
+		display: inline-block;
+		padding: 0px 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb{
+		margin-top: 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb > img{
+		width: 100%;
+	}
+	.s2_content > .clinic_item > .item_title{
+		height: auto;
+		margin: 0;
+		font-weight: 500;
+	}
+	.s2_content > .clinic_item > .item_price{
+		font-size: 17px;
+		margin: 18px 0;
+	}
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+	.s2_content > .clinic_item{
+		padding: 0px 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb{
+		margin-top: 10px;
+	}
+	.s2_content > .clinic_item > .item_thumb > img{
+		width: 100%;
+	}
+	.s2_content > .clinic_item > .item_title{
+		height: auto;
+		margin: 0;
+		font-weight: 500;
+	}
+	.s2_content > .clinic_item > .item_price{
+		font-size: 16px;
+		margin: 18px 0;
+	}
+}
+</style>
 <script>
 $(function(){
 	
@@ -52,14 +120,13 @@ $(function(){
 					<div class="aside_left">
 						<p class="al_title">모공/탄력/흉터 프로그램?</p>
 						<p class="al_content">
-							과거와 달리 피부를 깎는 레이저를 사용하지 않아도 좋은 효과를 기대할 수 있습니다.
-							프라이브피부과의원에서는 피부를 손상시키거나 예민하게 만드는 레이저 사용은 지양하고 있습니다.
-							모공/탄력/흉터 치료를 위해 융터의 종류나 모공/탄력 저하 정도에 따라 종류가 다른 레이저를 복합적으로
-							사용하며, 진피층부터 건강하게, 매끄럽고 탄력있는 피부를 만들 수 있습니다.
+							모공과 여드름 흉터에는 흉터의 모양, 모공의 발생 원인에 따라 알맞은 시술 방안이 있습니다.
+							프라이브는 먼저 개개인의 피부 상태를 고려해 현재 피부 상태에 맞게 정밀하게 분석하여 섬세한 상담을 통한 깊은 이해와 다년간의 노하우로 보다 체계적으로 진단합니다.
+							그 결과에 따라 진피개선/절제술, 레이저, 도트필링, 흉터주사 등을 시행하며 흉터치료와 재생치료를 병행하여 더욱 빠른 치료효과를 냅니다.
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_01_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -68,15 +135,30 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="s2_txt">
-						<h2>인기 프로그램</h2>
+						<h2>Prive's 맞춤 케어</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
-							<p class="item_title">턱보톡스 1회 (리터치포함)</p>
-							<p class="item_price">50,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
-						<c:choose>
+						<div class="clinic_item">
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_1.png"></p>
+							<p class="item_title">다양한 시술 조합</p>
+							<p class="item_price">진피개선·절제술/레이저 도트필링/흉터주사 병행</p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_2.png"></p>
+							<p class="item_title">피부 맞춤형 치료</p>
+							<p class="item_price">개개인의 피부 상태를 고려해 피부에 맞게 조합, 계획, 시술</p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_3.png"></p>
+							<p class="item_title">원인 맞춤형 치료</p>
+							<p class="item_price">흉터의 모양, 모공의 발생 원인에 따라 맞춤 치료</p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_4.png"></p>
+							<p class="item_title">2% 피부과 전문의</p>
+							<p class="item_price">대한민국 2% 피부과 전문의 전문적인 상담을 통한 치료</p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -91,7 +173,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -104,8 +186,31 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■모공/흉터/탄력 프로그램</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">아기레이저 듀얼파장+크라이오 진정관리 1회</p></td>
+									<td><p class="t_price">300,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">여드름흉터 올인원 프로그램(레이저 4종+도트필+서브시전+흉터주사+재생관리) 1회</p></td>
+									<td><p class="t_price">400,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">모공 프로그램(아기레이저 2회+재생관리 2회+스킨부스터 2회+PHA관리)</p></td>
+									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
 							<!-- 모공/탄력/흉터 프로그램 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -126,7 +231,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

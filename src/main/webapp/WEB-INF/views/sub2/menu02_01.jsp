@@ -52,9 +52,9 @@ $(function(){
 					<div class="aside_left">
 						<p class="al_title">보톡스란?</p>
 						<p class="al_content">
-							보톡스는 근육의 크기를 줄이거나, 주름을 자연스럽게 개선하여 매끄러운 얼굴 라인을 만들어주는 시술입니다.
-							불필요하게 발달한 근육에 직접 주사하면 자연스럽게 근육의 볼륨이 줄어들게 되며, 피부층에 주사하게 되면 주름개선 및 
-							탄력증대 효과가 있습니다. 시술하는 방식에 따라 턱라인을 리프팅시키고, 늘어난 모공을 줄여줄 수도 있습니다.
+							보톡스는 과도하게 발달한 근육을 줄여 슬림한 라인을 만들어주고, 주름의 원인이 되는 근육에 작용하여 주름을 완화시켜줍니다.
+							또한 피부 표면에 얕게 주입하여 모공축소, 잔주름 개선 등의 효과를 볼 수도 있습니다.
+							프라이브는 부위에 따라 보다 효과적으로 시술받을 수 있도록 국내외에서 안전성이 검증된 정품을 정량 사용하여 시술을 진행하고 있습니다.
 						</p>
 					</div>
 					<div class="aside_right">
@@ -70,7 +70,7 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
+						<div class="clinic_item">
 							<p class="item_title">턱보톡스 1회</p>
 							<p class="item_price">50,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
@@ -84,8 +84,8 @@ $(function(){
 							<p class="item_title">더모톡신(얼굴전체)</p>
 							<p class="item_price">300,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
-						<c:choose>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<!-- <div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -100,7 +100,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -113,7 +113,7 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<%-- <table>
+							<table>
 								<caption>■보톡스</caption>
 								<colgroup>
 									<col width="*">
@@ -229,10 +229,10 @@ $(function(){
 									<td><p class="t_price">180,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
 								</tr>
-							</table> --%>
+							</table>
 							
 							<!-- 보톡스 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -325,7 +325,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

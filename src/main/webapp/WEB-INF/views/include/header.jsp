@@ -8,7 +8,7 @@
 		<div class="pc-menu-wrap">
 			<ul class="gnb-wrap">
 				<li class="gnb">
-					<span class="gnb-txt">Prive 소개</span>
+					<span class="gnb-txt">About Prive</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_01">Prive란?</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_02">의료진 소개</a></li>
@@ -34,7 +34,7 @@
 					</ul>
 				</li>
 				<li class="gnb">
-					<span class="gnb-txt">대표시술</span>
+					<span class="gnb-txt">Prive, Pride</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/landing2">울쎄라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/landing1">써마지</a></li>
@@ -44,10 +44,10 @@
 					</ul>
 				</li>
 				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">이벤트</span></a>
+					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">PROMOTION</span></a>
 				</li>
 				<li class="gnb">
-					<span class="gnb-txt">프라이브미디어</span>
+					<span class="gnb-txt">STORY</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_01">YOUTUBE</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_02">PRIVE MAGAZINE</a></li>
@@ -57,7 +57,7 @@
 					<a href="${pageContext.request.contextPath}/menu06_01"><span class="gnb-txt">예약</span></a>
 				</li>
 				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">온라인상담</span></a>
+					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">Q&A</span></a>
 				</li>
 			</ul>
 			<div class="sns_icon_wrap">
@@ -79,7 +79,7 @@
 		<div class="m-menu-wrap">
 			<ul class="gnb-wrap">
 				<li class="gnb">
-					<span class="gnb-txt">Prvie 소개</span><span class="arrow">∨</span>
+					<span class="gnb-txt">About Prive</span><span class="arrow">∨</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_01">Prive란?</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_02">의료진 소개</a></li>
@@ -105,7 +105,7 @@
 					</ul>
 				</li>
 				<li class="gnb">
-					<span class="gnb-txt">대표시술</span><span class="arrow">∨</span>
+					<span class="gnb-txt">Prive, Pride</span><span class="arrow">∨</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_01">울쎄라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_02">써마지</a></li>
@@ -115,10 +115,10 @@
 					</ul>
 				</li>
 				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">이벤트</span></a>
+					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">PROMOTION</span></a>
 				</li>
 				<li class="gnb">
-					<span class="gnb-txt">프라이브미디어</span><span class="arrow">∨</span>
+					<span class="gnb-txt">STORY</span><span class="arrow">∨</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_01">YOUTUBE</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_02">PRIVE MAGAZINE</a></li>
@@ -128,7 +128,7 @@
 					<a href="${pageContext.request.contextPath}/menu06_01"><span class="gnb-txt">예약</span></a>
 				</li>
 				<li class="gnb">
-					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">온라인상담</span></a>
+					<a href="${pageContext.request.contextPath}/menu07_01"><span class="gnb-txt">Q&A</span></a>
 				</li>
 			</ul>
 		</div><!-- m-menu-wrap -->

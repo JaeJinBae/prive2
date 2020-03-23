@@ -58,7 +58,7 @@ section{
 	}
 	.board-counsel-view{width:100%;border-top: 2px solid gray; }
 	.board-counsel-view thead{background:#f8f8f8; border-top:2px solid #858585; border-bottom:1px solid #cfd1d4;}
-	.board-counsel-view thead th{text-align:center; font-size:14px; font-weight:700; color:#222; padding:15px 0;}
+	.board-counsel-view thead th{text-align:center; font-size:14px; font-weight:500; color:#222; padding:15px 0;}
 	
 	.board-counsel-view tbody td{background:#fff;  border-bottom:1px solid #cfd1d4; text-align:center; padding:15px; font-size:13px; line-height:23px;}
 	.board-counsel-view tbody td i.notice{display:inline-block; padding:5px; background:#172b4d; color:#fff; border-radius:2px; font-size:11px; font-weight:700;}
@@ -123,7 +123,7 @@ section{
 	}
 	.board-counsel-view{width:100%;border-top: 2px solid gray; }
 	.board-counsel-view thead{background:#f8f8f8; border-top:2px solid #858585; border-bottom:1px solid #cfd1d4;}
-	.board-counsel-view thead th{text-align:center; font-size:14px; font-weight:700; color:#222; padding:15px 0;}
+	.board-counsel-view thead th{text-align:center; font-size:14px; font-weight:500; color:#222; padding:15px 0;}
 	
 	.board-counsel-view tbody td{background:#fff;  border-bottom:1px solid #cfd1d4; text-align:center; padding:15px; font-size:13px; line-height:23px;}
 	.board-counsel-view tbody td i.notice{display:inline-block; padding:5px; background:#172b4d; color:#fff; border-radius:2px; font-size:11px; font-weight:700;}

@@ -52,13 +52,13 @@ $(function(){
 					<div class="aside_left">
 						<p class="al_title">필러란?</p>
 						<p class="al_content">
-							하알루론산으로 구성된 필러는, 필요한 부분에 볼륨을 만들어주고, 깊게 패인 주름을 채우는 데 사용합니다.
-							필러시술은 재료가 같아도 시술자의 경험과 실력에 따라 결과가 많이 달라질 수 있습니다.
-							프라이브피부과의원에서는 다년간의 시술 경력이 있는 숙련된 전문의가 섬세하게 디자인하여 정성스럽게 시술합니다.
+							필러는 꺼지거나 주름진 부위에 주사 시술을 진행하여 볼륨을 채워 입체적인 얼굴을 만들어주고, 피부 표면을 팽팽하게 만들어 얕고 깊은 주름을 완화시켜줍니다. 
+							프라이브는 주요 성분, 유지기간 등에 따라 다양한 제품을 구비해두고 있으며, 얼굴 혈관과 피부층에 대한 이해가 높고 임상경험이 풍부한 피부과 전문의가
+							국내외에서 안전성이 검증된 정품을 정량 사용하여 시술을 진행하여 안전하고 만족도가 높습니다.
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_01_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_02_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -70,12 +70,22 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<%-- <div class="clinic_item">
-							<p class="item_title">턱보톡스 1회 (리터치포함)</p>
-							<p class="item_price">50,000원</p>
+						<div class="clinic_item">
+							<p class="item_title">이마필러+이마보톡스 1회</p>
+							<p class="item_price">360,000원</p>
 							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div> --%>
-						<c:choose>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">턱필러+자갈턱보톡스</p>
+							<p class="item_price">120,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">코필러</p>
+							<p class="item_price">100,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -90,7 +100,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -103,8 +113,76 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■필러</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">국산 필러 1cc</p></td>
+									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">국산 필러 2cc</p></td>
+									<td><p class="t_price">240,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">국산 필러 3cc</p></td>
+									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">국산 필러 4cc</p></td>
+									<td><p class="t_price">450,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">국산 필러 5cc</p></td>
+									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 10cc</p></td>
+									<td><p class="t_price">1,000,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 1cc</p></td>
+									<td><p class="t_price">280,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 2cc</p></td>
+									<td><p class="t_price">560,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 3cc</p></td>
+									<td><p class="t_price">840,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 4cc</p></td>
+									<td><p class="t_price">1,000,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 5cc</p></td>
+									<td><p class="t_price">1,250,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">수입 필러 10cc</p></td>
+									<td><p class="t_price">2,500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
 							<!-- 필러 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -125,7 +203,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>
