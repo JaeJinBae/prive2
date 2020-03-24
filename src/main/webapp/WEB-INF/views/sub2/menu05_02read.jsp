@@ -54,6 +54,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.board-notice-view{width:100%;border-top: 2px solid gray;}
 	.board-notice-view thead{background:#f8f8f8; border-top:2px solid #858585; border-bottom:1px solid #cfd1d4;}
@@ -115,7 +116,8 @@ section{
 	}
 	.s1_txt > h2{
 		font-size: 30px;
-		margin-bottom: 100px; 
+		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	
 	
@@ -172,7 +174,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400;
 	}
 	
 	.board-notice-view{width:100%; }

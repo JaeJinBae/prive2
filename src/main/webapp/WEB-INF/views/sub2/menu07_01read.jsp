@@ -52,6 +52,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.m{
 		display: none;
@@ -116,7 +117,8 @@ section{
 	}
 	.s1_txt > h2{
 		font-size: 30px;
-		margin-bottom: 100px; 
+		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.m{
 		display: none;
@@ -180,7 +182,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400;
 	}
 	.board-counsel-view{width:100%;}
 	.board-counsel-view ul.full{border-top:2px solid #858585;}

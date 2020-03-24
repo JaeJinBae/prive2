@@ -71,6 +71,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.m-list{
 		display: none;
@@ -94,7 +95,8 @@ section{
 	}
 	.s1_txt > h2{
 		font-size: 30px;
-		margin-bottom: 100px; 
+		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.m-list{
 		display: none;
@@ -117,6 +119,7 @@ section{
 	}
 	.s1_txt > h2{
 		font-size: 25px; 
+		font-weight: 400;
 	}
 	
 	#footer{ 

@@ -86,7 +86,7 @@ section{
 	text-align: center;
 	font-size: 22px;
 	color: #333;
-	font-weight: bold;
+	font-weight: 500;
 }
 .content_wrap > .slider_wrap > .slider > .txt_wrap > .txt_date{
 	width: 100%;
@@ -104,7 +104,7 @@ section{
 	width: 100%;
 	text-align: center;
 	font-size: 19px;
-	font-weight: bold;
+	font-weight: 500;
 	padding: 20px 0;
 	margin: 0;
 }
@@ -137,6 +137,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	#footer{
 		height: 30%;
@@ -158,6 +159,7 @@ section{
 	.s1_txt > h2{
 		font-size: 30px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.content_wrap > .slider_wrap > .slider{
 		width: 355px;
@@ -180,7 +182,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400;
 	}
 	.content_wrap > .slider_wrap > .slider{
 		width: 95%;

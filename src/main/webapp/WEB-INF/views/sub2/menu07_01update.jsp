@@ -51,6 +51,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.form_wrap{
 		margin-bottom: 100px;
@@ -111,7 +112,8 @@ section{
 	}
 	.s1_txt > h2{
 		font-size: 30px;
-		margin-bottom: 100px; 
+		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	/**********************************************************************
 	* Descript : 온라인상담 글쓰기 폼 스타일
@@ -166,7 +168,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400; 
 	}
 	
 	/**********************************************************************

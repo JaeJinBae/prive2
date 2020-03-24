@@ -62,6 +62,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	
 	.content_wrap{
@@ -98,7 +99,7 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
@@ -192,6 +193,7 @@ section{
 	.s1_txt > h2{
 		font-size: 30px;
 		margin-bottom: 100px; 
+		font-weight: 400;
 	}
 	
 	
@@ -229,7 +231,7 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
@@ -320,7 +322,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400;
 	}
 	
 	
@@ -357,7 +360,7 @@ section{
 		text-align: center;
 		font-size: 18px;
 		color: #333;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
@@ -482,13 +485,6 @@ $(function(){
 				</div>
 				<div class="formWrap">
 					<div class="content_wrap">
-						<%-- <div class="item">
-							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
-							<div class="txt_wrap">
-								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
-							</div>
-							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
-						</div>
 						<div class="item">
 							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
 							<div class="txt_wrap">
@@ -502,10 +498,17 @@ $(function(){
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
-						</div> --%>
+						</div>
+						<div class="item">
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
+							<div class="txt_wrap">
+								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
+							</div>
+							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+						</div>
 					
 						<!-- 공지사항 게시판 시작 -->
-						<c:choose>
+						<%-- <c:choose>
 						    <c:when test="${fn:length(list) == 0}">
 					        		<h2>등록된 게시물이 없습니다.</h2>
 						    </c:when>
@@ -523,7 +526,7 @@ $(function(){
 									<c:set var="num" value="${num-1}"></c:set>	
 								</c:forEach>
 						    </c:otherwise> 
-						</c:choose>
+						</c:choose> --%>
 					</div>	
 					<!-- 공지사항 게시판 끝 -->
 				
