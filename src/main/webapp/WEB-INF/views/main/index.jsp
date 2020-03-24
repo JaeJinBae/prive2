@@ -16,14 +16,14 @@
 
   gtag('config', 'UA-152756473-1');
 </script>
-<meta name="naver-site-verification" content="d53046e7ecfe442e3b973c1baeb37ec7fc75031d"/>
+<!-- <meta name="naver-site-verification" content="d53046e7ecfe442e3b973c1baeb37ec7fc75031d"/>
 <meta name="description" content="특별한 공간, 특별한 시간 프라이브피부과">
 <meta property="og:type" content="website">
 <meta property="og:title" content="프라이브피부과">
 <meta property="og:description" content="특별한 공간, 특별한 시간 프라이브피부과">
 <meta property="og:image" content="http://www.prive.co.kr/logo.png">
 <meta property="og:url" content="http://www.prive.co.kr">
-<link rel="canonical" href="http://www.prive.co.kr">
+<link rel="canonical" href="http://www.prive.co.kr"> -->
 <link rel="apple-touch-icon" href="http://www.prive.co.kr/logo.png"/>
 <link rel="shortcut icon" href="http://www.prive.co.kr/logo.png"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/full-page-scroll.css" />

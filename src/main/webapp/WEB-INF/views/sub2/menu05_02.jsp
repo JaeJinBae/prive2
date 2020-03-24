@@ -483,21 +483,21 @@ $(function(){
 				<div class="formWrap">
 					<div class="content_wrap">
 						<%-- <div class="item">
-							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
 							<div class="txt_wrap">
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
 						</div>
 						<div class="item">
-							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
 							<div class="txt_wrap">
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
 							</div>
 							<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
 						</div>
 						<div class="item">
-							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/thumb_19.jpg"></div>
+							<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/mediatest.jpg"></div>
 							<div class="txt_wrap">
 								<p class="txt_title">[ISSUE MAKER] 코로나로 고통받는 대구 지역민을 위한 마스크 나눔으로 감동 전해</p>
 							</div>
