@@ -103,7 +103,7 @@ section{
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #a1888b;
+		background: #111111;
 		padding: 15px 40px;
 		text-align: center;
 		font-size: 17px;
@@ -235,7 +235,7 @@ section{
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #a1888b;
+		background: #111111;
 		color: #fff;
 		padding: 15px 40px;
 		text-align: center;
@@ -364,7 +364,7 @@ section{
 	}
 	.content_wrap > .item > .resbtn{
 		margin: 0;
-		background: #a1888b;
+		background: #111111;
 		color: #fff;
 		padding: 15px 40px;
 		text-align: center;

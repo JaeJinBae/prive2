@@ -110,7 +110,7 @@ section{
 }
 .content_wrap > .slider_wrap > .slider > .resbtn{
 	margin: 0;
-	background: #a1888b;
+	background: #111111;
 	padding: 15px 40px;
 	text-align: center;
 	font-size: 17px;

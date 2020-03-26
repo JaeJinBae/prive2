@@ -202,7 +202,7 @@
 	#order-form #order-surgery .order-inventory .order-date p em{display:inline-block; font-weight:700; color:#111; margin-right:20px;}
 	
 	#order-form #order-surgery .order-inventory .order-btn{}
-	#order-form #order-surgery .order-inventory .order-btn button{display:block; width:100%; height:75px; line-height:75px; background:#b18c4c; color:#fff; font-size:22px; font-weight:700;}
+	#order-form #order-surgery .order-inventory .order-btn button{display:block; width:100%; height:75px; line-height:75px; background:#111111; color:#fff; font-size:22px; font-weight:700;}
 	
 	
 	
@@ -224,7 +224,7 @@
 	#pop-order #pop-order-btn{width:30%; min-height:100px;}
 	#pop-order #pop-order-btn .brick{position:absolute; display:inline-block; width:100%; height:50px; top:50%; margin-top:-25px;}
 	#pop-order #pop-order-btn button{display:inline-block; float:left; height:50px; padding:0 30px; line-height:53px; text-align:center; color:#fff; font-size:18px;}
-	#pop-order #pop-order-btn button.btn-complete{background:#b18c4c; margin-right:5px;}
+	#pop-order #pop-order-btn button.btn-complete{background:#111111; margin-right:5px;}
 	#pop-order #pop-order-btn button.btn-reset{background:#8b8b8b;}
 	#pop-order #pop-order-btn button.btn-reset em{display:inline-block; font-size:15px; line-height:40px; margin-right:10px;}
 	
@@ -474,7 +474,7 @@
 	#order-form #order-surgery .order-inventory .order-date p em{display:inline-block; font-weight:700; color:#111; margin-right:20px;}
 	
 	#order-form #order-surgery .order-inventory .order-btn{}
-	#order-form #order-surgery .order-inventory .order-btn button{display:block; width:100%; height:75px; line-height:75px; background:#b18c4c; color:#fff; font-size:22px; font-weight:700;}
+	#order-form #order-surgery .order-inventory .order-btn button{display:block; width:100%; height:75px; line-height:75px; background:#111111; color:#fff; font-size:22px; font-weight:700;}
 	
 	
 	
@@ -496,7 +496,7 @@
 	#pop-order #pop-order-btn{width:100%; text-align:center;}
 	#pop-order #pop-order-btn .brick{display:inline-block; height:50px;}
 	#pop-order #pop-order-btn button{display:inline-block; float:left; height:40px; padding:0 20px; line-height:43px; text-align:center; color:#fff; font-size:16px;}
-	#pop-order #pop-order-btn button.btn-complete{background:#b18c4c; margin-right:5px;}
+	#pop-order #pop-order-btn button.btn-complete{background:#111111; margin-right:5px;}
 	#pop-order #pop-order-btn button.btn-reset{background:#8b8b8b;}
 	#pop-order #pop-order-btn button.btn-reset em{display:inline-block; font-size:15px; line-height:40px; margin-right:10px;}
 	
@@ -572,7 +572,7 @@
 	#order-form #order-surgery .order-inventory .order-price p.txt03{font-size:12px;}
 
 	#order-form #order-surgery .order-inventory .order-date p em{display:block; font-weight:700; color:#111; margin:10px 0;}
-	#order-form #order-surgery .order-inventory .order-btn button{height:45px; line-height:45px; background:#b18c4c; color:#fff; font-size:17px; font-weight:700;}
+	#order-form #order-surgery .order-inventory .order-btn button{height:45px; line-height:45px; background:#111111; color:#fff; font-size:17px; font-weight:700;}
 }
 @media(max-width:480px){
 	#order-complete .order-complete-txt p.txt01{font-size:16px;}

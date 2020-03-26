@@ -122,7 +122,7 @@ $(function(){
 								</colgroup>
 								<tr>
 									<td><p class="t_title">턱보톡스</p></td>
-									<td><p class="t_price">1,550,000<span class="fw300">원</span></p></td>
+									<td><p class="t_price">50,000<span class="fw300">원</span></p></td>
 									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
 								</tr>
 								<tr>
