@@ -52,6 +52,7 @@ section{
 	.s1_txt > h2{
 		font-size: 35px;
 		margin-bottom: 100px;
+		font-weight: 400;
 	}
 	.m-list{
 		display: none;
@@ -112,7 +113,8 @@ section{
 		text-align: center;
 	}
 	.s1_txt > h2{
-		font-size: 25px; 
+		font-size: 25px;
+		font-weight: 400;
 	}
 	.m-list{
 		display: none;
@@ -165,8 +167,14 @@ section{
 	.inner{
 		margin-bottom: 100px;
 	}
+	
 	.pc-list{
 		display: none;
+	}
+	
+	.s1_txt > h2{
+		font-size: 25px;
+		font-weight: 400; 
 	}
 	/**********************************************************************
 	* Descript : 온라인상담 글쓰기 폼 스타일
@@ -247,7 +255,8 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>온라인 상담</h2>
+					<h2>전문의 상담</h2>
+					<img src="${pageContext.request.contextPath}/resources/img/content/menu07_01_bg.png">
 				</div>
 				<div class="form_wrap">
 					<form name="inquire" id="form1" method="post" action="${pageContext.request.contextPath}/menu07_01register" enctype="multipart/form-data">

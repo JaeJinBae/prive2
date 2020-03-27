@@ -270,7 +270,8 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>온라인 상담</h2>
+					<h2>전문의 상담</h2>
+					<img src="${pageContext.request.contextPath}/resources/img/content/menu07_01_bg.png">
 				</div>
 				<div class="form_wrap">
 					<input type="hidden" id="phone" value="${item.phone}">
