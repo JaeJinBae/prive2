@@ -220,19 +220,70 @@ body{
 	
 	.section4{
 		padding: 150px 0;
+		
+	}
+	.section4 > .inner{
 		overflow: hidden;
 	}
 	.section4 .s4_aside_left{
-		float: left;
-		width: 30%;
+		float: right;
+		width: 35%;
+	}
+	.section4 .s4_aside_left > .s4_txt > h1{
+		font-size: 60px;
+		font-weight: 300;
+	}
+	.section4 .s4_aside_left > .s4_txt > p:not(.moreBtn){
+		margin: 0;
+		color: #909090;
+		font-size: 17px;
+	}
+	.section4 .s4_aside_left > .s4_txt > p.moreBtn{
+		font-size: 20px; 
+		margin: 35px 0;
 	}
 	.section4 .s4_aside_left > .smallImg_wrap > img{
 		width: 200px;
+		cursor: pointer;
+		margin-top: 10px;
 	}
 	
 	.section4 .s4_aside_right{
 		float: right;
-		width: 70%;
+		width: 49%;
+		min-width: 755px;
+	}
+	.section4 .s4_aside_right > img{
+		width: 100%;
+	}
+	.section5{
+		background: url("resources/img/main/section5_bg.png") no-repeat;
+		background-size: cover;
+		padding: 100px 0;
+	}
+	.section5 > .inner{
+		width: 1100px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.section5 > .inner > .s5_aside_left{
+		float: left;
+	}
+	.section5 > .inner > .s5_aside_right{
+		float: right;
+	}
+	.section5 > .inner > .s5_aside_right > h1{
+		font-size: 45px;
+		text-align: center;
+	}
+	.section5 > .inner > .s5_aside_right > h2{
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+		margin: 20px 30px;
+	}
+	.section5 > .inner > .s5_aside_right > table{
+		margin: 0 auto;
 	}
 	
 }
@@ -292,23 +343,10 @@ body{
 </style>
 <script>
 $(function(){
-	$(".main_slider").slick({
-		arrows:true,
-		infinite:true,
-		speed:1000,
-		fade:true,
-		cssEase:'linear',
-		autoplay:true,
-		autoplaySpeed:3000,
-		dots:false
-	})
-	/* $(window).scroll(function(event){
-		var inner_width = window.innerWidth;
-		console.log($("html").position().top);
-		if(inner_width >= 1200){
-			func_header("scroll");
-		}
-	}); */
+	$(".smallImg_wrap > img").click(function(){
+		var target = $(this).attr("src");
+		$(".s4_aside_right > img").attr("src", target);
+	});
 	
 });
 </script>
@@ -428,6 +466,9 @@ $(function(){
 		</section>
 		<section class="section4">
 			<div class="inner">
+				<div class="s4_aside_right">
+					<img src="${pageContext.request.contextPath}/resources/img/main/space1.jpg">
+				</div>
 				<div class="s4_aside_left">
 					<div class="s4_txt">
 						<h1>Prive Space</h1>
@@ -444,10 +485,46 @@ $(function(){
 						<img src="${pageContext.request.contextPath}/resources/img/main/space6.jpg">
 					</div>
 				</div>
-				<div class="s4_aside_right">
-					<img src="${pageContext.request.contextPath}/resources/img/main/space1.jpg">
+			</div>
+		</section>
+		<section class="section5">
+			<div class="inner">
+				<div class="s5_aside_left">
+					<img src="${pageContext.request.contextPath}/resources/img/main/map.jpg">
 				</div>
-				
+				<div class="s5_aside_right">
+					<h1>CONTACT US</h1>
+					<h2><span class="fw400">TEL</span> 1800-5475 · 053-721-7531</h2>
+					<hr>
+					<table>
+						<tr>
+							<th>주소</th>
+							<td>대구광역시 수성구 범어천로3(구.아서원)</td>
+						</tr>
+						<tr>
+							<th>진료시간</th>
+							<td>
+								월-금 10:00 ~ 19:00(평일진료)<br>
+								점심시간 13:00 ~ 14:00<br>
+								토·공휴일 휴진
+							</td>
+						</tr>
+						<tr>
+							<th>지하철</th>
+							<td>도시철도 3호선 어린이 회관역, 도보 3분</td>
+						</tr>
+						<tr>
+							<th>주차</th>
+							<td>건물 뒷편 전용 주차공간</td>
+						</tr>
+					</table>
+					<div class="snslink">
+						<img src="${pageContext.request.contextPath}/resources/img/main/sns1.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/sns2.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/sns3.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/sns4.jpg">
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- footer -->
