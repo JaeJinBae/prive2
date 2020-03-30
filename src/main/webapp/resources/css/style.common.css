@@ -293,9 +293,12 @@ input[type='password']{
 }
 /**********************************************************************/
 #footer {
-	background-color:  #efede5;
+	background-color:  #fff;
 }
-
+.shortbar{
+	font-size: 14px;
+	color: #dfdfdf;
+}
 /* ****************************************************************** */
 @media only screen and (min-width:1200px){
 	.nav-fix{
@@ -329,17 +332,18 @@ input[type='password']{
 	.footer-wrap{
 		width: 1200px;
 		margin: 0 auto;
-		display: flex;
-	    flex-wrap: wrap;
-	    justify-content: space-between;
 	    padding: 50px 70px;
+	    text-align: center;
 	}
 	.footer-wrap > .foot{
 		/* width: 25%;
 		float: left; */
+		text-align: center;
 	}
 	.footer-wrap > .foot > .f_logo{
-		width: 250px;
+		width: 180px;
+		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 	.footer-wrap > .foot > .f_logo > a{
 		width: 100%;
@@ -353,6 +357,9 @@ input[type='password']{
 	
 	.footer-wrap > .foot > .f_info_txt{
 		width: 100%;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 22px;
 	}
 	.footer-wrap > .foot p{
 		font-size: 13px;
@@ -364,22 +371,27 @@ input[type='password']{
 	.f_bottom{
 		width: 100%;
 		text-align: center;
-	}
-	.f_bottom > ul{
-		width: 455px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-	.f_bottom > ul > li{
-		float: left;
-		padding: 0 10px;
-	}
-	.f_bottom > ul > li > a{
-		font-size: 13px;
+		border-bottom: 1px solid #e1e1e1;
 	}
 	.f_bottom p{
-		font-size: 13px;
+		font-size: 15px;
+		display: inline-block;
+		padding: 15px;
+		font-weight: 300;
 	}
+	.f_copyright{
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		
+	}
+	.f_copyright > p{
+		margin: 0;
+		margin-bottom: 50px;
+		color: #919191;
+	}
+		
+	
 	
 	/* footer-popup */
 	.footer-bg{

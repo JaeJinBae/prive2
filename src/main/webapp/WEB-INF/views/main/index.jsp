@@ -262,7 +262,7 @@ body{
 		padding: 100px 0;
 	}
 	.section5 > .inner{
-		width: 1100px;
+		width: 1150px;
 		margin: 0 auto;
 		overflow: hidden;
 	}
@@ -271,19 +271,34 @@ body{
 	}
 	.section5 > .inner > .s5_aside_right{
 		float: right;
+		text-align: center;
 	}
 	.section5 > .inner > .s5_aside_right > h1{
 		font-size: 45px;
 		text-align: center;
+		font-weight: 500;
 	}
 	.section5 > .inner > .s5_aside_right > h2{
 		font-size: 25px;
 		font-weight: 300;
 		text-align: center;
-		margin: 20px 30px;
+		margin: 20px 40px;
 	}
 	.section5 > .inner > .s5_aside_right > table{
 		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.section5 > .inner > .s5_aside_right > table th{
+		text-align: left;
+		font-weight: 400;
+	}
+	.section5 > .inner > .s5_aside_right > table td{
+		text-align: left;
+		padding-left: 40px;
+		font-weight: 300;
+	}
+	.section5 > .inner > .s5_aside_right > table td > p{
+		margin: 5px 0;
 	}
 	
 }
@@ -499,30 +514,30 @@ $(function(){
 					<table>
 						<tr>
 							<th>주소</th>
-							<td>대구광역시 수성구 범어천로3(구.아서원)</td>
+							<td><p>대구광역시 수성구 범어천로3(구.아서원)</p></td>
 						</tr>
 						<tr>
 							<th>진료시간</th>
 							<td>
-								월-금 10:00 ~ 19:00(평일진료)<br>
-								점심시간 13:00 ~ 14:00<br>
-								토·공휴일 휴진
+								<p>월-금 10:00 ~ 19:00(평일진료)</p>
+								<p>점심시간 13:00 ~ 14:00</p>
+								<p>토·공휴일 휴진</p>
 							</td>
 						</tr>
 						<tr>
 							<th>지하철</th>
-							<td>도시철도 3호선 어린이 회관역, 도보 3분</td>
+							<td><p>도시철도 3호선 어린이 회관역, 도보 3분</p></td>
 						</tr>
 						<tr>
 							<th>주차</th>
-							<td>건물 뒷편 전용 주차공간</td>
+							<td><p>건물 뒷편 전용 주차공간</p></td>
 						</tr>
 					</table>
 					<div class="snslink">
-						<img src="${pageContext.request.contextPath}/resources/img/main/sns1.jpg">
-						<img src="${pageContext.request.contextPath}/resources/img/main/sns2.jpg">
-						<img src="${pageContext.request.contextPath}/resources/img/main/sns3.jpg">
-						<img src="${pageContext.request.contextPath}/resources/img/main/sns4.jpg">
+						<a href=""><img src="${pageContext.request.contextPath}/resources/img/main/sns1.png"></a>
+						<a href=""><img src="${pageContext.request.contextPath}/resources/img/main/sns2.png"></a>
+						<a href=""><img src="${pageContext.request.contextPath}/resources/img/main/sns3.png"></a>
+						<a href=""><img src="${pageContext.request.contextPath}/resources/img/main/sns4.png"></a>
 					</div>
 				</div>
 			</div>
