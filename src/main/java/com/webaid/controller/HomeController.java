@@ -35,6 +35,7 @@ import com.webaid.domain.ClinicVO;
 import com.webaid.domain.EventVO;
 import com.webaid.domain.HospitalTimeVO;
 import com.webaid.domain.MediaVO;
+import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
 import com.webaid.domain.PopupVO;
 import com.webaid.domain.ReservationJsonVO;
@@ -601,6 +602,50 @@ public class HomeController {
 		
 		model.addAttribute("eventList", eventList);
 		return "sub2/menu04_01";
+	}
+	
+	@RequestMapping(value = "/menu05_00", method = RequestMethod.GET)
+	public String menu05_00(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu05_00 get");
+		
+		List<NoticeVO> topList = nService.selectTopNotice("o");
+		List<NoticeVO> list = nService.listSearch(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(nService.listSearchCount(cri));
+		pageMaker.setFinalPage(nService.listSearchCount(cri));
+		
+		model.addAttribute("topList", topList);
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "sub2/menu05_00";
+	}
+	
+	@RequestMapping(value = "/menu05_00read", method = RequestMethod.GET)
+	public String menu05_00read(int no, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu05_00read GET");
+		
+		NoticeVO vo=nService.selectOne(no);
+		NoticeVO beforeVO = nService.selectBefore(no);
+		NoticeVO afterVO = nService.selectAfter(no);
+		
+		nService.updateCnt(no);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(nService.listSearchCount(cri));
+		pageMaker.setFinalPage(nService.listSearchCount(cri));
+		
+		model.addAttribute("item", vo);
+		model.addAttribute("beforeItem", beforeVO);
+		model.addAttribute("afterItem", afterVO);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "sub2/menu05_00read";
 	}
 	
 	@RequestMapping(value = "/menu05_02", method = RequestMethod.GET)

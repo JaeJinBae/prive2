@@ -49,6 +49,7 @@
 				<li class="gnb">
 					<span class="gnb-txt">커뮤니티</span>
 					<ul class="lnb-wrap">
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_00">공지사항</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_01">YOUTUBE</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_02">PRIVE MAGAZINE</a></li>
 					</ul>
@@ -124,6 +125,7 @@
 				<li class="gnb">
 					<span class="gnb-txt">커뮤니티</span><span class="arrow">∨</span>
 					<ul class="lnb-wrap">
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_00">공지사항</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_01">YOUTUBE</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu05_02">PRIVE MAGAZINE</a></li>
 					</ul>
