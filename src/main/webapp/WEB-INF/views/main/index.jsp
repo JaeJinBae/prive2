@@ -275,8 +275,15 @@ body{
 		float:left;
 		text-align: center;
 		color: #fff;
-		background-color: #111111;
-        background-color: rgba( 1, 1, 1, 0.8 );
+		background: #111111;
+        background: rgba( 1, 1, 1, 0.8 );
+        -webkit-transition: background 1s, -webkit-transform 1s;
+		transition: background 1s, transform 1s;
+	}
+	.section3 > .inner > .s3_content > .equip_item:hover{
+		background: #222a1e;
+		-webkit-transition: background 1s, -webkit-transform 1s;
+		transition: background 1s, transform 1s;
 	}
 	.section3 > .inner > .s3_content > .equip_item > h4{
 		font-size: 20px;
