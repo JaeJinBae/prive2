@@ -166,6 +166,21 @@ body{
 		padding-bottom: 35px;
 		border: 1px solid #efefef;
 		position: relative;
+		overflow: hidden;
+	}
+	.section2 > .inner > .s2_content > .value_img > img:not(.img_no){
+		width: 100%;
+	}
+	.section2 > .inner > .s2_content > .value_img > img:not(.img_no):hover{
+		cursor:pointer;
+		-webkit-transform:scale(1.1); /*  크롬 */
+		-moz-transform:scale(1.1); /* FireFox */
+		-o-transform:scale(1.1); /* Opera */
+		transform:scale(1.1);
+		transition: transform .35s;
+		-o-transition: transform .35s;
+		-moz-transition: transform .35s;
+		-webkit-transition: transform .35s;
 	}
 	.section2 > .inner > .s2_content > .value_img:nth-child(2){
 		margin-left: 13px;
@@ -385,26 +400,72 @@ body{
 		cursor: pointer;
 	}
 }
-.hideme{
+.fadeInDelay0s, .fadeInDelay1s, .fadeInDelay2s, .fadeInDelay3s, .fadeInDelay4s, .fadeInDelay5s, .fadeInDelay6s{
 	opacity: 0;
 }
+
 </style>
 <script>
+function start_animation(e){
+	var bottom_of_object = $(e).offset().top + $(e).outerHeight();
+	var bottom_of_window = $(window).scrollTop() + $(window).height();
+	
+	if( bottom_of_window > bottom_of_object*0.7 ){
+		$(e).animate({'opacity':'1'},1500);
+	}
+}
 $(function(){
 	$(".smallImg_wrap > img").click(function(){
 		var target = $(this).attr("src");
 		$(".s4_aside_right > img").attr("src", target);
 	});
+	
 	$(window).scroll( function(){
-        $('.hideme').each( function(i){
-            
-        	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_object/2 ){
-                $(this).animate({'opacity':'1'},2000);
-            }
-        }); 
+		$('.fadeInDelay0s').each( function(i){
+			/* var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+			
+			if( bottom_of_window > bottom_of_object*0.8 ){
+				$(this).animate({'opacity':'1'},1800);
+			} */
+			start_animation(this);
+		});
+		 $('.fadeInDelay1s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},1000);
+        });
+		$('.fadeInDelay2s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},1500);
+        });
+		$('.fadeInDelay3s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},2000);
+        });
+		$('.fadeInDelay4s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},2500);
+        });
+		$('.fadeInDelay5s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},3000);
+        });
+		$('.fadeInDelay6s').each( function(i){
+			var obj = this;
+			setTimeout(function(){
+				start_animation(obj);
+			},3500);
+        });
     });
 });
 </script>
@@ -454,48 +515,48 @@ $(function(){
 		</section>
 		<section class="section2">
 			<div class="inner">
-				<div class="s2_txt hideme">
+				<div class="s2_txt fadeInDelay0s">
 					<p class="horizontal_bar"></p>
 					<h4>Prive's Core Value</h4>
 					<h2>프라이브의 가치는 당신입니다.</h2>
 				</div>
 				<div class="s2_content">
-					<div class="value_img">
+					<div class="value_img fadeInDelay0s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value1.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no1.jpg">
 						<h2>프라이빗한 공간</h2>
 						<p>VIP를 위한 공간 머무는 시간도</p>
 						<p>아름다울 수 있도록, 프라이빗한 공간</p>
 					</div>
-					<div class="value_img">
+					<div class="value_img fadeInDelay1s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value2.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no2.jpg">
 						<h2>최고급 시술 장비</h2>
 						<p>최선의 결과를 위한</p>
 						<p>최고급의 시술 장비</p>
 					</div>
-					<div class="value_img">
+					<div class="value_img fadeInDelay2s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value3.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no3.jpg">
 						<h2>피부&바디 디자인</h2>
 						<p>내게 맞는 균형과 조화와</p>
 						<p>피부&바디 디자인</p>
 					</div>
-					<div class="value_img">
+					<div class="value_img fadeInDelay3s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value4.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no4.jpg">
 						<h2>대한민국 2% 피부과전문의</h2>
 						<p>건강한 아름다움을 위해 연구하는</p>
 						<p>대한민국 2% 피부과 전문의</p>
 					</div>
-					<div class="value_img">
+					<div class="value_img fadeInDelay4s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value5.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no5.jpg">
 						<h2>1:1 프리미엄 케어</h2>
 						<p>맞춤형 1:1 토탈케어,</p>
 						<p>1:1 프리미엄 케어</p>
 					</div>
-					<div class="value_img">
+					<div class="value_img fadeInDelay5s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value6.jpg">
 						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no6.jpg">
 						<h2>전용 지상 주차장</h2>
@@ -508,36 +569,36 @@ $(function(){
 		</section>
 		<section class="section3">
 			<div class="inner main_s3">
-				<div class="s3_txt">
+				<div class="s3_txt fadeInDelay0s">
 					<h2>Prive, Pride</h2>
 					<p>프라이브가 준비한 맞춤 프로그램을</p>
 					<p>합리적인 가격에 경험해보세요.</p>
 				</div>
 				<div class="s3_content">
-					<div class="equip_item">
+					<div class="equip_item fadeInDelay0s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/equipment1.png">
 						<h4>써마지</h4>
 						<p>대구에 단 2대 밖에 없는</p>
 						<p>4세대 최신써마지FLX</p>
 					</div>
-					<div class="equip_item">
+					<div class="equip_item fadeInDelay1s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/equipment2.png">
 						<h4>울쎄라</h4>
 						<p>프라이브의 울쎄라</p>
 						<p>울쎄라 간단설명입니다.</p>
 					</div>
-					<div class="equip_item">
+					<div class="equip_item fadeInDelay2s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/equipment3.png">
 						<h4>튠페이스</h4>
 						<p>프라이브의 튠페이스</p>
 						<p>튠페이스 간단설명입니다.</p>
 					</div>
-					<div class="equip_item">
+					<div class="equip_item fadeInDelay3s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/equipment4.png">
 						<h4>프라이브의 실리프팅</h4>
 						<p>실리프팅 간단설명입니다.</p><br>
 					</div>
-					<div class="equip_item">
+					<div class="equip_item fadeInDelay4s">
 						<img src="${pageContext.request.contextPath}/resources/img/main/equipment5.png">
 						<h4>8주미백프로그램</h4>
 						<p>프라이브의 8주미백프로그램</p>
@@ -552,7 +613,7 @@ $(function(){
 					<img src="${pageContext.request.contextPath}/resources/img/main/space1.jpg">
 				</div>
 				<div class="s4_aside_left">
-					<div class="s4_txt">
+					<div class="s4_txt fadeInDelay0s">
 						<h1>Prive Space</h1>
 						<p>머무는 시간도 아름다울 수 있도록</p>
 						<p>프라이빗한 개인룸에서 시술 및 스킨케어를 진행합니다.</p>
@@ -574,7 +635,7 @@ $(function(){
 				<div class="s5_aside_left">
 					<img src="${pageContext.request.contextPath}/resources/img/main/map.jpg">
 				</div>
-				<div class="s5_aside_right">
+				<div class="s5_aside_right fadeInDelay0s">
 					<h1>CONTACT US</h1>
 					<h2><span class="fw400">TEL</span> 1800-5475 · 053-721-7531</h2>
 					<hr>
