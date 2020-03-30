@@ -160,10 +160,40 @@ body{
 	}
 	.section2 > .inner > .s2_content > .value_img{
 		display: inline-block;
-		margin: 0 3px;
+		width: 30%;
 		margin-bottom: 20px;
-		
+		padding: 12px;
+		padding-bottom: 35px;
+		border: 1px solid #efefef;
+		position: relative;
 	}
+	.section2 > .inner > .s2_content > .value_img:nth-child(2){
+		margin-left: 13px;
+		margin-right: 13px;
+	}
+	.section2 > .inner > .s2_content > .value_img:nth-child(5){
+		margin-left: 13px;
+		margin-right: 13px;
+	}
+	.section2 > .inner > .s2_content > .value_img > .img_no{
+		position: absolute;
+		top: 49%;
+		left: 50%;
+		margin-left: -29px;
+	}
+	.section2 > .inner > .s2_content > .value_img > h2{
+		font-size: 28px;
+		font-weight: 400;
+		letter-spacing: -2px;
+		margin-top: 50px;
+	}
+	.section2 > .inner > .s2_content > .value_img > p{
+		margin: 0;
+		font-size: 18px;
+		color: #888;
+		font-weight: 300;
+	}
+	
 	
 	.section3{
 		width: 100%;
@@ -355,6 +385,9 @@ body{
 		cursor: pointer;
 	}
 }
+.hideme{
+	opacity: 0;
+}
 </style>
 <script>
 $(function(){
@@ -362,7 +395,17 @@ $(function(){
 		var target = $(this).attr("src");
 		$(".s4_aside_right > img").attr("src", target);
 	});
-	
+	$(window).scroll( function(){
+        $('.hideme').each( function(i){
+            
+        	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object/2 ){
+                $(this).animate({'opacity':'1'},2000);
+            }
+        }); 
+    });
 });
 </script>
 </head>
@@ -411,7 +454,7 @@ $(function(){
 		</section>
 		<section class="section2">
 			<div class="inner">
-				<div class="s2_txt">
+				<div class="s2_txt hideme">
 					<p class="horizontal_bar"></p>
 					<h4>Prive's Core Value</h4>
 					<h2>프라이브의 가치는 당신입니다.</h2>
@@ -419,21 +462,45 @@ $(function(){
 				<div class="s2_content">
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value1.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no1.jpg">
+						<h2>프라이빗한 공간</h2>
+						<p>VIP를 위한 공간 머무는 시간도</p>
+						<p>아름다울 수 있도록, 프라이빗한 공간</p>
 					</div>
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value2.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no2.jpg">
+						<h2>최고급 시술 장비</h2>
+						<p>최선의 결과를 위한</p>
+						<p>최고급의 시술 장비</p>
 					</div>
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value3.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no3.jpg">
+						<h2>피부&바디 디자인</h2>
+						<p>내게 맞는 균형과 조화와</p>
+						<p>피부&바디 디자인</p>
 					</div>
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value4.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no4.jpg">
+						<h2>대한민국 2% 피부과전문의</h2>
+						<p>건강한 아름다움을 위해 연구하는</p>
+						<p>대한민국 2% 피부과 전문의</p>
 					</div>
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value5.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no5.jpg">
+						<h2>1:1 프리미엄 케어</h2>
+						<p>맞춤형 1:1 토탈케어,</p>
+						<p>1:1 프리미엄 케어</p>
 					</div>
 					<div class="value_img">
 						<img src="${pageContext.request.contextPath}/resources/img/main/value6.jpg">
+						<img class="img_no" src="${pageContext.request.contextPath}/resources/img/main/no6.jpg">
+						<h2>전용 지상 주차장</h2>
+						<p>프라이브가 준비한 넉넉한</p>
+						<p>전용 지상 주차공간</p>
 					</div>
 					
 				</div>
