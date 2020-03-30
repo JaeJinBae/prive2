@@ -123,14 +123,38 @@ body{
 		line-height: 1.65;
 	}
 	.section2{
-		background: url("resources/img/main/section2_bg.png") no-repeat;
+		
 	}
 	.section2 > .inner{
 		/* padding: 100px 0; */
+		overflow: hidden;
+	}
+	.section2 > .inner > .s2_bg{
+		background: url("resources/img/main/section2_bg.png") no-repeat center;
+    	background-size: cover;
+		width: 100%;
+		height: 365px;
+		margin-bottom: 50px;
+		
+	}
+	.s2_bg_scale{
+		-webkit-transform:scale(1.1); /*  크롬 */
+		-moz-transform:scale(1.1); /* FireFox */
+		-o-transform:scale(1.1); /* Opera */
+		transform:scale(1.1);
+		transition: transform 15s;
+		-o-transition: transform 15s;
+		-moz-transition: transform 15s;
+		-webkit-transition: transform 15s;
 	}
 	.section2 > .inner > .s2_txt{
 		color: #fff;
-		padding: 100px;
+		width: 100%;
+		position: absolute;
+		top: 100px;
+		
+	}
+		
 	}
 	.section2 > .inner > .s2_txt > p.horizontal_bar{
 		width: 50px;
@@ -410,7 +434,7 @@ function start_animation(e){
 	var bottom_of_object = $(e).offset().top + $(e).outerHeight();
 	var bottom_of_window = $(window).scrollTop() + $(window).height();
 	
-	if( bottom_of_window > bottom_of_object*0.7 ){
+	if( bottom_of_window > (bottom_of_object*0.9) ){
 		$(e).animate({'opacity':'1'},1500);
 	}
 }
@@ -419,7 +443,7 @@ $(function(){
 		var target = $(this).attr("src");
 		$(".s4_aside_right > img").attr("src", target);
 	});
-	
+	$(".s2_bg").addClass("s2_bg_scale");
 	$(window).scroll( function(){
 		$('.fadeInDelay0s').each( function(i){
 			/* var bottom_of_object = $(this).offset().top + $(this).outerHeight();
@@ -429,6 +453,8 @@ $(function(){
 				$(this).animate({'opacity':'1'},1800);
 			} */
 			start_animation(this);
+			
+			
 		});
 		 $('.fadeInDelay1s').each( function(i){
 			var obj = this;
@@ -515,6 +541,7 @@ $(function(){
 		</section>
 		<section class="section2">
 			<div class="inner">
+				<div class="s2_bg"></div>
 				<div class="s2_txt fadeInDelay0s">
 					<p class="horizontal_bar"></p>
 					<h4>Prive's Core Value</h4>
