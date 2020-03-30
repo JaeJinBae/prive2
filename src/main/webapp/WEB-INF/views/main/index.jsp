@@ -448,7 +448,14 @@ function start_animation(e){
 $(function(){
 	$(".smallImg_wrap > img").click(function(){
 		var target = $(this).attr("src");
-		$(".s4_aside_right > img").attr("src", target);
+		$(".s4_aside_right > img").animate({'opacity':'0'},500);
+		setTimeout(function(){
+			$(".s4_aside_right > img").attr("src", target);
+		}, 600);
+		setTimeout(function(){
+			$(".s4_aside_right > img").animate({'opacity':'1'},500);
+		}, 700);
+		
 	});
 	$(".s2_bg").addClass("s2_bg_scale");
 	$(window).scroll( function(){
