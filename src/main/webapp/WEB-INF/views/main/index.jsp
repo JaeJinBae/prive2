@@ -138,10 +138,10 @@ body{
 		
 	}
 	.s2_bg_scale{
-		-webkit-transform:scale(1.1); /*  크롬 */
-		-moz-transform:scale(1.1); /* FireFox */
-		-o-transform:scale(1.1); /* Opera */
-		transform:scale(1.1);
+		-webkit-transform:scale(1.2); /*  크롬 */
+		-moz-transform:scale(1.2); /* FireFox */
+		-o-transform:scale(1.2); /* Opera */
+		transform:scale(1.2);
 		transition: transform 15s;
 		-o-transition: transform 15s;
 		-moz-transition: transform 15s;
