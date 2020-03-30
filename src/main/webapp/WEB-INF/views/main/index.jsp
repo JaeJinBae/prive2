@@ -111,8 +111,8 @@ body{
 		max-width: 800px;
 	}
 	.section1 > .inner > .s1_txt > h2{
-		font-size: 35px;
-		font-weight: 500;
+		font-size: 40px;
+		font-weight: 400;
 		margin: 0;
 		margin-bottom: 20px;
 	}
@@ -123,9 +123,117 @@ body{
 		line-height: 1.65;
 	}
 	.section2{
-		background: url("../resources/img/main/section2_bg.png") no-repeat;
+		background: url("resources/img/main/section2_bg.png") no-repeat;
+	}
+	.section2 > .inner{
+		/* padding: 100px 0; */
+	}
+	.section2 > .inner > .s2_txt{
+		color: #fff;
+		padding: 100px;
+	}
+	.section2 > .inner > .s2_txt > p.horizontal_bar{
+		width: 50px;
+		height: 2px;
+		margin: 0 auto;
+		background: #fff;
+	}
+	.section2 > .inner > .s2_txt > h4{
+		font-size: 22px;
+		font-weight: 400;
+		text-align: center;
+		letter-spacing: 5px;
+		margin-bottom: 10px;
+	}
+	.section2 > .inner > .s2_txt > h2{
+		font-size: 40px;
+		font-weight: 300;
+		text-align: center;
+		margin: 0;
+		padding-bottom: 50px;
+	}
+	.section2 > .inner > .s2_content{
+		width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 50px 0;
+	}
+	.section2 > .inner > .s2_content > .value_img{
+		display: inline-block;
+		margin: 0 3px;
+		margin-bottom: 20px;
+		
 	}
 	
+	.section3{
+		width: 100%;
+		height: 660px;
+		background: url("resources/img/main/section3_bg.png") no-repeat;
+	}
+	.section3 > .inner{
+		overflow: hidden;
+		height: 100%;
+	}
+	.section3 > .inner > .s3_txt{
+		float: left;
+		width: 25.8%;
+		/* height: 100%; */
+		text-align: center;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+  		transform: translateY(-50%);
+	}
+	.section3 > .inner > .s3_txt > h2{
+		font-size: 55px;
+		font-weight: 300;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.section3 > .inner > .s3_txt > p{
+		font-weight: 200;
+		margin: 0;
+	}
+	.section3 > .inner > .s3_content{
+		float: right;
+		width: 74%;
+		height: 100%;
+	}
+	.section3 > .inner > .s3_content > .equip_item{
+		padding-top: 13%;
+		width: 20%;
+		height: 100%;
+		float:left;
+		text-align: center;
+		color: #fff;
+		background-color: #111111;
+        background-color: rgba( 1, 1, 1, 0.8 );
+	}
+	.section3 > .inner > .s3_content > .equip_item > h4{
+		font-size: 20px;
+	}
+	.section3 > .inner > .s3_content > .equip_item > p{
+		margin: 0;
+		font-size: 14px;
+		color: #909090;
+	}
+	
+	.section4{
+		padding: 150px 0;
+		overflow: hidden;
+	}
+	.section4 .s4_aside_left{
+		float: left;
+		width: 30%;
+	}
+	.section4 .s4_aside_left > .smallImg_wrap > img{
+		width: 200px;
+	}
+	
+	.section4 .s4_aside_right{
+		float: right;
+		width: 70%;
+	}
 	
 }
 @media only screen and (min-width:768px) and (max-width:1199px){
@@ -255,10 +363,90 @@ $(function(){
 					<h4>Prive's Core Value</h4>
 					<h2>프라이브의 가치는 당신입니다.</h2>
 				</div>
+				<div class="s2_content">
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value1.jpg">
+					</div>
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value2.jpg">
+					</div>
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value3.jpg">
+					</div>
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value4.jpg">
+					</div>
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value5.jpg">
+					</div>
+					<div class="value_img">
+						<img src="${pageContext.request.contextPath}/resources/img/main/value6.jpg">
+					</div>
+					
+				</div>
 			</div>
 		</section>
 		<section class="section3">
 			<div class="inner main_s3">
+				<div class="s3_txt">
+					<h2>Prive, Pride</h2>
+					<p>프라이브가 준비한 맞춤 프로그램을</p>
+					<p>합리적인 가격에 경험해보세요.</p>
+				</div>
+				<div class="s3_content">
+					<div class="equip_item">
+						<img src="${pageContext.request.contextPath}/resources/img/main/equipment1.png">
+						<h4>써마지</h4>
+						<p>대구에 단 2대 밖에 없는</p>
+						<p>4세대 최신써마지FLX</p>
+					</div>
+					<div class="equip_item">
+						<img src="${pageContext.request.contextPath}/resources/img/main/equipment2.png">
+						<h4>울쎄라</h4>
+						<p>프라이브의 울쎄라</p>
+						<p>울쎄라 간단설명입니다.</p>
+					</div>
+					<div class="equip_item">
+						<img src="${pageContext.request.contextPath}/resources/img/main/equipment3.png">
+						<h4>튠페이스</h4>
+						<p>프라이브의 튠페이스</p>
+						<p>튠페이스 간단설명입니다.</p>
+					</div>
+					<div class="equip_item">
+						<img src="${pageContext.request.contextPath}/resources/img/main/equipment4.png">
+						<h4>프라이브의 실리프팅</h4>
+						<p>실리프팅 간단설명입니다.</p><br>
+					</div>
+					<div class="equip_item">
+						<img src="${pageContext.request.contextPath}/resources/img/main/equipment5.png">
+						<h4>8주미백프로그램</h4>
+						<p>프라이브의 8주미백프로그램</p>
+						<p>8주미백 간단설명입니다.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section4">
+			<div class="inner">
+				<div class="s4_aside_left">
+					<div class="s4_txt">
+						<h1>Prive Space</h1>
+						<p>머무는 시간도 아름다울 수 있도록</p>
+						<p>프라이빗한 개인룸에서 시술 및 스킨케어를 진행합니다.</p>
+						<p class="moreBtn"><a href="${pageContext.request.contextPath}/menu01_04">MORE →</a></p>
+					</div>
+					<div class="smallImg_wrap">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space1.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space2.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space3.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space4.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space5.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/main/space6.jpg">
+					</div>
+				</div>
+				<div class="s4_aside_right">
+					<img src="${pageContext.request.contextPath}/resources/img/main/space1.jpg">
+				</div>
 				
 			</div>
 		</section>
