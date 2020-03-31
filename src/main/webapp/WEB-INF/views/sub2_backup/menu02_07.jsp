@@ -70,7 +70,22 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<c:choose>
+						<div class="clinic_item">
+							<p class="item_title">8주 미백 프로그램</p>
+							<p class="item_price">990,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">색소 패키지(관리포함) 5회</p>
+							<p class="item_price">800,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">콰트로 색소 패키지 10회</p>
+							<p class="item_price">2,000,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -85,7 +100,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -98,8 +113,110 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
+							<table>
+								<caption>■레이저 토닝</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">레블라이트SI 토닝+미백관리 1회</p></td>
+									<td><p class="t_price">180,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">레블라이트SI 토닝 10회</p></td>
+									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">젠틀맥스 프로+진정/재생관리 1회</p></td>
+									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■겨드랑이 토닝</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">겨드랑이 토닝</p></td>
+									<td><p class="t_price">30,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">겨드랑이 토닝+제모+미백관리</p></td>
+									<td><p class="t_price">300,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■색소 프로그램</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">One Day색소 프로그램(레블라이트SI+젠틀맥스 프로+CO2+진정관리) 1회</p></td>
+									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">8주 미백 프로그램(레블라이트SI 4회+티파니부스터 2회+미백관리 4회+PHA관리 2회)</p></td>
+									<td><p class="t_price">990,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">색소 패키지(미백/진정케어 포함) 5회</p></td>
+									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">색소 패키지(미백/진정케어 포함) 10회</p></td>
+									<td><p class="t_price">1,500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">듀얼 색소 패키지(미백/진정케어 포함) 5회</p></td>
+									<td><p class="t_price">1,000,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">콰트로 색소 패키지(미백/진정케어 포함) 10회</p></td>
+									<td><p class="t_price">2,000,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■홍조 프로그램</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">홍조 레드 패키지(홍조/진정케어 포함) 1회</p></td>
+									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">홍조 레드 패키지(홍조/진정케어 포함) 3회</p></td>
+									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">홍조 레드 패키지(홍조/진정케어 포함) 5회</p></td>
+									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
 							<!-- 레이저 토닝 -->
-							<c:choose >
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -192,7 +309,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

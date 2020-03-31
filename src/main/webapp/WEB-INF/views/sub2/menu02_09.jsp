@@ -70,22 +70,7 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<div class="clinic_item">
-							<p class="item_title">더마인디비주얼 관리 1회</p>
-							<p class="item_price">80,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">PHA 물톡스 관리 1회</p>
-							<p class="item_price">120,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">코레지관리 5회+물광관리 5회</p>
-							<p class="item_price">1,200,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<%-- <c:choose>
+						<c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -100,7 +85,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose> --%>
+						</c:choose>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -113,131 +98,8 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
-								<caption>■메디컬 스킨케어</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">여드름관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">여드름관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">알라딘필링+재생관리 얼굴 1회</p></td>
-									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">알라딘필링+재생관리 등/가슴 1회</p></td>
-									<td><p class="t_price">250,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">수분관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">수분관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">미백관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">미백관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">진정관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">진정관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">탄력관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">탄력관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">재생관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">재생관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">LDM관리 1회</p></td>
-									<td><p class="t_price">80,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">LDM관리 10회+1회</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">물광관리 1회</p></td>
-									<td><p class="t_price">120,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">물광관리 10회+1회</p></td>
-									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">코레지관리 2단계 1회</p></td>
-									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">코레지고나리 3단계 1회</p></td>
-									<td><p class="t_price">400,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">코레지관리 5회+물광관리 5회</p></td>
-									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">LDM+엑소마지관리 1회</p></td>
-									<td><p class="t_price">150,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">LDM+엑소마지관리 10회+1회</p></td>
-									<td><p class="t_price">1,500,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
 							<!-- 메디컬 스킨케어 -->
-							<%-- <c:choose >
+							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -258,7 +120,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose> --%>
+							</c:choose>
 						</div>
 					</div>
 				</div>

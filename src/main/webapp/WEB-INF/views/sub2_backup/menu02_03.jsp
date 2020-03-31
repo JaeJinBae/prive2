@@ -40,7 +40,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>리프팅</h2>
+					<h2>윤곽주사</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -50,15 +50,15 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">리프팅이란?</p>
+						<p class="al_title">윤곽주사란?</p>
 						<p class="al_content">
-							리프팅은 초음파, 고주파, 실리프팅 등으로 나눌 수 있으며 선천적 혹은 후천적으로 쳐진 부위를 끌어올려 탄력있는 얼굴을 만들어주는 시술입니다.
-							프라이브는 시술 의료진의 정품인증 친필 서명으로 100% 확실하게 보장되는 정품팁으로 마지막 0샷까지 확실하게 시술합니다.
-							피부과 전문의가 정밀 분석 후 고객님의 탄력, 주름, 처짐, 피부 꺼짐 등을 고려하여 매 샷마다 최상의 결과를 이끌어낼 수 있도록 맞춤 에너지 설정 튜닝 노하우를 바탕으로 시술합니다.
+							윤곽주사는 여러 가지 성분을 이용하여 얼굴의 불필요한 지방세포와 과도한 섬유조직을 줄여주는 시술입니다.
+							프라이브만의 윤곽주사는 의료진이 직접 연구 및 개발한 레시피로, 여러 성분이 복합작용하여 지방을 분해하고 림프순환을 촉진시켜 지방분해산물과 노폐물을 함께 배출시키게 됩니다.
+							무너진 턱라인/심부볼/광대/이중턱 부분 등 어느 부위라도 원하는 부위에 필요한 만큼 주입하여 숨겨진 브이라인을 찾을 수 있습니다. 
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_04_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_03_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -70,7 +70,22 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<c:choose>
+						<div class="clinic_item">
+							<p class="item_title">턱보톡스+윤곽주사 1회</p>
+							<p class="item_price">60,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">V라인 솔루션 1회</p>
+							<p class="item_price">360,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<div class="clinic_item">
+							<p class="item_title">튠페이스+울쎄라+튠라이너 1회</p>
+							<p class="item_price">800,000원</p>
+							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
+						</div>
+						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -85,7 +100,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose> --%>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -98,14 +113,50 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- ■슈링크 -->
-							<c:choose >
+							<table>
+								<caption>■윤곽 프로그램</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">V라인 솔루션(사각턱보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
+									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">튠페이스 V-Line+울쎄라(100샷)+튠라이너</p></td>
+									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<table>
+								<caption>■윤곽주사</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">윤곽주사(옆광대/심부볼/턱라인/이중턱) 1회</p></td>
+									<td><p class="t_price">40,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">턱보톡스(50단위)+윤곽주사</p></td>
+									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<!-- 윤곽 프로그램 -->
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■슈링크</caption>
+										<caption>■윤곽 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="18%">
@@ -122,14 +173,14 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 울쎄라 -->
+							<!-- 윤곽주사 -->
 							<c:choose >
 								<c:when test="${fn:length(list2) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■울쎄라</caption>
+										<caption>■윤곽주사</caption>
 										<colgroup>
 											<col width="*">
 											<col width="18%">
@@ -144,55 +195,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
-							
-							<!-- 튠페이스 -->
-							<c:choose >
-								<c:when test="${fn:length(list3) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■튠페이스</caption>
-										<colgroup>
-											<col width="*">
-											<col width="18%">
-											<col width="12%">
-										</colgroup>
-										<c:forEach var="item" items="${list3}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
-							<!-- 써마지FLX -->
-							<c:choose >
-								<c:when test="${fn:length(list4) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■써마지FLX</caption>
-										<colgroup>
-											<col width="*">
-											<col width="18%">
-											<col width="12%">
-										</colgroup>
-										<c:forEach var="item" items="${list4}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

@@ -69,22 +69,7 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<div class="clinic_item">
-							<p class="item_title">샤넬주사+H-LDM</p>
-							<p class="item_price">200,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">엑소좀+코레지 관리 1회</p>
-							<p class="item_price">500,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">볼라이트+더모톡신+H-LDM</p>
-							<p class="item_price">600,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<%-- <c:choose>
+						<c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -99,7 +84,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose> --%>
+						</c:choose>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -112,67 +97,8 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
-								<caption>■NCTF135주사</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM(5회 진행시 1회)</p></td>
-									<td><p class="t_price">200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM 1회</p></td>
-									<td><p class="t_price">350,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">NCTF135주사(일명 샤넬주사)+H-LDM 3회</p></td>
-									<td><p class="t_price">900,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■ASCE 엑소좀</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">ASCE엑소좀+코레지 관리 1회</p></td>
-									<td><p class="t_price">500,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">ASCE엑소좀+코레지 관리 3회</p></td>
-									<td><p class="t_price">1,300,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■볼라이트</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">볼라이트(2cc)+더모톡신+H-LDM</p></td>
-									<td><p class="t_price">600,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">볼라이트(3cc)+더모톡신+H-LDM</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
 							<!-- NCTF135주사 -->
-							<%-- <c:choose >
+							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -241,7 +167,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose> --%>
+							</c:choose>
 						</div>
 					</div>
 				</div>

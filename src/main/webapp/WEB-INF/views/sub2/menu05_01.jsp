@@ -447,7 +447,7 @@ $(function(){
 		var searchType = encodeURIComponent(s);
 		var k=$("input[name='input_key']").val();
 		var keyword = encodeURIComponent(k);
-		location.href="${pageContext.request.contextPath}/menu05_02${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
+		location.href="${pageContext.request.contextPath}/menu05_01${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
 	});
 	
     $(document).on("click", ".subject > a", function(e){
@@ -481,7 +481,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>PRIVE MAGAZINE</h2>
+					<h2>YOUTUBE</h2>
 				</div>
 				<div class="formWrap">
 					<div class="content_wrap">
@@ -495,11 +495,11 @@ $(function(){
 						    	<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 						        <c:forEach var="item" items="${list}">
 									<div class="item">
-										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadMedia/${item.thumb_stored}"></div>
+										<div class="thumb"><img src="${pageContext.request.contextPath}/resources/uploadYoutube/${item.thumb_stored}"></div>
 										<div class="txt_wrap">
 											<p class="txt_title">${item.title}</p>
 										</div>
-										<p class="resbtn"><a href="${pageContext.request.contextPath}/menu05_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">자세히</a></p>
+										<p class="resbtn"><a href="${item.content}">자세히</a></p>
 									</div>
 									<c:set var="num" value="${num-1}"></c:set>	
 								</c:forEach>

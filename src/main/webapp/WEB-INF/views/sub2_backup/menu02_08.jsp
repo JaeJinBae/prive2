@@ -108,7 +108,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>항산화수액</h2>
+					<h2>모공/탄력/흉터</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -118,15 +118,15 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">항산화수액이란?</p>
+						<p class="al_title">모공/탄력/흉터 프로그램?</p>
 						<p class="al_content">
-							항산화수액은 매우 강력한 항산화물질을 기본적으로 사용하게 되며, 필요한 영양성분을 보충해 체내 전반적인 기초대사를 활성화 시켜줍니다.
-							프라이브는 아늑하고 편안한 분위기의 1인실 프리미엄 시술이 가능하여 바쁜 일상 속에서 나에게 꼭 맞는 수액테라피를 선물하면 일상 속 힐링을 느낄 수 있습니다.
-							현재의 컨디션을 감안하여 피부/체형 타입에 따라 부족한 부분을 채워주기 때문에 피로회복 및 안티에이징의 효과를 기대할 수 있습니다. 
+							모공과 여드름 흉터에는 흉터의 모양, 모공의 발생 원인에 따라 알맞은 시술 방안이 있습니다.
+							프라이브는 먼저 개개인의 피부 상태를 고려해 현재 피부 상태에 맞게 정밀하게 분석하여 섬세한 상담을 통한 깊은 이해와 다년간의 노하우로 보다 체계적으로 진단합니다.
+							그 결과에 따라 진피개선/절제술, 레이저, 도트필링, 흉터주사 등을 시행하며 흉터치료와 재생치료를 병행하여 더욱 빠른 치료효과를 냅니다.
 						</p>
 					</div>
 					<div class="aside_right">
-						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_12_01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_01.jpg">
 					</div>
 				</div>
 			</div>
@@ -135,28 +135,28 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="s2_txt">
-						<h2>Prive 수액 테라피</h2>
+						<h2>Prive's 맞춤 케어</h2>
 					</div>
 					<div class="s2_content">
 						<div class="clinic_item">
-							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_12_02_1.png"></p>
-							<p class="item_title">이너뷰티</p>
-							<p class="item_price">필요한 영양성분을 보충해 체내 전반적 기초대사 활성화</p>
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_1.png"></p>
+							<p class="item_title">다양한 시술 조합</p>
+							<p class="item_price">진피개선·절제술/레이저 도트필링/흉터주사 병행</p>
 						</div>
 						<div class="clinic_item">
-							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_12_02_2.png"></p>
-							<p class="item_title">숙취/피로회복</p>
-							<p class="item_price">현재의 컨디션을 감안하여 부족한 부분을 채워주는 방식</p>
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_2.png"></p>
+							<p class="item_title">피부 맞춤형 치료</p>
+							<p class="item_price">개개인의 피부 상태를 고려해 피부에 맞게 조합, 계획, 시술</p>
 						</div>
 						<div class="clinic_item">
-							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_12_02_3.png"></p>
-							<p class="item_title">일상 속 힐링</p>
-							<p class="item_price">바쁜 일상 속에서 나에게 꼭 맞는 수액 테라피 선물</p>
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_3.png"></p>
+							<p class="item_title">원인 맞춤형 치료</p>
+							<p class="item_price">흉터의 모양, 모공의 발생 원인에 따라 맞춤 치료</p>
 						</div>
 						<div class="clinic_item">
-							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_12_02_4.png"></p>
-							<p class="item_title">1인실 시술</p>
-							<p class="item_price">아늑하고 편안한 분위기의 1인실 프리미엄 테라피</p>
+							<p class="item_thumb"><img src="${pageContext.request.contextPath}/resources/img/content/menu02_08_02_4.png"></p>
+							<p class="item_title">2% 피부과 전문의</p>
+							<p class="item_price">대한민국 2% 피부과 전문의 전문적인 상담을 통한 치료</p>
 						</div>
 						<%-- <c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
@@ -186,18 +186,41 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<!-- 수액 테라피 -->
-							<c:choose >
+							<table>
+								<caption>■모공/흉터/탄력 프로그램</caption>
+								<colgroup>
+									<col width="*">
+									<col width="18%">
+									<col width="12%">
+								</colgroup>
+								<tr>
+									<td><p class="t_title">아기레이저 듀얼파장+크라이오 진정관리 1회</p></td>
+									<td><p class="t_price">300,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">여드름흉터 올인원 프로그램(레이저 4종+도트필+서브시전+흉터주사+재생관리) 1회</p></td>
+									<td><p class="t_price">400,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+								<tr>
+									<td><p class="t_title">모공 프로그램(아기레이저 2회+재생관리 2회+스킨부스터 2회+PHA관리)</p></td>
+									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
+									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+								</tr>
+							</table>
+							<!-- 모공/탄력/흉터 프로그램 -->
+							<%-- <c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■수액 테라피</caption>
+										<caption>■모공/탄력/흉터 프로그램</caption>
 										<colgroup>
 											<col width="*">
-											<col width="20%">
-											<col width="15%">
+											<col width="18%">
+											<col width="12%">
 										</colgroup>
 										<c:forEach var="item" items="${list1}">
 											<tr>
@@ -208,7 +231,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose>
+							</c:choose> --%>
 						</div>
 					</div>
 				</div>

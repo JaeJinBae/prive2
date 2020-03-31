@@ -186,31 +186,8 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
-								<caption>■모공/흉터/탄력 프로그램</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">아기레이저 듀얼파장+크라이오 진정관리 1회</p></td>
-									<td><p class="t_price">300,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">여드름흉터 올인원 프로그램(레이저 4종+도트필+서브시전+흉터주사+재생관리) 1회</p></td>
-									<td><p class="t_price">400,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">모공 프로그램(아기레이저 2회+재생관리 2회+스킨부스터 2회+PHA관리)</p></td>
-									<td><p class="t_price">1,200,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
 							<!-- 모공/탄력/흉터 프로그램 -->
-							<%-- <c:choose >
+							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -231,7 +208,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose> --%>
+							</c:choose>
 						</div>
 					</div>
 				</div>

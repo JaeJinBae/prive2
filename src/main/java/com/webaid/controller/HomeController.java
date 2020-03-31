@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -42,6 +41,7 @@ import com.webaid.domain.ReservationJsonVO;
 import com.webaid.domain.ReservationVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.StatisticVO;
+import com.webaid.domain.YoutubeVO;
 import com.webaid.service.AdviceService;
 import com.webaid.service.Category1Service;
 import com.webaid.service.ClinicService;
@@ -52,6 +52,7 @@ import com.webaid.service.NoticeService;
 import com.webaid.service.PopupService;
 import com.webaid.service.ReservationService;
 import com.webaid.service.StatisticService;
+import com.webaid.service.YoutubeService;
 
 /**
  * Handles requests for the application home page.
@@ -90,6 +91,9 @@ public class HomeController {
 	
 	@Autowired
 	private EventService eService;
+	
+	@Autowired
+	private YoutubeService yService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest req, Model model) {
@@ -646,6 +650,24 @@ public class HomeController {
 		model.addAttribute("pageMaker", pageMaker);
 		
 		return "sub2/menu05_00read";
+	}
+	
+	@RequestMapping(value = "/menu05_01", method = RequestMethod.GET)
+	public String menu05_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu05_01 get");
+		
+		List<YoutubeVO> list = yService.listSearch(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(yService.listSearchCount(cri));
+		pageMaker.setFinalPage(yService.listSearchCount(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "sub2/menu05_01";
 	}
 	
 	@RequestMapping(value = "/menu05_02", method = RequestMethod.GET)

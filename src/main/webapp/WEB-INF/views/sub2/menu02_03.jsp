@@ -70,22 +70,7 @@ $(function(){
 						<h2>인기 프로그램</h2>
 					</div>
 					<div class="s2_content">
-						<div class="clinic_item">
-							<p class="item_title">턱보톡스+윤곽주사 1회</p>
-							<p class="item_price">60,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">V라인 솔루션 1회</p>
-							<p class="item_price">360,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<div class="clinic_item">
-							<p class="item_title">튠페이스+울쎄라+튠라이너 1회</p>
-							<p class="item_price">800,000원</p>
-							<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01">예약바로가기</a></p>
-						</div>
-						<%-- <c:choose>
+						<c:choose>
 							<c:when test="${fn:length(listPopular) == 0}">
 								<div class="clinic_item">
 									<p class="item_title">존재하지 않습니다.</p>
@@ -100,7 +85,7 @@ $(function(){
 									</div>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose> --%>
+						</c:choose>
 					</div>
 				</div><!-- s1_txt end -->
 			</div>
@@ -113,44 +98,8 @@ $(function(){
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">
-							<table>
-								<caption>■윤곽 프로그램</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">V라인 솔루션(사각턱보톡스 50단위+윤곽주사+튠라이너) 1회</p></td>
-									<td><p class="t_price">360,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">튠페이스 V-Line+울쎄라(100샷)+튠라이너</p></td>
-									<td><p class="t_price">800,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
-							<table>
-								<caption>■윤곽주사</caption>
-								<colgroup>
-									<col width="*">
-									<col width="18%">
-									<col width="12%">
-								</colgroup>
-								<tr>
-									<td><p class="t_title">윤곽주사(옆광대/심부볼/턱라인/이중턱) 1회</p></td>
-									<td><p class="t_price">40,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-								<tr>
-									<td><p class="t_title">턱보톡스(50단위)+윤곽주사</p></td>
-									<td><p class="t_price">60,000<span class="fw300">원</span></p></td>
-									<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
-								</tr>
-							</table>
 							<!-- 윤곽 프로그램 -->
-							<%-- <c:choose >
+							<c:choose >
 								<c:when test="${fn:length(list1) == 0}">
 									
 								</c:when>
@@ -195,7 +144,7 @@ $(function(){
 										</c:forEach>
 									</table>
 								</c:otherwise>
-							</c:choose> --%>
+							</c:choose>
 						</div>
 					</div>
 				</div>

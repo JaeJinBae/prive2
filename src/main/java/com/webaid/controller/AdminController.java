@@ -188,6 +188,8 @@ public class AdminController {
 			innerUploadPath = "resources/uploadAdvice/";
 		}else if(btype.equals("media")){
 			innerUploadPath = "resources/uploadMedia/";
+		}else if(btype.equals("youtube")){
+			innerUploadPath = "resources/uploadYoutube/";
 		}
 		
 		String uploadPath = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
@@ -538,6 +540,8 @@ public class AdminController {
 			vo.setThumb_stored(prevVO.getThumb_stored());
 		}
 
+		mService.update(vo);
+		
 		rtts.addAttribute("no", mtfReq.getParameter("no"));
 		
 		PageMaker pageMaker = new PageMaker();
@@ -717,7 +721,6 @@ public class AdminController {
 		
 		String thumbState = mtfReq.getParameter("thumbState");
 		
-		
 		YoutubeVO vo = new YoutubeVO();
 		YoutubeVO prevVO = yService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
 		
@@ -736,7 +739,9 @@ public class AdminController {
 			vo.setThumb_origin(prevVO.getThumb_origin());
 			vo.setThumb_stored(prevVO.getThumb_stored());
 		}
-
+		
+		yService.update(vo);
+		
 		rtts.addAttribute("no", mtfReq.getParameter("no"));
 		
 		PageMaker pageMaker = new PageMaker();
