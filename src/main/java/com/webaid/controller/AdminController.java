@@ -51,6 +51,7 @@ import com.webaid.domain.ReservationVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.StatisticSelectDateVO;
 import com.webaid.domain.StatisticVO;
+import com.webaid.domain.YoutubeVO;
 import com.webaid.service.AdviceService;
 import com.webaid.service.Category1Service;
 import com.webaid.service.ClinicService;
@@ -61,6 +62,7 @@ import com.webaid.service.NoticeService;
 import com.webaid.service.PopupService;
 import com.webaid.service.ReservationService;
 import com.webaid.service.StatisticService;
+import com.webaid.service.YoutubeService;
 import com.webaid.util.FileDelete;
 
 /**
@@ -101,6 +103,9 @@ public class AdminController {
 	
 	@Autowired
 	private Category1Service c1Service;
+	
+	@Autowired
+	private YoutubeService yService;
 	
 	
 	@RequestMapping(value = "", method = RequestMethod.GET)
@@ -485,7 +490,7 @@ public class AdminController {
 		logger.info("menu01_03update POST");
 		
 		//이미지 업로드
-		String innerUploadPath = "resources/uploadRealStory/";
+		String innerUploadPath = "resources/uploadMedia/";
 		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
 		String fileName = "";
 		String storedFileName = "";
@@ -586,6 +591,205 @@ public class AdminController {
 		mService.delete(no);
 		
 		return "redirect:/admin/menu01_03";
+	}
+	
+	//============= youtube menu01_04 ===============
+	@RequestMapping(value = "/menu01_04", method = RequestMethod.GET)
+	public String menu01_04(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu01_04 GET");
+		
+		List<YoutubeVO> list = yService.listSearchAll(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(yService.listSearchCountAll(cri));
+		pageMaker.setFinalPage(yService.listSearchCountAll(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu01_04";
+	}
+	
+	@RequestMapping(value = "/menu01_04register", method = RequestMethod.GET)
+	public String menu01_04register(Model model) {
+		logger.info("menu01_04register GET");
+		
+		return "admin/menu01_04register";
+	}
+	
+	@RequestMapping(value = "/menu01_04register", method = RequestMethod.POST)
+	public String menu01_04registerPost(MultipartHttpServletRequest mtfReq) throws IOException {
+		logger.info("menu01_04register POST");
+		
+		YoutubeVO vo = new YoutubeVO();
+		
+		vo.setNo(0);
+		vo.setWriter(mtfReq.getParameter("writer"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setCnt(Integer.parseInt(mtfReq.getParameter("cnt")));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setUse_state("o");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadYoutube/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			vo.setThumb_origin(fileName);
+			vo.setThumb_stored(storedFileName);
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}//이미지 업로드 끝
+		
+		yService.insert(vo);
+		
+		return "redirect:/admin/menu01_04";
+	}
+	
+	@RequestMapping(value = "/menu01_04update", method = RequestMethod.GET)
+	public String menu01_04update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu01_04update GET");
+		
+		YoutubeVO vo = yService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(yService.listSearchCountAll(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu01_04update";
+	}
+	
+	@RequestMapping(value = "/menu01_04update", method = RequestMethod.POST)
+	public String menu01_04updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+		logger.info("menu01_04update POST");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadYoutube/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		//이미지 업로드 끝
+		
+		String thumbState = mtfReq.getParameter("thumbState");
+		
+		
+		YoutubeVO vo = new YoutubeVO();
+		YoutubeVO prevVO = yService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setWriter(mtfReq.getParameter("writer"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setCnt(Integer.parseInt(mtfReq.getParameter("cnt")));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setUse_state(mtfReq.getParameter("use_state"));
+		
+		if(thumbState.equals("o")){
+			vo.setThumb_origin(fileName);
+			vo.setThumb_stored(storedFileName);
+		}else{
+			vo.setThumb_origin(prevVO.getThumb_origin());
+			vo.setThumb_stored(prevVO.getThumb_stored());
+		}
+
+		rtts.addAttribute("no", mtfReq.getParameter("no"));
+		
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(yService.listSearchCountAll(cri));
+
+		rtts.addAttribute("page", page);
+		
+		return "redirect:/admin/menu01_04update";
+	}
+	
+	@RequestMapping(value = "/menu01_04uploadImgDelete", method = RequestMethod.POST)
+	public ResponseEntity<String> menu01_04uploadImgDelete(HttpServletRequest req, @RequestBody Map<String, String> info) {
+		logger.info("menu01_04update POST");
+		ResponseEntity<String> entity = null;
+		
+		int no = Integer.parseInt(info.get("no"));
+		
+		String innerUploadPath = "resources/uploadYoutube/";
+		String path = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		
+		YoutubeVO prevVO = yService.selectOne(no);
+		FileDelete fd = new FileDelete();
+		
+		YoutubeVO vo = new YoutubeVO();
+		vo.setNo(no);
+		
+		try {
+			
+			fd.fileDelete(path, prevVO.getThumb_stored());
+			
+			vo.setThumb_origin("");
+			vo.setThumb_stored("");
+			yService.updateThumb(vo);
+			
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+			e.printStackTrace();
+		}
+		
+		return entity;
+	}
+	
+	@RequestMapping(value="/menu01_04delete/{no}", method=RequestMethod.GET)
+	public String menu01_04delete(@PathVariable("no") int no){
+		logger.info("menu01_04 delete");
+		
+		yService.delete(no);
+		
+		return "redirect:/admin/menu01_04";
 	}
 	
 	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)

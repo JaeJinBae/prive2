@@ -55,12 +55,12 @@ $(function(){
 		var no = $("input[name='no']").val();
 		
 		$.ajax({
-			url:"${pageContext.request.contextPath}/admin/menu01_03delete/"+no,
+			url:"${pageContext.request.contextPath}/admin/menu01_04delete/"+no,
 			type:"get",
 			dataType:"text",
 			async:false,
 			success:function(json){
-				location.href="${pageContext.request.contextPath}/admin/menu01_03";
+				location.href="${pageContext.request.contextPath}/admin/menu01_04";
 			} 
 		});
 		
@@ -81,19 +81,19 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>PriveMagazine</h1>
+				<h1>Youtube</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>게시판관리&nbsp;&gt;&nbsp;</li>
-					<li>PriveMagazine</li>
+					<li>Youtube</li>
 				</ul>
 			</div>
 			
 			<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditorFull/ckeditor.js"></script>
 			
 			<div class="main_bottom_area">
-				<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu01_03update${pageMaker.makeSearch(pageMaker.cri.page)}">
+				<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu01_04update${pageMaker.makeSearch(pageMaker.cri.page)}">
 					<input type="hidden" name="no" value="${item.no}">
 					<div class="write_area">
 						<div class="write_box">
@@ -140,12 +140,9 @@ $(function(){
 									</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">내용</td>
+									<td class="title">URL</td>
 									<td>
-										<textarea id="b_content" name="content">${item.content}</textarea>
-										<script type="text/javascript">
-											CKEDITOR.replace('b_content',{filebrowserUploadUrl:"/admin/imgUpload/media", width:'100%', height:'500px'});
-										</script>
+										<input type="text" class="w_form_l" name="content" value="${item.content}">
 									</td>
 								</tr>
 								<tr class="cont">
@@ -157,9 +154,9 @@ $(function(){
 												<div><input type="file" name="thumb"></div>
 											</c:when>
 											<c:otherwise>
-												<img src="${pageContext.request.contextPath}/resources/uploadMedia/${item.thumb_stored}" height="100px">
+												<img src="${pageContext.request.contextPath}/resources/uploadYoutube/${item.thumb_stored}" height="100px">
 												<div>
-													<a id="downBtn" href="${pageContext.request.contextPath}/admin/filedown?dPath=uploadMedia">${item.thumb_origin}</a>
+													<a id="downBtn" href="${pageContext.request.contextPath}/admin/filedown?dPath=uploadYoutube">${item.thumb_origin}</a>
 													<img id="thumb" src="${pageContext.request.contextPath}/resources/img/admin/icon_x.png" class="vimg cursor">
 													<input type="hidden" name="thumb" value="${item.thumb_origin}">
 													<input type="hidden" name="thumb_stored" value="${item.thumb_stored}">
@@ -173,12 +170,12 @@ $(function(){
 						
 						<div class="btn_area">
 							<p class="btn_left">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03'">리스트</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_04'">리스트</button>
 							</p>
 							<p class="btn_right">
 								<input type="submit" class="btn_black" value="수정">&nbsp;
 								<button type="button" class="btn_red" id="delBtn">삭제</button>
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03'">취소</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_04'">취소</button>
 							</p>
 						</div>
 				

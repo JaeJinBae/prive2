@@ -77,12 +77,12 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>프라이브미디어</h1>
+				<h1>PriveMagazine</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>게시판관리&nbsp;&gt;&nbsp;</li>
-					<li>프라이브미디어</li>
+					<li>PriveMagazine</li>
 				</ul>
 			</div>			
 			

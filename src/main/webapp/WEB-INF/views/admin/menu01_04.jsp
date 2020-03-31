@@ -30,7 +30,7 @@ $(function(){
 		var searchType = encodeURIComponent(s);
 		var k=$("input[name='input_key']").val();
 		var keyword = encodeURIComponent(k);
-		location.href="${pageContext.request.contextPath}/admin/menu01_03${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
+		location.href="${pageContext.request.contextPath}/admin/menu01_04${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
 	});
 });
 </script>
@@ -48,12 +48,12 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>PriveMagazine</h1>
+				<h1>Youtube</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>게시판관리&nbsp;&gt;&nbsp;</li>
-					<li>PriveMagazine</li>
+					<li>Youtube</li>
 				</ul>
 			</div>
 			
@@ -125,11 +125,11 @@ $(function(){
 													</c:choose>
 													<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor vimg" id="ismain_2036"></td>
 													<td><i class="ico notice">${num}</i></td>
-													<td><a href="${pageContext.request.contextPath}/admin/menu01_03update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title"> ${item.title}</p></a></td>
+													<td><a href="${pageContext.request.contextPath}/admin/menu01_04update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title"> ${item.title}</p></a></td>
 													<td>${item.writer}</td>
 													<td>${item.regdate}</td>
 													<td></td>
-													<td>${item.cnt}</td>
+													<td></td>
 												</tr>
 												<c:set var="num" value="${num-1}"></c:set>	
 											</c:forEach>
@@ -140,12 +140,8 @@ $(function(){
 					</div>
 			
 					<div class="btn_area">
-						<p class="btn_left" style="visibility:hidden;">
-							<button type="button" class="btn_gray">선택삭제</button>
-							<button type="button" class="btn_gray">게시물이동</button>
-						</p>
 						<p class="btn_right">
-							<button type="button" class="btn_black" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03register'">등록</button>
+							<button type="button" class="btn_black" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_04register'">등록</button>
 						</p>
 					</div>
 			

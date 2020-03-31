@@ -14,56 +14,52 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/admin/css/style_admin.css"><!-- @1 스타일 초기화		**삭제/수정금지** -->
 <!-- ********************************************플러그인********************************************* -->
 <script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script><!-- #1 1.12.4  -->
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditorFull/ckeditor.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-ui-1.11.1.js"></script><!-- #jquery UI  -->
 <!-- ************************************************************************************************* -->
 <!-- jQuery UI CSS파일 -->
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
 <!-- ************************************************************************************************* -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.admin.js"></script><!-- # 필수 함수 -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.default.js"></script><!-- # 필수 함수 -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js"></script><!-- # 필수 함수 -->
+<%-- <script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"></script> --%>
+<link href="https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
+<style>.cke{visibility:hidden;}</style>
 <script>
 $(function(){
-	$.ajaxSetup({cache:false});
+	//$.ajaxSetup({cache:false});
 	
-	$( "#regdate" ).datepicker({
+	var ndate = new Date();
+	var year = ndate.getFullYear();
+	var month = ndate.getMonth()+1;
+	var date = ndate.getDate();
+	
+	month = (month > 9) ? month+"":"0"+month;
+	date = (date > 9) ? date+"":"0"+date;
+	
+	$("#regdate").val(year+"-"+month+"-"+date);
+	
+	$("#regdate").datepicker({
 		changeMonth: true, 
 		changeYear: true,
 		dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
-		dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
-		monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+		dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'], 
+		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
 		monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
 		dateFormat: "yy-mm-dd"
     });
 	
-	$("#result").click(function(){
-		alert($("input[name='regdate']").val());
-	});
-	
 	//예외처리
 	$("#form1").submit(function(){
-		if($("input[name='writer']").val()==""||$("input[name='writer']").val()==null){
+		if($("input[name='writer']").val()==""){
 			alert("작성자를 입력해주세요.");
 			return false;
-		}else if($("input[name='title']").val()==""||$("input[name='title']").val()==null){
+		}
+		if($("input[name='title']").val()==""){
 			alert("제목을 입력해주세요.");
 			return false;
 		}
-	})
-	
-	$("#delBtn").click(function(){
-		var no = $("input[name='no']").val();
-		
-		$.ajax({
-			url:"${pageContext.request.contextPath}/admin/menu01_03delete/"+no,
-			type:"get",
-			dataType:"text",
-			async:false,
-			success:function(json){
-				location.href="${pageContext.request.contextPath}/admin/menu01_03";
-			} 
-		});
-		
 	});
 });
 </script>
@@ -81,20 +77,18 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>PriveMagazine</h1>
+				<h1>Youtube</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>게시판관리&nbsp;&gt;&nbsp;</li>
-					<li>PriveMagazine</li>
+					<li>Youtube</li>
 				</ul>
-			</div>
-			
-			<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditorFull/ckeditor.js"></script>
+			</div>			
 			
 			<div class="main_bottom_area">
-				<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu01_03update${pageMaker.makeSearch(pageMaker.cri.page)}">
-					<input type="hidden" name="no" value="${item.no}">
+				<form id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/admin/menu01_04register${pageMaker.makeSearch(pageMaker.cri.page)}">
+					<input type="hidden" name="no" value="0">
 					<div class="write_area">
 						<div class="write_box">
 							<table class="write_table" cellpadding="0">
@@ -105,86 +99,63 @@ $(function(){
 								<tr class="cont">
 									<td class="title">사용유무</td>
 									<td>
-										<c:if test="${item.use_state == 'o'}">
-											<label><input type="radio" name="use_state" id="b_notice1" value="o" checked="checked"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;
-											<label><input type="radio" name="use_state" id="b_notice2" value="x"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;
-										</c:if>
-										<c:if test="${item.use_state == 'x'}">
-											<label><input type="radio" name="use_state" id="b_notice1" value="o"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;
-											<label><input type="radio" name="use_state" id="b_notice2" value="x" checked="checked"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;
-										</c:if>
+										<label><input type="radio" name="use_state" id="b_notice1" value="o" checked="checked"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<label><input type="radio" name="use_state" id="b_notice2" value="x"><i></i>미사용</label>
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">작성자</td>
 									<td>
-										<input type="text" class="w_form_s" name="writer" value="${item.writer}">
+										<input type="text" class="w_form_s" name="writer" value="프라이브">
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">작성일</td>
 									<td>
-										<input type="text" id="regdate" class="w_form_s" name="regdate" value="${item.regdate}" autocomplete="off">
+										<input type="text" id="regdate" class="w_form_s" name="regdate" value="" autocomplete="off">
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">조회수</td>
 									<td>
-										<input type="text" class="w_form_s" name="cnt" value="${item.cnt}">
+										<input type="text" class="w_form_s" name="cnt" value="0">
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">제목</td>
 									<td>
-										<input type="text" class="w_form_l" name="title" value="${item.title}">
+										<input type="text" class="w_form_l" name="title" value="">
 									</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">내용</td>
+									<td class="title">URL</td>
 									<td>
-										<textarea id="b_content" name="content">${item.content}</textarea>
-										<script type="text/javascript">
-											CKEDITOR.replace('b_content',{filebrowserUploadUrl:"/admin/imgUpload/media", width:'100%', height:'500px'});
-										</script>
+										<input type="text" class="w_form_l" name="content" value="">
+										
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">썸네일 이미지</td>
-									<td id="attach">
-										<input type="hidden" id="thumbState" name="thumbState" value="x">
-										<c:choose>
-											<c:when test="${item.thumb_origin == ''}">
-												<div><input type="file" name="thumb"></div>
-											</c:when>
-											<c:otherwise>
-												<img src="${pageContext.request.contextPath}/resources/uploadMedia/${item.thumb_stored}" height="100px">
-												<div>
-													<a id="downBtn" href="${pageContext.request.contextPath}/admin/filedown?dPath=uploadMedia">${item.thumb_origin}</a>
-													<img id="thumb" src="${pageContext.request.contextPath}/resources/img/admin/icon_x.png" class="vimg cursor">
-													<input type="hidden" name="thumb" value="${item.thumb_origin}">
-													<input type="hidden" name="thumb_stored" value="${item.thumb_stored}">
-												</div>
-											</c:otherwise>
-										</c:choose>
-									</td>
+									<td id="attach"><div><input type="file" name="thumb"></div></td>
 								</tr>
 							</table>
-						</div>
-						
+						</div><!-- write_box end -->
+				
 						<div class="btn_area">
 							<p class="btn_left">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03'">리스트</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_04'">리스트</button>
 							</p>
 							<p class="btn_right">
-								<input type="submit" class="btn_black" value="수정">&nbsp;
-								<button type="button" class="btn_red" id="delBtn">삭제</button>
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03'">취소</button>
+								<input type="submit" class="btn_black" value="등록">&nbsp;
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_04register'">취소</button>
 							</p>
-						</div>
-				
-					</div>
+						</div><!-- btn_area end -->
+					</div><!-- write_area end -->
 				</form>
-			</div>
+			</div><!-- main_bottom_area -->
+			
+			
+			
 		</div><!-- admin_right 끝 -->
     </div><!-- container 끝 -->
 
