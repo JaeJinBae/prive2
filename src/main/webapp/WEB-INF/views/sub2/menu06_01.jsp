@@ -319,7 +319,6 @@ $(function(){
 							<!-- 코드가 너무길어져서 탭내용은 1개만 넣어두었습니다. -->
 							<div class="surgery-tab">
 								<button rel="surgery-item000" class="surgery-category">EVENT</button>
-								<button rel="surgery-item477" class="surgery-category">필러</button>
 								<c:forEach var="item" items="${categoryList}">
 									<button rel="surgery-item${item.no}" class="surgery-category">${item.name}</button>
 								</c:forEach>
@@ -348,12 +347,12 @@ $(function(){
 									</c:choose>
 								</c:forEach>
 								</div>
-								<div id="surgery-item477" class="surgery-inventory">
+								<!-- <div id="surgery-item477" class="surgery-inventory">
 									<div class="item"><input type="checkbox" id="category480" value="480" _category1="477" _category1nm="필러" _category2="480" _pay="100000" _category2nm="국산 더채움 기본 1cc" _category3="" _category3nm="" _name="국산 더채움 기본 1cc" name="category"><label for="category480">국산 더채움 기본 1cc <em>100,000 원</em></label></div>
 									<div class="item"><input type="checkbox" id="category677" value="677" _category1="477" _category1nm="필러" _category2="677" _pay="280000" _category2nm="수입 레스틸렌 1cc" _category3="" _category3nm="" _name="수입 레스틸렌 1cc" name="category"><label for="category677">수입 레스틸렌 1cc <em>280,000 원</em></label></div>
 									<div class="item"><input type="checkbox" id="category481" value="481" _category1="477" _category1nm="필러" _category2="481" _pay="90000" _category2nm="턱필러 1cc 이내" _category3="" _category3nm="" _name="턱필러 1cc 이내" name="category"><label for="category481">턱필러 1cc 이내 <em>90,000 원</em></label></div>
 									<div class="item"><input type="checkbox" id="category482" value="482" _category1="477" _category1nm="필러" _category2="482" _pay="90000" _category2nm="코필러 1cc 이내" _category3="" _category3nm="" _name="코필러 1cc 이내" name="category"><label for="category482">코필러 1cc 이내 <em>90,000 원</em></label></div>
-								</div>
+								</div> -->
 							</div><!-- surgery-option 끝 -->
 						</div>
 					</div>
