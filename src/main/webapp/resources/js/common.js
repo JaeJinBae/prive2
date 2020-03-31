@@ -79,9 +79,10 @@ $(function(){
 	});
 	
 	//footer-popup
-	$(".f_bottom > ul > li > a").click(function(e){
+	$(".f_bottom > p > a").click(function(e){
 		e.preventDefault();
 		var idx = $(this).parent().index();
+		console.log($(this).parent().parent().index());
 		$(".footer-bg").css("display", "block");
 		$(".footer-popup-wrap").css("display", "block");
 		$(".f_popup").eq(idx).css("display", "block");

@@ -154,7 +154,7 @@ section{
 	.s2_content > .table_wrap > table caption{
 		font-size: 25px;
 		text-align: left;
-		color: #a1888b;
+		color: #222222;
 	}
 	.s2_content > .table_wrap > table tr td{
 		border-bottom: 1px solid #ddd;
@@ -319,7 +319,7 @@ section{
 	.s2_content > .table_wrap > table caption{
 		font-size: 25px;
 		text-align: left;
-		color: #a1888b;
+		color: #222222;
 	}
 	.s2_content > .table_wrap > table tr td{
 		border-bottom: 1px solid #ddd;
@@ -481,7 +481,7 @@ section{
 	.s2_content > .table_wrap > table caption{
 		font-size: 20px;
 		text-align: left;
-		color: #a1888b;
+		color: #222222;
 	}
 	.s2_content > .table_wrap > table tr td{
 		border-bottom: 1px solid #ddd;
