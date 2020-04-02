@@ -26,7 +26,7 @@
 function deleteUploadImg(no, type){
 	var info = {no:no, type:type};
 	$.ajax({
-		url:"${pageContext.request.contextPath}/admin/menu01_03uploadImgDelete",
+		url:"${pageContext.request.contextPath}/admin/menu01_04uploadImgDelete",
 		type:"post",
 		data:JSON.stringify(info),
 		contentType : "application/json; charset=UTF-8",

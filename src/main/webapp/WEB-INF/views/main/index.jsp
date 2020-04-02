@@ -32,6 +32,7 @@
 <%-- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css" /> --%>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/cookie.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <style type="text/css">
@@ -61,6 +62,9 @@ body{
 		z-index: 9999;
 		background: #efefef;
 	}
+	.main-popup p{
+		margin: 0;
+	}
 	.popup-content img{
 		max-width: 700px !important;
 		max-height: 700px !important;
@@ -68,14 +72,19 @@ body{
 	.popup-btn{
 		width: 100%;
 		background: #efefef;
+		overflow: hidden;
 	}
 	.popup-btn > p{
 		margin: 0;
-		padding: 20px 0;
+		padding: 5px;
 		text-align: center; 
 		cursor: pointer;
+		font-size: 14px;
+		font-weight: 300;
 	}
-	
+	.popup-btn > p:hover{
+		font-weight: 500;
+	}
 	.section1{
 		width: 100%;
 		height: 100%;
@@ -388,6 +397,9 @@ body{
 		z-index: 9999;
 		background: #efefef;
 	}
+	.popup-content p{
+		margin: 0;
+	}
 	.popup-content img{
 		max-width: 700px !important;
 		max-height: 700px !important;
@@ -395,12 +407,18 @@ body{
 	.popup-btn{
 		width: 100%;
 		background: #efefef;
+		overflow: hidden;
 	}
 	.popup-btn > p{
 		margin: 0;
-		padding: 20px 0;
-		text-align: center;
+		padding: 5px;
+		text-align: center; 
 		cursor: pointer;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	.popup-btn > p:hover{
+		font-weight: 500;
 	}
 	
 	.section1{
@@ -743,10 +761,11 @@ body{
 	.popup-btn{
 		width: 100%;
 		background: #efefef;
+		overflow: hidden;
 	}
 	.popup-btn > p{
 		margin: 0;
-		padding: 20px 0;
+		padding: 5px;
 		text-align: center;
 		cursor: pointer;
 	}
@@ -1085,6 +1104,17 @@ body{
 
 </style>
 <script>
+function closePopup(ClassName){
+    $("#"+ClassName).fadeOut(0);
+    console.log('그냥닫기');
+}
+function closePopupToday(ClassName){                 
+    setCookie(ClassName,'Y', 1);
+    $("#"+ClassName).fadeOut(0);
+    console.log('하루동안 닫기');
+}
+
+
 function start_animation(e){
 	var bottom_of_object = $(e).offset().top + $(e).outerHeight();
 	var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -1094,6 +1124,14 @@ function start_animation(e){
 	}
 }
 $(function(){
+	$(".main-popup").each(function(){
+		var idName = $(this).attr("id");
+		if(getCookie(idName)=="Y"){
+		    $("#"+idName).css("display", "none");
+		}
+	});
+	
+	
 	$(".smallImg_wrap > img").click(function(){
 		var target = $(this).attr("src");
 		$(".s4_aside_right > img").animate({'opacity':'0'},500);
@@ -1168,18 +1206,21 @@ $(function(){
 			<p>닫 기</p>
 		</div>
 	</div> --%>
+
 	<c:if test="${fn:length(list) != 0}">
 		<c:forEach var="item" items="${list}">
-			<div class="main-popup">
+			<div class="main-popup popup${item.no}" id="popup${item.no}">
 				<div class="popup-content">
 					<a href="${item.link}">${item.content}</a>
 				</div>
 				<div class="popup-btn">
-					<p>닫 기</p>
+					<p style="float:left" onclick="javascript:closePopupToday('popup${item.no}');">[24시간 이 창을 열지 않음]</p>
+					<p style="float:right" onclick="javascript:closePopup('popup${item.no}');">[닫 기]</p>
 				</div>
 			</div>
 		</c:forEach>
 	</c:if>
+	
 	<!-- popup end -->
 	<!-- header -->
 	<jsp:include page="../include/header.jsp"></jsp:include>

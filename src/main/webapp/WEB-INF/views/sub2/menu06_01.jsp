@@ -152,6 +152,11 @@ function drawTimePicker(dow){
 		return false;
 	}
 	var timeInfo = getTimeByDay(dow);
+
+	if(timeInfo.end_time-timeInfo.start_time <= 0){
+		return false;
+	}
+	
 	var timeList = new Array;
 	var s_time = 0;
 	var e_time = 0;
@@ -269,6 +274,7 @@ $(function(){
 	var dateFull = dateFullYear+"-"+dateFullMonth+"-"+dateFullDate;
 	var cname = "date_"+dateFull;
 	$(".date_"+dateFull).addClass('closed');
+	$(".sat").addClass("closed");
 	
 	var nUrl = window.location.href;
 	if(nUrl.indexOf("kind1no") > 0){
@@ -858,7 +864,7 @@ $(function(){
 						drawTimePicker(dow)
 						$("#r_date").val(selDate);
 					}else{
-						alert("홈페이지 시술예약은 당일이나, 1일전 예약 불가합니다.\n유선상으로 문의하여 주시기 바랍니다");
+						alert("해당 날짜는 예약이 불가합니다.\n유선상으로 문의하여 주시기 바랍니다");
 					}
 				}
 			
@@ -869,7 +875,7 @@ $(function(){
 						$("#r_time_code").val(selTimeCode);
 						$("#r_time").val(selTimeVal);
 					}else{
-						alert("홈페이지 시술예약은 당일이나, 1일전 예약 불가합니다.\n유선상으로 문의하여 주시기 바랍니다");
+						alert("해당 날짜는 예약이 불가합니다.\n유선상으로 문의하여 주시기 바랍니다");
 						return false;
 					}
 				}

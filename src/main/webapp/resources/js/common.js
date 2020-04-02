@@ -33,7 +33,7 @@ function func_header(type){
 $(function(){
 	//main popup
 	$(".popup-btn > p").click(function(){
-		$(this).parent().parent().css("display", "none"); 
+		//$(this).parent().parent().css("display", "none"); 
 	});
 	
 	$(window).scroll(function(event){
