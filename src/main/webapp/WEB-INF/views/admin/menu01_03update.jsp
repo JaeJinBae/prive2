@@ -23,6 +23,24 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.default.js"></script><!-- # 필수 함수 -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js"></script><!-- # 필수 함수 -->
 <script>
+function deleteUploadImg(no, type){
+	var info = {no:no, type:type};
+	$.ajax({
+		url:"${pageContext.request.contextPath}/admin/menu01_03uploadImgDelete",
+		type:"post",
+		data:JSON.stringify(info),
+		contentType : "application/json; charset=UTF-8",
+		dataType:"text",
+		async:false,
+		success:function(json){
+			console.log(json);
+		},
+		error:function(request,status,error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+}
+
 $(function(){
 	$.ajaxSetup({cache:false});
 	
@@ -49,7 +67,25 @@ $(function(){
 			alert("제목을 입력해주세요.");
 			return false;
 		}
+		
+		var urlArr = $(this).prop("action").split("keyword=");
+		var keyword = encodeURIComponent(urlArr[1]);
+		var no = $("input[name='no']").val();
+		var target = urlArr[0]+"keyword="+keyword+"&no="+no;
+		$(this).prop("action", target);
 	})
+	
+	$("#fileSelectBtn").click(function(){
+		$("#thumbState").val("o");
+	});
+	
+	$("#thumb").click(function(){
+		var no = $("#form1 > input[name='no']").val();
+		deleteUploadImg(no, "before");
+		$(this).parent().html("<input type='file' name='thumb'>");
+		$("#attach > img").css("display", "none");
+		$("#thumbState").val("o");
+	});
 	
 	$("#delBtn").click(function(){
 		var no = $("input[name='no']").val();
@@ -64,6 +100,18 @@ $(function(){
 			} 
 		});
 		
+	});
+	
+	$(document).on("click", "#downBtn", function(e){
+		e.preventDefault();
+		var href = $(this).prop("href");
+		var f_origin = $("input[name='thumb']").val();
+		var fileName = encodeURIComponent(f_origin);
+		var f_stored = $("input[name='thumb_stored']").val();
+		var downName =  encodeURIComponent(f_stored);
+		
+		href += "&fileName="+fileName+"&downName="+downName;
+		location.href= href;
 	});
 });
 </script>
@@ -154,7 +202,7 @@ $(function(){
 										<input type="hidden" id="thumbState" name="thumbState" value="x">
 										<c:choose>
 											<c:when test="${item.thumb_origin == ''}">
-												<div><input type="file" name="thumb"></div>
+												<div><input type="file" name="thumb" id="fileSelectBtn"></div>
 											</c:when>
 											<c:otherwise>
 												<img src="${pageContext.request.contextPath}/resources/uploadMedia/${item.thumb_stored}" height="100px">

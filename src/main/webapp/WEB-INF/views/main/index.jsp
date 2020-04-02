@@ -1276,31 +1276,32 @@ $(function(){
 						<div class="equip_img"><img src="${pageContext.request.contextPath}/resources/img/main/equipment2.png"></div>
 						<div class="equip_txt">
 							<h4>울쎄라</h4>
-							<p>프라이브의 울쎄라</p>
-							<p>울쎄라 간단설명입니다.</p>
+							<p>가장 깊은 근막층까지</p>
+							<p>작용하는 강력한 정품 울쎄라</p>
 						</div>
 					</div>
 					<div class="equip_item fadeInDelay2s">
 						<div class="equip_img"><img src="${pageContext.request.contextPath}/resources/img/main/equipment3.png"></div>
 						<div class="equip_txt">
 							<h4>튠페이스</h4>
-							<p>프라이브의 튠페이스</p>
-							<p>튠페이스 간단설명입니다.</p>
+							<p>피부의 탄력과 라인을</p>
+							<p> 살려주는 리프팅 레이저</p>
 						</div>
 					</div>
 					<div class="equip_item fadeInDelay3s">
 						<div class="equip_img"><img src="${pageContext.request.contextPath}/resources/img/main/equipment4.png"></div>
 						<div class="equip_txt">
-							<h4>프라이브의 실리프팅</h4>
-							<p>실리프팅 간단설명입니다.</p><br>
+							<h4>실리프팅</h4>
+							<p>리프팅, 타이트닝, 볼륨을 함께!</p>
+							<p>즉각적이고 강한 리프팅</p><br>
 						</div>
 					</div>
 					<div class="equip_item fadeInDelay4s">
 						<div class="equip_img"><img src="${pageContext.request.contextPath}/resources/img/main/equipment5.png"></div>
 						<div class="equip_txt">
-							<h4>8주미백프로그램</h4>
-							<p>프라이브의 8주미백프로그램</p>
-							<p>8주미백 간단설명입니다.</p>
+							<h4>8주집중미백프로그램</h4>
+							<p>기미와 잡티 없이 촉촉하고</p>
+							<p>밝은 피부로의 변화</p>
 						</div>
 					</div>
 				</div>

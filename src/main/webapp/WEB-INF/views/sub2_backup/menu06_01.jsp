@@ -207,7 +207,7 @@ function makeCalendar(today){
 	var dNum = 1;
 	var prevDate;
 	today = new Date();
-	today.setDate(today.getDate()-1);
+	today.setDate(today.getDate()+1);
 	
 	for(var i=1; i<=6; i++){ 
 		if(dNum > lastDate){
@@ -217,7 +217,6 @@ function makeCalendar(today){
 		for( var k=1; k<=7; k++){
 			if(i==1 && k<=theDay||dNum>lastDate){
 				str += "<td class='"+arrDow2[k-1]+" closed calDate date_' onclick=onCalDate('');><button></button></td>";
-				
 			}else{
 				if(k==1){
 					str += "<td class='"+arrDow2[k-1]+" closed calDate date_"+cd+((dNum>9?'':'0')+dNum)+"' onclick=onCalDate('"+arrDow2[k-1]+"','"+cd+((dNum>9?'':'0')+dNum)+"');><button>"+dNum+"</button></td>";
@@ -225,7 +224,6 @@ function makeCalendar(today){
 					prevDate = new Date(cd+((dNum>9?'':'0')+dNum));
 					
 					if(prevDate.getTime() <= today.getTime()){
-						console.log(cd+((dNum>9?'':'0')+dNum));
 						str += "<td class='"+arrDow2[k-1]+" closed calDate date_"+cd+((dNum>9?'':'0')+dNum)+"' onclick=onCalDate('"+arrDow2[k-1]+"','"+cd+((dNum>9?'':'0')+dNum)+"');><button>"+dNum+"</button></td>";
 					}else{
 						str += "<td class='"+arrDow2[k-1]+" calDate date_"+cd+((dNum>9?'':'0')+dNum)+"' onclick=onCalDate('"+arrDow2[k-1]+"','"+cd+((dNum>9?'':'0')+dNum)+"');><button>"+dNum+"</button></td>";
@@ -260,7 +258,7 @@ $(function(){
 		prevMonth.setMonth(prevMonth.getMonth()-1);
 		makeCalendar(prevMonth);
 	});
-	today.setDate(today.getDate()-1);
+	today.setDate(today.getDate()+1);
 	var dateFullYear = today.getFullYear();
 	var dateFullMonth = today.getMonth()+1;
 	var dateFullDate = today.getDate();

@@ -90,10 +90,15 @@ $(function(){
 		$(this).prop("action", target);
 	});
 	
+	$("#fileSelectBtn").click(function(){
+		$("#thumbState").val("o");
+	});
+	
 	$("#thumb").click(function(){
 		var no = $("#form1 > input[name='no']").val();
 		deleteUploadImg(no, "before");
 		$(this).parent().html("<input type='file' name='thumb'>");
+		$("#attach > img").css("display", "none");
 		$("#thumbState").val("o");
 	});
 	
@@ -186,7 +191,7 @@ $(function(){
 										<input type="hidden" id="thumbState" name="thumbState" value="x">
 										<c:choose>
 											<c:when test="${item.thumb_origin == ''}">
-												<div><input type="file" name="thumb"></div>
+												<div><input type="file" name="thumb" id="fileSelectBtn"></div>
 											</c:when>
 											<c:otherwise>
 												<img src="${pageContext.request.contextPath}/resources/uploadEvent/${item.thumb_stored}" height="100px">

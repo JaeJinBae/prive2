@@ -255,7 +255,7 @@
 	#order-complete .order-complete-btn button{float:left; width:100%; display:inline-block; height:75px; line-height:78px; text-align:center; font-size:18px;}
 	#order-complete .order-complete-btn button.order-btn-kakao{background:#f8f8f8; color:#222;}
 	#order-complete .order-complete-btn button.order-btn-kakao img{line-height:73px; margin-right:5px;}
-	#order-complete .order-complete-btn button.order-btn-complete{background:#b18c4c; color:#fff;}
+	#order-complete .order-complete-btn button.order-btn-complete{background:#111111; color:#fff;}
 	/* 예약접수 완료 팝업 끝 */
 	
 	
@@ -528,7 +528,7 @@
 	#order-complete .order-complete-btn button{float:left; width:100%; display:inline-block; height:75px; line-height:78px; text-align:center; font-size:18px;}
 	#order-complete .order-complete-btn button.order-btn-kakao{background:#f8f8f8; color:#222;}
 	#order-complete .order-complete-btn button.order-btn-kakao img{line-height:73px; margin-right:5px;}
-	#order-complete .order-complete-btn button.order-btn-complete{background:#b18c4c; color:#fff;}
+	#order-complete .order-complete-btn button.order-btn-complete{background:#111111; color:#fff;}
 	
 	
 	/* 예약접수 완료 팝업 끝 */

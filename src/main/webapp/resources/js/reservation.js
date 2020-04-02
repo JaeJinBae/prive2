@@ -53,7 +53,7 @@ $(document).ready( function() {
 	// * 
 	$('.order-btn button').click(function(){
 		//$('#order-complete').fadeIn();
-		$('#pop-agreement').fadeIn();
+		//$('#pop-agreement').fadeIn();
 	});
 
 	$('button.order-btn-complete').click(function(){
