@@ -62,12 +62,19 @@ section{
 	}
 	.s1_txt > h1{
 		font-size: 40px;
+		font-weight: 500;
+		margin-top:0;
+	}
+	.s1_txt > h3{
+		font-weight: 500;
+		margin-bottom: 0;
 	}
 	.s1_txt > p{
 		line-height: 25px;
 	}
 	.s1_txt > p > strong{
 		font-size: 17px;
+		font-weight: 500;
 	}
 	
 	.section2{
@@ -79,9 +86,14 @@ section{
 		left: 20%;
 		width: 1100px;
 	}
+	.s2_txt > h3{
+		font-weight: 500;
+	}
 	.s2_txt > h1{
 		font-size: 40px;
+		margin-top: 0;
 		margin-bottom: 80px;
+		font-weight: 500;
 	}
 	.s2_txt > .cv_div_wrap{
 		width: 100%;
@@ -114,7 +126,8 @@ section{
 		margin-right: 10px;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > h4{
-		font-size: 20px; 
+		font-size: 20px;
+		font-weight: 500;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > p{
 		line-height: 25px;
@@ -143,12 +156,19 @@ section{
 	}
 	.s1_txt > h1{
 		font-size: 40px;
+		font-weight: 500;
+		margin-top: 0;
+	}
+	.s1_txt > h3{
+		font-weight: 500;
+		margin-bottom: 0;
 	}
 	.s1_txt > p{
 		line-height: 25px;
 	}
 	.s1_txt > p > strong{
 		font-size: 17px;
+		font-weight: 500;
 	}
 	
 	.section2{
@@ -160,9 +180,14 @@ section{
 		left: 20%;
 		width: 768px;
 	}
+	.s2_txt > h3{
+		font-weight: 500;
+	}
 	.s2_txt > h1{
 		font-size: 40px;
 		margin-bottom: 80px;
+		margin-top:0;
+		font-weight: 500;
 	}
 	.s2_txt > .cv_div_wrap{
 		width: 100%;
@@ -183,7 +208,8 @@ section{
 		margin-right: 10px;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > h4{
-		font-size: 20px; 
+		font-size: 20px;
+		font-weight: 500;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > p{
 		line-height: 25px;
@@ -201,7 +227,7 @@ section{
 	.s1_txt{
 		width: 82%;
 		position: absolute;
-		top: 20%;
+		bottom: 75px;
 		left: 50%;
 		margin-left: -46%;
 		padding: 20px;
@@ -211,11 +237,20 @@ section{
 	}
 	.s1_txt > h1{
 		font-size: 30px;
+		font-weight: 500;
+		margin-top: 0;
+	}
+	.s1_txt > h3{
+		font-weight: 500;
+		margin-bottom: 0;
 	}
 	.s1_txt > p{
 		line-height: 20px;
 	}
-	
+	.s1_txt > p > strong{
+		font-size: 17px;
+		font-weight: 500;
+	}
 	.section2{
 		height: 2000px;
 	}
@@ -227,8 +262,13 @@ section{
 		margin-left: -49%;
 		
 	}
+	.s2_txt > h3{
+		font-weight: 500;
+	}
 	.s2_txt > h1{
-		font-size: 35px;
+		font-size: 30px;
+		font-weight: 500;
+		margin-top:0;
 	}
 	.s2_txt > .cv_div_wrap{
 		width: 100%;
@@ -249,7 +289,8 @@ section{
 		margin-right: 10px;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > h4{
-		font-size: 20px; 
+		font-size: 20px;
+		font-weight: 500;
 	}
 	.s2_txt > .cv_div_wrap > .cv_div > .cv_txt > p{
 		line-height: 25px;
@@ -277,22 +318,12 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h1>About Prive</h1>
-					<p><strong>
-						"피부, 탄력, 리프팅"<br>
-						피부, 라이프스타일을 새롭게 변화시키다.
-					</strong></p>
+					<h3>01. Who We are</h3>
+					<h1>Private Dermatology</h1>
+					<p><strong>PRIVE</strong></p>
 					<p>
-						시간이 지나고 세월의 흐름에 따라 나타나는 자연스러운 노화현상
-						이에 새롭게 발전하는 의료시술을 안정성에 초점을 두어 피부 본연의 기능을 회복시키고,
-						현재 피부컨디션에 맞춰 과하지 않게 스킨밸런스를 찾아가는것에서 시작되는
-						한층 업그레이드된 프리미엄 피부과입니다.<br><br>
-						
-						"Prive Dermatology"<br><br>
-						
-						여유로움이 가득한 공간에서<br>
-						리프팅, 피부탄력을 위한 시간을 경험하세요.<br><br>
-						프라이브피부과.
+						우리는 트렌드에 민감하되, 개개인의 피부 상태에 맞게, 기본에 충실한 병원입니다.<br>
+						피부 본연의 기능을 회복시키고, 내게 맞는 균형과 조화를 찾아 자연스럽게, 그리고 안전하게, 진보된 안티에이징 솔루션을 제공합니다.
 					</p>
 				</div><!-- s1_txt end -->
 			</div>
@@ -300,18 +331,15 @@ $(function(){
 		<section class="section2">
 			<div class="inner">
 				<div class="s2_txt">
-					<h1>Prive's Core Value</h1>
+					<h3 style="margin-bottom:0;">02. Brand Identity</h3>
+					<h1>아름다움/건강함의 최적의 밸런스를 찾아</h1>
 					<div class="cv_div_wrap">
 						<div class="cv_div">
 							<div class="cv_txt">
-								<h4><span class="gray_bar"></span>프라이빗함을 더한 여유로운 공간</h4>
+								<h4><span class="gray_bar"></span>프라이빗한 공간</h4>
 								<p>
-									시술의 중요성을 잘 이해하시는 분들이라 생각하여<br>
-									진료 커뮤니케이션에 집중할 수 있도록<br>
-									프라이빗함을 더했습니다.<br><br>
-									  
-									여유로운 공간에서 시작되는<br>
-									Prive 프리미엄 뷰티 프로그램
+									프라이빗하고 고급스러운 1인 시술실에서 탈의부터<br>
+									클렌징, 시술, 마무리까지 프리미엄 케어를 받으실 수 있습니다.<br>
 								</p>
 							</div>
 							<div class="cv_img">
@@ -320,16 +348,13 @@ $(function(){
 						</div><!-- cv_div end --> 
 						<div class="cv_div">
 							<div class="cv_txt">
-								<h4><span class="gray_bar"></span>안전한 의료시술</h4>
+								<h4><span class="gray_bar"></span>최고급 시술 장비</h4>
 								<p>
-									'시술을 가장 잘하는곳'<br>
-									'좋은레이저가 많은병원'으로만 알려지길<br>
-									지향하지 않습니다.<br><br>
+									투자를 아끼지 않습니다.<br>
+									최신의 하이엔드 레이저는 강력하고 안전합니다.<br><br>
 									
-									프라이브는<br>
-									'과하지 않게 그리고 안전하게'<br>
-									피부 본연의 기능회복과<br>
-									스킨밸런스를 높이기 위해 노력합니다. 
+									고가의 최신의 장비, 프리미엄 에스테틱 관리를<br>
+									엄선하여 시술하고 있습니다.<br>
 								</p>
 							</div>
 							<div class="cv_img">
@@ -338,11 +363,15 @@ $(function(){
 						</div><!-- cv_div end -->
 						<div class="cv_div">
 							<div class="cv_txt">
-								<h4><span class="gray_bar"></span>나만을 위한 뷰티 코칭</h4>
+								<h4><span class="gray_bar"></span>1:1 피부&바디디자인</h4>
 								<p>
-									모든사람의 피부가 같을 순 없습니다.<br>
-									프라이브는 '내 피부 컨디션에 포커스를 맞춘<br>
-									당신을 위한 진료플랜'을 제안합니다.
+									작은것 하나라도 섬세하게 다릅니다.<br>
+									슈링크 시술 시 공업용 초음파 겔이 아닌 천연 보습겔을 사용하고,<br>
+									피부장벽회복 주기에 맞는 치료, 효과를 배가시키는<br>
+									전후관리를 병행하고 있습니다.<br><br>
+									
+									단순한 치료나 시술의 개념에서 벗어나 필요로 하는 것,<br>
+									변해가는 삶 그 자체에 세심한 관심을 기울입니다.<br>
 								</p>
 							</div>
 							<div class="cv_img">
@@ -351,10 +380,11 @@ $(function(){
 						</div><!-- cv_div end -->
 						<div class="cv_div">
 							<div class="cv_txt">
-								<h4><span class="gray_bar"></span>피부과전문의</h4>
+								<h4><span class="gray_bar"></span>대한민국2% 피부과전문의</h4>
 								<p>
-									당신의 피부를 가장 잘 이해 하기위해서<br>
-									프라이브는 '피부과전문의'가 함께합니다.
+									두 명의 피부과 전문의가 직접 시술합니다.<br>
+									피부과 전문의가 대한민국 의사의 단 2%인 것을 알고 계시나요?<br>
+									피부를 가장 잘 아는 전문의가 정직하고 안전하게 시술합니다.<br>
 								</p>
 							</div>
 							<div class="cv_img">
