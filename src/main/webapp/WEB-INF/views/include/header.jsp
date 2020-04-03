@@ -114,9 +114,9 @@
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_01">울쎄라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_02">써마지</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_03">튠페이스</a></li>
+						<%-- <li class="lnb"><a href="${pageContext.request.contextPath}/menu03_03">튠페이스</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_04">실루엣소프트</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_05">남성관리</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_05">남성관리</a></li> --%>
 					</ul>
 				</li>
 				<li class="gnb">

@@ -166,11 +166,13 @@ function drawTimePicker(dow){
 	console.log(timeInfo);
 	s_time = timeInfo.start_time;
 	e_time = timeInfo.end_time-30;
-	
+	console.log("dow값은 ="+dow);
 	 
 	while(s_time != e_time){
-		if(s_time == 780 || s_time == 810 || s_time == 840){
-			
+		if(s_time == 780 || s_time == 810){
+			if(s_time==780 && dow=="sat"){
+				timeList.push(s_time);
+			}
 		}else{
 			timeList.push(s_time);
 		}
@@ -274,7 +276,6 @@ $(function(){
 	var dateFull = dateFullYear+"-"+dateFullMonth+"-"+dateFullDate;
 	var cname = "date_"+dateFull;
 	$(".date_"+dateFull).addClass('closed');
-	$(".sat").addClass("closed");
 	
 	var nUrl = window.location.href;
 	if(nUrl.indexOf("kind1no") > 0){
@@ -488,7 +489,7 @@ $(function(){
 								<ul>
 									<li><label for="r_name">고객명</label><input type="text" id="r_name" name="r_name" valid="required" element-name="고객명"></li>
 									<li><label for="r_phone">연락처</label><input type="text" id="r_phone" name="r_phone" valid="required" element-name="연락처"></li>
-									<li><label for="r_email">이메일</label><input type="text" id="r_email" name="r_email" valid="required" element-name="이메일"></li>
+									<!-- <li><label for="r_email">이메일</label><input type="text" id="r_email" name="r_email" valid="required" element-name="이메일"></li> -->
 									<li><label for="r_memo">메모</label><input type="text" id="r_memo" name="r_memo"></li>
 								</ul>
 								<div class="agreement">
@@ -729,10 +730,10 @@ $(function(){
 							return;
 						}
 			
-						if($("#r_email").val() == ""){
+						/* if($("#r_email").val() == ""){
 							alert("이메일을 입력하세요.");
 							return;
-						}
+						} */
 			
 						$("#result_name").html("");
 						$("#result_phone").html("");
@@ -750,7 +751,7 @@ $(function(){
 						reserveJson.r_time = $('#r_time').val();
 						reserveJson.r_name = $('#r_name').val();
 						reserveJson.r_phone = $('#r_phone').val();
-						reserveJson.r_email = $('#r_email').val();
+						/* reserveJson.r_email = $('#r_email').val(); */
 						reserveJson.r_memo = $('#r_memo').val();
 						reserveJson.r_counsel = ($("#agree01").is(":checked")) ? "Y" : "N";
 						var nd = new Date();
