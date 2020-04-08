@@ -220,6 +220,7 @@ button{
 @media only screen and (min-width:320px) and (max-width:767px){	
 	.section1{
 		background: #faf9f6;
+		min-height: 800px;
 	}
 	.section1 > .inner > .aside_wrap2{
 		width: 100%;
@@ -329,9 +330,11 @@ $(function(){
 					<div class="aside_bottom">
 						<div class="as_b_div">
 							<h3>진료시간</h3>
-							<p>월-금요일 AM 10:00 ~ PM 07:00<br>(평일진료)</p>
+							<p>월-목요일 AM 10:00 ~ PM 07:00</p>
+							<p>금요일 AM 10:00 ~ PM 09:00</p>
+							<p>토요일 AM 09:30 ~ PM 14:00</p>
 							<p>점심 시간 PM 01: 00 ~ PM 02:00</p>
-							<p>토 · 일, 공휴일 휴진</p>
+							<p>일, 공휴일 휴진</p>
 						</div>
 						<div class="as_b_div">
 							<h3>CS Center</h3>

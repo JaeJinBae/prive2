@@ -81,7 +81,7 @@ $(function(){
 									<div class="clinic_item">
 										<p class="item_title">${item.name}</p>
 										<p class="item_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" />원</p>
-										<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p>
+										<p class="item_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p>
 									</div>
 								</c:forEach>
 							</c:otherwise>
@@ -115,7 +115,7 @@ $(function(){
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
 											</tr>
 										</c:forEach>
 									</table>
@@ -139,7 +139,7 @@ $(function(){
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
 											</tr>
 										</c:forEach>
 									</table>
@@ -163,7 +163,7 @@ $(function(){
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
 											</tr>
 										</c:forEach>
 									</table>

@@ -203,7 +203,7 @@ $(function(){
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${kind1}&no=${item.no}">예약바로가기</a></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
 											</tr>
 										</c:forEach>
 									</table>

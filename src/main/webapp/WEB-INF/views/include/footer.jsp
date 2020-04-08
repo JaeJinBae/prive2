@@ -33,11 +33,11 @@
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> 
 
 <script type="text/javascript">
-function log_analytics(val1){
+function log_analytics(val1, val2){
 	/* 전환페이지 설정 */ 
 	 
 	var _nasa={};
-	_nasa["cnv"] = wcs.cnv(val1,"1"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고 
+	_nasa["cnv"] = wcs.cnv(val1, val2); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고 
 	
 	if (!wcs_add) var wcs_add={};
 	wcs_add["wa"] = "s_314181f9fe48";

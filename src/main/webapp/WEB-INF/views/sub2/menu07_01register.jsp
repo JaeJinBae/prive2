@@ -237,7 +237,7 @@ $(function(){
 		var phone3 = $("#phone3").val();
 		$("#phone").val(phone1+"-"+phone2+"-"+phone3);
 		
-		log_analytics('3');
+		log_analytics('2', '1');
 	});
 	
 	var oldURL = document.referrer;
