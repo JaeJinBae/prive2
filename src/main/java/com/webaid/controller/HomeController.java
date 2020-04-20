@@ -520,7 +520,7 @@ public class HomeController {
 		}
 		
 		for(int i=0; i<listAll.size(); i++){
-			if(listAll.get(i).getKind2nm().equals("듄바디")){
+			if(listAll.get(i).getKind2nm().equals("튠바디")){
 				list1.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("다한증 보톡스")){
 				list2.add(listAll.get(i));

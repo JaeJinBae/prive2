@@ -495,8 +495,8 @@ $(function(){
 								</ul>
 								<div class="agreement">
 									<p><input type="checkbox" id="agree01" name="agree01"><label for="agree01">시술 전 상담이 필요하신 고객님은 체크해주세요.</label></p>
-									<p><input type="checkbox" id="agree02" name="agree02"><label for="agree02"><em>[필수]</em> 서비스 이용 및 예약에 필요한 개인정보 제공에 동의합니다.<button class="agree01" onclick="return false;">약관확인</button></label></p>
-									<p><input type="checkbox" id="agree03" name="agree03"><label for="agree03"><em>[필수]</em> 마케팅 활용에 동의합니다.<button class="agree02" onclick="return false;">약관확인</button></label></p>
+									<p><input type="checkbox" id="agree02" name="agree02" checked="checked"><label for="agree02"><em>[필수]</em> 서비스 이용 및 예약에 필요한 개인정보 제공에 동의합니다.<button class="agree01" onclick="return false;">약관확인</button></label></p>
+									<p><input type="checkbox" id="agree03" name="agree03" checked="checked"><label for="agree03"><em>[필수]</em> 마케팅 활용에 동의합니다.<button class="agree02" onclick="return false;">약관확인</button></label></p>
 								</div>
 							</div>
 						</div>
