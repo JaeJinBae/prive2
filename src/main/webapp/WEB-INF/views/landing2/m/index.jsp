@@ -12,7 +12,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="HandheldFriendly" content="true">
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/m/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/m/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/m/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing2/m/css/slick-theme.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -31,9 +31,42 @@
 			$(".layer").css('display','none').removeClass("on");
 		}
 	</script>
+
+	<!--  LOG corp Web Analitics & Live Chat  START -->
+	<script  type="text/javascript">
+	//<![CDATA[
+	function logCorpAScript_full(){
+		HTTP_MSN_MEMBER_NAME="";/*member name*/
+		var prtc=(document.location.protocol=="https:")?"https://":"http://";
+		var hst=prtc+"asp19.http.or.kr";
+		var rnd="r"+(new Date().getTime()*Math.random()*9);
+		this.ch=function(){
+			if(document.getElementsByTagName("head")[0]){logCorpAnalysis_full.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
+		}
+		this.dls=function(){
+			var h=document.getElementsByTagName("head")[0];
+			var s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
+			if(h){s.src=hst+"/HTTP_MSN/UsrConfig/prive1/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
+		}
+		this.init= function(){
+			document.write('<img src="'+hst+'/sr.gif?d='+rnd+'" style="width:1px;height:1px;position:absolute;display:none" onload="logCorpAnalysis_full.ch()" alt="" />');
+		}
+	}
+	if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
+	//]]>
+	</script>
+	<noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
+	<!-- LOG corp Web Analitics & Live Chat END -->
 </head>
 <body>
 	<div id="wrap">
+		<div class="rev_wrap">
+			<ul>
+				<li><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/icon_rev02.png">전화상담하기</a></li>
+				<li class="rev_btn"><a href="/menu06_01?kind1no=4&no=52"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/icon_rev01.png">지금예약하기</a></li>
+			</ul>
+		</div>
+
 		<div id="header">
 			<ul class="header_img">
 				<li class="home"><a href="http://www.prive.co.kr"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/home.jpg?ver=1" alt="프라이브피부과 홈페이지 바로가기" /></a></li>
@@ -48,14 +81,14 @@
 			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/popup.png?ver=1" alt="" /></div>
 		</div>
 		<!-- 퀵 -->
-		<div id="quick">
+		<!-- <div id="quick">
 			<div class="img"><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/quick_tel.png" alt=""></a></div>
 			<ul>
 				<li class="circle01"></li>
 				<li class="circle02"></li>
 				<li class="circle03"></li>
 			</ul>
-		</div>
+		</div> -->
 		<div id="content">
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main1.jpg" alt="메인1" /></div>	
 			<!--
@@ -75,7 +108,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8.jpg" alt="메인8" /></div>	
 			<div><a href="http://prive.co.kr/landing1"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8_1.jpg" alt="" /></a></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9.jpg" alt="메인9" /></div>	
-			<div class="main12">
+			<!-- <div class="main12">
 				<img src="${pageContext.request.contextPath}/resources/landing2/m/image/main12.jpg" alt="메인12" />
 				<div class="slide_wrap">
 					<ul class="slide">
@@ -98,7 +131,7 @@
 			</div>	
 			<div class="main13">
 				<img src="${pageContext.request.contextPath}/resources/landing2/m/image/main13.jpg" alt="메인13" />
-				<!-- 지도 -->
+
 				<div class="map_wrap">
 					<div id="daumRoughmapContainer1580782896280" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 				</div>
@@ -117,13 +150,13 @@
 							<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
 						</ul>
 					</div>
-					<!-- DB START -->
+
 					<form id="event_form" name="event_form" method="post" onsubmit="return funcSubmit()">
 					  <input type="hidden" id="pr_no"      name="pr_no"      value="49"/>
-					  <input type="hidden" id="return_url" name="return_url" value=""/> <!-- 반환경로 -->
-					  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> <!-- 접속경로 -->
-					  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/> <!-- 배너광고 -->
-					  <input type="hidden" id="pp_data178"  name="pp_data178"  value="울쎄라"/> <!-- 구분 -->
+					  <input type="hidden" id="return_url" name="return_url" value=""/> 
+					  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> 
+					  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/>
+					  <input type="hidden" id="pp_data178"  name="pp_data178"  value="울쎄라"/>
 					<div class="db">
 						<ul class="db_input">
 							<li><input type="text" id="pp_data170" name="pp_data170" title="성함" placeholder="성함을 입력해주세요." class="required" /></li>
@@ -140,7 +173,7 @@
 					</form>
 				</div>
 			</div>	
-			<!-- 개인정보 레이어시작 -->
+
 			<div class="layer">
 				<div class="layer_wrap">
 				<div class="close_btn" style="text-align:right"><a href="#self" onclick="closelayer();">X</a></div>	
@@ -187,8 +220,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- 개인정보 레이어끝 -->
+			</div> -->
+
 		</div>
 		<div id="footer">
 			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>

@@ -107,3 +107,10 @@ input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: no
 #footer address span{display: inline-block; margin:0 8px; color: #555;}
 #footer address strong{color: #eee;font-weight:bold;}
 #footer small{display: block;margin-top:24px;color: #fff; font-size:10px;  letter-spacing:1px; opacity: 0.5;}
+
+/* 20200408추가(예약하기추가) */
+.rev_wrap{position:fixed; bottom:0; width:100%; max-width:640px; box-shadow:0 0 30px rgba(0,0,0,0.6);  z-index: 10000;}
+.rev_wrap ul li{float:left; width:50%; background:rgba(255,197,35,0.95)}
+.rev_wrap ul li.rev_btn{background:rgba(0,0,0,0.9);}
+.rev_wrap ul li a{display: block; padding:21px 0; text-align:center; color: #fff; font-size:14px;} 
+.rev_wrap ul li a img{ width:14px; margin-right:5px; vertical-align:bottom;}

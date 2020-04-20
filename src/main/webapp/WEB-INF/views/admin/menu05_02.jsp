@@ -495,6 +495,8 @@ $(function(){
 						</c:if>
 						<a href="${pageMaker.makeSearch(pageMaker.finalPage+1)}" class="direction">&gt;&gt;</a>
 					</div>	<!-- 페이징 끝 -->
+					
+					
 				</div>
 			</div><!-- main_bottom_area end -->
 			

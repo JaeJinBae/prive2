@@ -12,7 +12,7 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="HandheldFriendly" content="true">
 <title>::프라이브피부과::</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/main.css?ver=1" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/main.css?ver=2" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/slick.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/m/css/slick-theme.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -34,6 +34,14 @@
 </head>
 <body>
 	<div id="wrap">
+
+		<div class="rev_wrap">
+			<ul>
+				<li><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev02.png">전화상담하기</a></li>
+				<li class="rev_btn"><a href="/menu06_01?kind1no=4&no=63"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev01.png">지금예약하기</a></li>
+			</ul>
+		</div>
+
 		<div id="header">
 			<ul class="header_img">
 				<li class="home"><a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/landing/m/image/home.jpg?ver=1" alt="프라이브피부과 홈페이지 바로가기" /></a></li>
@@ -48,14 +56,14 @@
 			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup.png?ver=1" alt="" /></div>
 		</div>
 		<!-- 퀵 -->
-		<div id="quick">
+		<!-- <div id="quick">
 			<div class="img"><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/quick_tel.png" alt=""></a></div>
 			<ul>
 				<li class="circle01"></li>
 				<li class="circle02"></li>
 				<li class="circle03"></li>
 			</ul>
-		</div>
+		</div> -->
 		<div id="content">
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1.jpg" alt="메인1" /></div>	
 			<div class="main2">
@@ -74,7 +82,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main9.jpg" alt="메인9" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main10.jpg" alt="메인10" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11.jpg" alt="메인11" /></div>	
-			<div class="main12">
+			<!-- <div class="main12">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main12.jpg" alt="메인12" />
 				<div class="slide_wrap">
 					<ul class="slide">
@@ -93,10 +101,10 @@
 						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list13.jpg" alt="프라이브피부과 내부" /></li>
 					</ul>
 				</div>
-			</div>	
-			<div class="main13">
+			</div>	 -->
+
+			<!-- <div class="main13">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main13.jpg" alt="메인13" />
-				<!-- 지도 -->
 				<div class="map_wrap">
 					<div id="daumRoughmapContainer1580782896280" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 				</div>
@@ -115,12 +123,11 @@
 							<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/m/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
 						</ul>
 					</div>
-					<!-- DB START -->
 					<form id="event_form" name="event_form" method="post" onsubmit="return funcSubmit()">
 					  <input type="hidden" id="pr_no"      name="pr_no"      value="49"/>
-					  <input type="hidden" id="return_url" name="return_url" value=""/> <!-- 반환경로 -->
-					  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> <!-- 접속경로 -->
-					  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/> <!-- 배너광고 -->
+					  <input type="hidden" id="return_url" name="return_url" value=""/> 
+					  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> 
+					  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/> 
 					<div class="db">
 						<ul class="db_input">
 							<li><input type="text" id="pp_data170" name="pp_data170" title="성함" placeholder="성함을 입력해주세요." class="required" /></li>
@@ -137,7 +144,6 @@
 					</form>
 				</div>
 			</div>	
-			<!-- 개인정보 레이어시작 -->
 			<div class="layer">
 				<div class="layer_wrap">
 				<div class="close_btn" style="text-align:right"><a href="#self" onclick="closelayer();">X</a></div>	
@@ -184,8 +190,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- 개인정보 레이어끝 -->
+			</div> -->
+
 		</div>
 		<div id="footer">
 			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing/m/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>

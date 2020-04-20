@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=3" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
@@ -23,6 +23,12 @@
 </head>
 <body>
 	<div id="wrap">
+
+	<!-- 20200408추가(예약하기추가-이미지) -->
+	<div class="rev_btn" style="position:fixed;width:100%; bottom:0;z-index:1000; font-size:0; text-align:center; " >
+		<a href="http://pf.kakao.com/_HbkxkT/chat"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn01.png"></a>
+		<a href="/menu06_01?kind1no=4&no=63"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn02.png"></a>
+	</div>
 		<!-- header -->
 		<div id="header">
 		    <div class="header_inner">
@@ -77,7 +83,7 @@
 			<div class="main9"></div>
 			<div class="main10"></div>
 			<div class="main11"></div>
-			<div class="main12">
+			<!-- <div class="main12">
 				<div class="content_inner">
 					<h2><img src="${pageContext.request.contextPath}/resources/landing/image/main12_title.png" alt="prive space" /></h2>
 					<div class="slide_wrap">
@@ -98,14 +104,14 @@
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="main13">
+			</div> -->
+			<!-- <div class="main13">
 				<div class="content_inner">
-					<!-- 지도 -->
+
 					<div class="map_wrap">
 						<div id="daumRoughmapContainer1580782896280" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 					</div>
-					<!-- 병원정보 -->
+
 					<div class="ha_info">
 						<div class="info_sns">
 							<ul>
@@ -125,12 +131,12 @@
 							<li><strong>지하철</strong>도시철도 3호선 어린이 회관역, 도보3분</li>
 							<li><strong>주차</strong>건물 뒷편 전용 주차공간</li>
 						</ul>
-						<!-- DB START -->
+
 						<form id="event_form" name="event_form" method="post" onsubmit="return funcSubmit()">
 						  <input type="hidden" id="pr_no"      name="pr_no"      value="49"/>
-						  <input type="hidden" id="return_url" name="return_url" value=""/> <!-- 반환경로 -->
-						  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> <!-- 접속경로 -->
-						  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/> <!-- 배너광고 -->
+						  <input type="hidden" id="return_url" name="return_url" value=""/> 
+						  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> 
+						  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/>
 
 						<div class="db">
 							<ul class="db_input">
@@ -146,8 +152,7 @@
 							</div>
 						</div>
 						</form>
-						<!-- DB END -->
-						<!-- 개인정보 레이어시작 -->
+
 						<div class="layer">
 							<div class="layer_wrap">
 							<div class="close_btn" style="text-align:right"><a href="#self" onclick="closelayer();">X</a></div>	
@@ -195,9 +200,9 @@
 								</div>
 							</div>
 						</div>
-						<!-- 개인정보 레이어끝 -->
+
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<!-- //content -->
