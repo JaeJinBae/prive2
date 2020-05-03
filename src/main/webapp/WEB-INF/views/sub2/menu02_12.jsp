@@ -91,6 +91,9 @@ src="https://www.facebook.com/tr?id=686450048565469&ev=PageView
 		font-size: 17px;
 		margin: 18px 0;
 	}
+	.t_title{
+		text-align: left;
+	}
 }
 @media only screen and (min-width:320px) and (max-width:767px){
 	.s2_content > .clinic_item{

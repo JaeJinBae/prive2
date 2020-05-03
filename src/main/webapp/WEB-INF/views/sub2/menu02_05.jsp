@@ -61,7 +61,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>실루엣소프트/엘란쎄/스컬트라</h2>
+					<h2>콜라겐 볼륨 프로그램</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				

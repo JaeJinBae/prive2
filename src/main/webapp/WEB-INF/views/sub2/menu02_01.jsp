@@ -150,7 +150,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■더모톡스</caption>
+										<caption>■더모톡신</caption>
 										<colgroup>
 											<col width="*">
 											<col width="18%">
