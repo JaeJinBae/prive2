@@ -235,7 +235,7 @@ function makeCalendar(today){
 	var dNum = 1;
 	var prevDate;
 	today = new Date();
-	today.setDate(today.getDate()-1);
+	today.setDate(today.getDate());
 	
 	for(var i=1; i<=6; i++){ 
 		if(dNum > lastDate){

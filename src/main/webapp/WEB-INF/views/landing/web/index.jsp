@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
@@ -17,6 +17,14 @@
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
 	<script src="${pageContext.request.contextPath}/resources/landing/js/wow.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/landing/js/slick.js"></script>
+
+	<!-- 오픈 그래프 태그 Start //-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="프라이브 피부과">
+	<meta property="og:description" content="특별한 공간, 특별한 시간 프라이브피부과, 써마지">
+	<meta property="og:image" content="http://prive.co.kr/resources/landing/image/prive_logo.jpg">
+	<meta property="og:url" content="http://prive.co.kr/">
+	<!-- 오픈 그래프 태그 End //-->
 
 	<!-- utf-8 환경 common.js -->
 	<script type="text/javascript" src="http://www.linchdb.com/js/common.js"></script>

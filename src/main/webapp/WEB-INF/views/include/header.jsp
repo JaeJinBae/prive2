@@ -38,6 +38,7 @@
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/landing2">울쎄라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/landing1">써마지</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing3">미백치료</a></li>
 						<%-- <li class="lnb"><a href="${pageContext.request.contextPath}/#none">튠페이스</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/#none">실루엣소프트</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/#none">남성관리</a></li> --%>
