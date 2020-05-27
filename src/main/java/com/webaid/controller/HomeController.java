@@ -418,6 +418,7 @@ public class HomeController {
 		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
 		
 		for(int i=0; i<listAll.size(); i++){
 			if(listAll.get(i).getPopular().equals("o")){
@@ -432,6 +433,8 @@ public class HomeController {
 				list2.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("볼라이트")){
 				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("리쥬란힐러")){
+				list4.add(listAll.get(i));
 			}
 		}
 		
@@ -439,6 +442,7 @@ public class HomeController {
 		model.addAttribute("list1", list1);
 		model.addAttribute("list2", list2);
 		model.addAttribute("list3", list3);
+		model.addAttribute("list4", list4);
 		
 		return "sub2/menu02_06";
 	}

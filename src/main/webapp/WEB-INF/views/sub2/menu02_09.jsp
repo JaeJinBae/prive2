@@ -61,7 +61,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>피부관리</h2>
+					<h2>메디컬 스킨케어</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
@@ -71,7 +71,7 @@ $(function(){
 			<div class="inner">
 				<div class="s_content_wrap">
 					<div class="aside_left">
-						<p class="al_title">피부관리란?</p>
+						<p class="al_title">메디컬 스킨케어란?</p>
 						<p class="al_content">
 							전문적인 피부관리사가 진행하는 메디컬 스킨케어는 의학적인 치료와 함께 병행하면 효과를 극대화시킬 수 있습니다.
 							각종 레이저 시술의 전/후 진행 시 레이저 치료의 효과를 증대시킬 수 있으며, 꾸준한 스킨케어는 피부를 건강하게 만들어줍니다.

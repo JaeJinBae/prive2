@@ -61,7 +61,7 @@ $(function(){
 		<section class="section1">
 			<div class="inner">
 				<div class="s1_txt">
-					<h2>체형</h2>
+					<h2>바디 컨투어링</h2>
 					<p class="stick"></p>
 				</div><!-- s1_txt end -->
 				
