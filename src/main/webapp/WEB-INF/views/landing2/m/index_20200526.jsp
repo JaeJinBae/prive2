@@ -109,17 +109,15 @@
 		</div> -->
 		<div id="content">
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main1.jpg" alt="메인1" /></div>	
-			<!-- 20200525 맴버십추가 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/member_m02.jpg" alt="맴버십" /></div>
-
+			<!--
 			<div class="main2">
-				<img src="${pageContext.request.contextPath}/resources/landing2/m/image/main2.jpg" alt="메인2" />
+				<img src="image/main2.jpg" alt="메인2" />
 				<div class="movie">
-					<iframe width="100%" height="350" src="https://www.youtube.com/embed/rFdV1YoWZNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="100%" height="350" src="https://www.youtube.com/embed/rexaCCc5B6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-				<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main2_btn.jpg" alt="프라이브피부과 유튜브 링크이동" /></a>
+				<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="image/main2_btn.jpg" alt="프라이브피부과 유튜브 링크이동" /></a>
 			</div>	
-
+			-->
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main3.jpg" alt="메인3" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main4.jpg" alt="메인4" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main5.jpg" alt="메인5" /></div>	
@@ -127,8 +125,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main7.jpg" alt="메인7" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8.jpg" alt="메인8" /></div>	
 			<div><a href="http://prive.co.kr/landing1"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8_1.jpg" alt="" /></a></div>	
-			<!-- <div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9.jpg" alt="메인9" /></div>	 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9_new.jpg" alt="메인9" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9.jpg" alt="메인9" /></div>	
 			<!-- <div class="main12">
 				<img src="${pageContext.request.contextPath}/resources/landing2/m/image/main12.jpg" alt="메인12" />
 				<div class="slide_wrap">

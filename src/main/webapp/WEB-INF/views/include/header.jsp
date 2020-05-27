@@ -23,12 +23,12 @@
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_02">필러</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_03">윤곽주사</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_04">리프팅</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05">콜라겐 볼륨 프로그램</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05">실루엣소프트/엘란쎄/스컬트라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_06">스킨부스터</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_07">기미/색소/미백</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_08">모공/탄력/흉터</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_09">메디컬 스킨케어</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_10">바디 컨투어링</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_09">피부관리</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_10">체형</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_11">레이저제모</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_12">항산화수액</a></li>
 					</ul>
@@ -100,12 +100,12 @@
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_02">필러</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_03">윤곽주사</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_04">리프팅</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05">콜라겐 볼륨 프로그램</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05">실루엣소프트/엘란쎄/스컬트라</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_06">스킨부스터</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_07">기미/색소/미백</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_08">모공/탄력/흉터</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_09">메디컬 스킨케어</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_10">바디 컨투어링</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_09">피부관리</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_10">체형</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_11">레이저제모</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_12">항산화수액</a></li>
 					</ul>

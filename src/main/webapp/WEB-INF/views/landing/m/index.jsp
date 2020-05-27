@@ -58,6 +58,24 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 <noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
 <!-- LOG corp Web Analitics & Live Chat END -->
 
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '686450048565469');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 </head>
 <body>
 	<div id="wrap">
@@ -93,6 +111,10 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		</div> -->
 		<div id="content">
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1.jpg" alt="메인1" /></div>	
+
+			<!-- 20200525 맴버십추가 -->
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/member_m01.jpg" alt="맴버십" /></div>
+
 			<div class="main2">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main2.jpg" alt="메인2" />
 				<div class="movie">
@@ -108,7 +130,9 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main8.jpg" alt="메인8" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main9.jpg" alt="메인9" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main10.jpg" alt="메인10" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11.jpg" alt="메인11" /></div>	
+			<!-- <div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11.jpg" alt="메인11" /></div>	 -->
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11_new.jpg" alt="메인11" /></div>
+
 			<!-- <div class="main12">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main12.jpg" alt="메인12" />
 				<div class="slide_wrap">

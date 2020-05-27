@@ -6,180 +6,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=4" />
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/slick.css" />
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
-	<script src="${pageContext.request.contextPath}/resources/landing/js/wow.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/landing/js/slick.js"></script>
-
-	<!-- 오픈 그래프 태그 Start //-->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="프라이브 피부과">
-	<meta property="og:description" content="특별한 공간, 특별한 시간 프라이브피부과, 써마지">
-	<meta property="og:image" content="http://prive.co.kr/resources/landing/image/prive_logo.jpg">
-	<meta property="og:url" content="http://prive.co.kr/">
-	<!-- 오픈 그래프 태그 End //-->
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/animate.css" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing2/css/slick-theme.css" />
+	<script src="${pageContext.request.contextPath}/resources/landing2/js/wow.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/landing2/js/slick.js"></script>
 
 	<!-- utf-8 환경 common.js -->
 	<script type="text/javascript" src="http://www.linchdb.com/js/common.js"></script>
 
+	<!--  LOG corp Web Analitics & Live Chat  START -->
+	<script  type="text/javascript">
+	//<![CDATA[
+	function logCorpAScript_full(){
+		HTTP_MSN_MEMBER_NAME="";/*member name*/
+		var prtc=(document.location.protocol=="https:")?"https://":"http://";
+		var hst=prtc+"asp19.http.or.kr";
+		var rnd="r"+(new Date().getTime()*Math.random()*9);
+		this.ch=function(){
+			if(document.getElementsByTagName("head")[0]){logCorpAnalysis_full.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
+		}
+		this.dls=function(){
+			var h=document.getElementsByTagName("head")[0];
+			var s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
+			if(h){s.src=hst+"/HTTP_MSN/UsrConfig/prive1/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
+		}
+		this.init= function(){
+			document.write('<img src="'+hst+'/sr.gif?d='+rnd+'" style="width:1px;height:1px;position:absolute;display:none" onload="logCorpAnalysis_full.ch()" alt="" />');
+		}
+	}
+	if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
+	//]]>
+	</script>
+	<noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
+	<!-- LOG corp Web Analitics & Live Chat END -->
 
-<!--  LOG corp Web Analitics & Live Chat  START -->
-<script  type="text/javascript">
-//<![CDATA[
-function logCorpAScript_full(){
-	HTTP_MSN_MEMBER_NAME="";/*member name*/
-	var prtc=(document.location.protocol=="https:")?"https://":"http://";
-	var hst=prtc+"asp19.http.or.kr";
-	var rnd="r"+(new Date().getTime()*Math.random()*9);
-	this.ch=function(){
-		if(document.getElementsByTagName("head")[0]){logCorpAnalysis_full.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
-	}
-	this.dls=function(){
-		var h=document.getElementsByTagName("head")[0];
-		var s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
-		if(h){s.src=hst+"/HTTP_MSN/UsrConfig/prive1/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
-	}
-	this.init= function(){
-		document.write('<img src="'+hst+'/sr.gif?d='+rnd+'" style="width:1px;height:1px;position:absolute;display:none" onload="logCorpAnalysis_full.ch()" alt="" />');
-	}
-}
-if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
-//]]>
-</script>
-<noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
-<!-- LOG corp Web Analitics & Live Chat END -->
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '686450048565469');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '686450048565469');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 <body>
 	<div id="wrap">
-
 	<!-- 20200408추가(예약하기추가-이미지) -->
 	<div class="rev_btn" style="position:fixed;width:100%; bottom:0;z-index:1000; font-size:0; text-align:center; " >
-		<a href="http://pf.kakao.com/_HbkxkT/chat"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn01.png"></a>
-		<a href="/menu06_01?kind1no=4&no=63"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn02.png"></a>
+		<a href="http://pf.kakao.com/_HbkxkT/chat"><img src="${pageContext.request.contextPath}/resources/landing2/image/reservation_btn01.png"></a>
+		<a href="/menu06_01?kind1no=4&no=52"><img src="${pageContext.request.contextPath}/resources/landing2/image/reservation_btn02.png"></a>
 	</div>
 		<!-- header -->
 		<div id="header">
 		    <div class="header_inner">
 				<div class="header_sns">
 					<ul>
-						<li><a href="https://blog.naver.com/priveprive" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list01.png" alt="프라이브피부과 블로그 링크이동" /></a></li>
-						<li><a href="https://www.facebook.com/priveskin1" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list02.png" alt="프라이브피부과 페이스북 링크이동" /></a></li>
-						<li><a href="https://www.instagram.com/priveskin" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list03.png" alt="프라이브피부과 인스타그램 링크이동" /></a></li>
-						<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
+						<li><a href="https://blog.naver.com/priveprive" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list01.png" alt="프라이브피부과 블로그 링크이동" /></a></li>
+						<li><a href="https://www.facebook.com/priveskin1" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list02.png" alt="프라이브피부과 페이스북 링크이동" /></a></li>
+						<li><a href="https://www.instagram.com/priveskin" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list03.png" alt="프라이브피부과 인스타그램 링크이동" /></a></li>
+						<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
 					</ul>
 				</div>
-				<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s"><img src="${pageContext.request.contextPath}/resources/landing/image/logo.png" alt="프라이브피부과 로고이미지" /></h1>
+				<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s"><img src="${pageContext.request.contextPath}/resources/landing2/image/logo.png" alt="프라이브피부과 로고이미지" /></h1>
 				<div class="header_tel">
 					<ul>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/image/tel.png" alt="프라이브피부과 전화번호 1800-5475" /></li>
-						<li class="home_btn"><a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/landing/image/home.png" alt="프라이브피부과 홈페이지 바로가기 링크이동" /></a></li>
+						<li><img src="${pageContext.request.contextPath}/resources/landing2/image/tel.png" alt="프라이브피부과 전화번호 1800-5475" /></li>
+						<li class="home_btn"><a href="http://www.prive.co.kr/"><img src="${pageContext.request.contextPath}/resources/landing2/image/home.png" alt="프라이브피부과 홈페이지 바로가기 링크이동" /></a></li>
 					</ul>
 				</div>
-				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><img src="${pageContext.request.contextPath}/resources/landing/image/header_title.png" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
+				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><img src="${pageContext.request.contextPath}/resources/landing2/image/header_title.png" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
 		    </div>
 		</div>
 		<!-- //header -->
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
-			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup.png" alt="" /></div>
+			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing2/image/popup_close.png" alt="팝업닫기" / ></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing2/image/popup.png?ver1" alt="울쎄라이벤트 팝업" /></div>
 		</div>
 		<!-- content -->
 		<div id="content">
 			<div class="main1">
-				<span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title01.png" alt="존중과공감으로부터 시작되는" /></span>
-				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title02.png" alt="써마지 리프팅 솔루션" /></h2>	
-				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title03.png" alt="대구에 단2대 밖에없는 4세대 최신 써마지" /></p>
+				<span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><img src="${pageContext.request.contextPath}/resources/landing2/image/main1_title01.png" alt="존중과공감으로부터 시작되는" /></span>
+				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing2/image/main1_title02.png" alt="울쎄라 리프팅" /></h2>	
+				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><img src="${pageContext.request.contextPath}/resources/landing2/image/main1_title03.png" alt="1년에 한번 당신의 피부를 한단계 승격시키세요" /></p>
 			</div>
-			<!-- 20200525추가 프라이브 맴버십 -->	
-			<div class="main_new_member"></div>
+			<!--
 			<div class="main2">
 				<div class="content_inner">
 					<div class="title">
-						<img src="${pageContext.request.contextPath}/resources/landing/image/main2_title.png" alt="이뇽TV 유튜브로 소통하는 피부과전문의" />
-						<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/main2_btn.png" alt="프라이브피부과 유튜브 링크이동" /></a>
+						<img src="../image/main2_title.png" alt="이뇽TV 유튜브로 소통하는 피부과전문의" />
+						<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="../image/main2_btn.png" alt="프라이브피부과 유튜브 링크이동" /></a>
 					</div>
 					<div class="movie">
-						<iframe width="100%" height="500" src="https://www.youtube.com/embed/cfs4Wcpp8M0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="100%" height="500" src="https://www.youtube.com/embed/rexaCCc5B6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
+			--->
 			<div class="main3"></div>
 			<div class="main4"></div>
 			<div class="main5"></div>
 			<div class="main6"></div>
 			<div class="main7"></div>
-			<div class="main8"></div>
+			<div class="main8">
+				<div class="main8_btn"><a href="http://prive.co.kr/landing1"><img src="${pageContext.request.contextPath}/resources/landing2/image/main8_btn.png" alt="써마지프로모션으로 링크이동" /></a></div>
+			</div>
 			<div class="main9"></div>
-			<div class="main10"></div>
-			<div class="main11"></div>
 			<!-- <div class="main12">
 				<div class="content_inner">
-					<h2><img src="${pageContext.request.contextPath}/resources/landing/image/main12_title.png" alt="prive space" /></h2>
+					<h2><img src="${pageContext.request.contextPath}/resources/landing2/image/main12_title.png" alt="prive space" /></h2>
 					<div class="slide_wrap">
 						<ul class="slide">
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list01.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list02.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list03.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list04.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list05.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list06.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list07.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list08.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list09.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list10.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list11.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list12.jpg" alt="프라이브피부과 내부" /></li>
-							<li><img src="${pageContext.request.contextPath}/resources/landing/image/space_list13.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list01.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list02.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list03.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list04.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list05.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list06.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list07.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list08.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list09.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list10.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list11.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list12.jpg" alt="프라이브피부과 내부" /></li>
+							<li><img src="${pageContext.request.contextPath}/resources/landing2/image/space_list13.jpg" alt="프라이브피부과 내부" /></li>
 						</ul>
 					</div>
 				</div>
-			</div> -->
-			<!-- <div class="main13">
+			</div>
+			<div class="main13">
 				<div class="content_inner">
-
 					<div class="map_wrap">
 						<div id="daumRoughmapContainer1580782896280" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 					</div>
-
 					<div class="ha_info">
 						<div class="info_sns">
 							<ul>
-								<li><a href="https://blog.naver.com/priveprive" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list01.png" alt="프라이브피부과 블로그 링크이동" /></a></li>
-								<li><a href="https://www.facebook.com/priveskin1" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list02.png" alt="프라이브피부과 페이스북 링크이동" /></a></li>
-								<li><a href="https://www.instagram.com/priveskin" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list03.png" alt="프라이브피부과 인스타그램 링크이동" /></a></li>
-								<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
+								<li><a href="https://blog.naver.com/priveprive"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list01.png" alt="프라이브피부과 블로그 링크이동" /></a></li>
+								<li><a href="https://www.facebook.com/priveskin1"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list02.png" alt="프라이브피부과 페이스북 링크이동" /></a></li>
+								<li><a href="https://www.instagram.com/priveskin"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list03.png" alt="프라이브피부과 인스타그램 링크이동" /></a></li>
+								<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="${pageContext.request.contextPath}/resources/landing2/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
 							</ul>
 						</div>
 						<div class="title">
-							<h2><img src="${pageContext.request.contextPath}/resources/landing/image/db_logo.png" alt=""></h2>
-							<p><img src="${pageContext.request.contextPath}/resources/landing/image/db_tel.png" alt=""></p>
+							<h2><img src="${pageContext.request.contextPath}/resources/landing2/image/db_logo.png" alt=""></h2>
+							<p><img src="${pageContext.request.contextPath}/resources/landing2/image/db_tel.png" alt=""></p>
 						</div>
 						<ul class="info_detail">
 							<li><strong>주소</strong> 대구광역시 수성구 범어천로3 (구.아서원)</li>
@@ -187,13 +175,12 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 							<li><strong>지하철</strong>도시철도 3호선 어린이 회관역, 도보3분</li>
 							<li><strong>주차</strong>건물 뒷편 전용 주차공간</li>
 						</ul>
-
 						<form id="event_form" name="event_form" method="post" onsubmit="return funcSubmit()">
 						  <input type="hidden" id="pr_no"      name="pr_no"      value="49"/>
-						  <input type="hidden" id="return_url" name="return_url" value=""/> 
-						  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> 
+						  <input type="hidden" id="return_url" name="return_url" value=""/>
+						  <input type="hidden" id="pi_referer" name="pi_referer" value=""/>
 						  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/>
-
+						  <input type="hidden" id="pp_data178"  name="pp_data178"  value="울쎄라"/>
 						<div class="db">
 							<ul class="db_input">
 								<li><input type="text" id="pp_data170" name="pp_data170" title="성함" placeholder="성함을 입력해주세요." class="required" /></li>
@@ -201,10 +188,10 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 								<li class="agree"><label><input type="checkbox"  title="체크" name="is_agree" id="is_agree" />개인정보처리방침 동의합니다. </label><a onclick="javascript:openlayer();">[ 자세히 ]</a></li>
 							</ul>
 							<div class="db_submit">
-								<input type="image" src="${pageContext.request.contextPath}/resources/landing/image/db_submit.png" />
+								<input type="image" src="${pageContext.request.contextPath}/resources/landing2/image/db_submit.png" />
 							</div>
 							<div class="kakao_btn">
-								<a href="http://pf.kakao.com/_HbkxkT/chat"><input type="image" src="${pageContext.request.contextPath}/resources/landing/image/db_kakao.png" /></a>
+								<a href="http://pf.kakao.com/_HbkxkT/chat"><input type="image" src="${pageContext.request.contextPath}/resources/landing2/image/db_kakao.png" /></a>
 							</div>
 						</div>
 						</form>
@@ -256,7 +243,6 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div> -->
 			</div>
@@ -264,7 +250,7 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		<!-- //content -->
 		<!-- footer -->
 		<div id="footer">
-			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>
+			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing2/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>
 			<address>
 				<strong>상호</strong> 프라이브피부과의원<span>|</span><strong>주소</strong> 대구광역시 수성구 범어천로3 (구.아서원)<br/>
 				<strong>대표</strong> 김인용 외1명<span>|</span><strong>사업자번호</strong> 660-61-00332<span>|</span><strong>TEL</strong> 1800-5475 · 053-721-7531<br/>

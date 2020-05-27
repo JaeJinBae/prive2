@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=4" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
@@ -117,8 +117,6 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title02.png" alt="써마지 리프팅 솔루션" /></h2>	
 				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title03.png" alt="대구에 단2대 밖에없는 4세대 최신 써마지" /></p>
 			</div>
-			<!-- 20200525추가 프라이브 맴버십 -->	
-			<div class="main_new_member"></div>
 			<div class="main2">
 				<div class="content_inner">
 					<div class="title">

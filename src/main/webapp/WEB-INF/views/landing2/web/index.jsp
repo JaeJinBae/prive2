@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing2/css/slick-theme.css" />
@@ -46,6 +46,25 @@
 	</script>
 	<noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
 	<!-- LOG corp Web Analitics & Live Chat END -->
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '686450048565469');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
 </head>
 <body>
 	<div id="wrap">
@@ -88,19 +107,22 @@
 				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing2/image/main1_title02.png" alt="울쎄라 리프팅" /></h2>	
 				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><img src="${pageContext.request.contextPath}/resources/landing2/image/main1_title03.png" alt="1년에 한번 당신의 피부를 한단계 승격시키세요" /></p>
 			</div>
-			<!--
+			<!-- 20200525추가 프라이브 맴버십 -->
+			<div class="main_new_member"></div>
+
 			<div class="main2">
 				<div class="content_inner">
 					<div class="title">
-						<img src="../image/main2_title.png" alt="이뇽TV 유튜브로 소통하는 피부과전문의" />
-						<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="../image/main2_btn.png" alt="프라이브피부과 유튜브 링크이동" /></a>
+						<img src="${pageContext.request.contextPath}/resources/landing2/image/main2_title.png" alt="이뇽TV 유튜브로 소통하는 피부과전문의" />
+						<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="${pageContext.request.contextPath}/resources/landing2/image/main2_btn.png" alt="프라이브피부과 유튜브 링크이동" /></a>
 					</div>
 					<div class="movie">
-						<iframe width="100%" height="500" src="https://www.youtube.com/embed/rexaCCc5B6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="100%" height="500" src="https://www.youtube.com/embed/rFdV1YoWZNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
-			--->
+
+
 			<div class="main3"></div>
 			<div class="main4"></div>
 			<div class="main5"></div>
