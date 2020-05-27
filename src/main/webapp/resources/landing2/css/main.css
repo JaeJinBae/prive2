@@ -56,8 +56,7 @@ input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: no
 #content .main7{height:1118px; background:url(../image/main7_bg.jpg) no-repeat 50% 0;}
 #content .main8{position: relative; height:872px; background:url(../image/main8_bg.jpg) no-repeat 50% 0;}
 #content .main8 .main8_btn{position: relative; width:241px; left:50%; top:760px; margin-left:360px}
-
-#content .main9{height:1040px; background:url(../image/main9_bg.jpg) no-repeat 50% 0;}
+#content .main9{height:925px; background:url(../image/main9_bg_new.jpg) no-repeat 50% 0;}
 #content .main10{height:1343px; background:url(../image/main10_bg.jpg) no-repeat 50% 0;}
 #content .main11{height:893px; background:url(../image/main11_bg.jpg) no-repeat 50% 0;}
 #content .main12{padding:100px 0; background:#fbf0e2; text-align:left;}
@@ -101,6 +100,9 @@ input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: no
 #content .main13 .db .db_submit input{background:#262626 ; padding:42px 26px; box-sizing:border-box;}
 #content .main13 .db .kakao_btn{clear:both;}
 #content .main13 .db .kakao_btn a{display: block;padding:24px 0 ;clear:both; background:#f9e000;}
+
+.main_new_member{height:2395px; background:url(../image/member_02.jpg) no-repeat 50%;}
+
 /* 레이어팝업 */
 .layer{position:fixed; display:none; left:0;top:180px; z-index:3000000; width:100%;}
 .layer .close_btn{position:absolute; overflow: hidden; right:0; top:0;background:#111;}
