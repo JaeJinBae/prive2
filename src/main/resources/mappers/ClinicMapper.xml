@@ -29,7 +29,7 @@
 	</delete>
 	
 	<select id="listSearch" resultType="ClinicVO">
-		select * from clinic where no>0 <include refid="search"></include> order by no desc limit #{pageStart},#{perPageNum}  
+		select * from clinic where no>0 <include refid="search"></include> order by kind1 asc, no asc limit #{pageStart},#{perPageNum}  
 	</select>
 	
 	<sql id="search">
