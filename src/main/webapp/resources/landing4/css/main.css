@@ -1,0 +1,67 @@
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/* Common */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{margin: 0;padding: 0;border: 0;font-size: 100%;font:inherit;vertical-align: baseline;font-family:'NanumGothic','Malgun Gothic', sans-serif; letter-spacing:-0.5px;font-style:normal}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+body {line-height:1;}
+ol, ul {list-style:none;}
+table {border-collapse:collapse; border-spacing:0;}
+a{text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:none;}
+table{border-spacing:0;border-collapse:collapse;}
+input,select,button{vertical-align:middle; outline:none;}
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+select::-ms-expand { display: none; }
+input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+/* 선택 */
+*::selection{background-color:rgba(30,150,222,1); color:#fff;}
+
+#header{height:273px; background:url(../image/header_bg.jpg) no-repeat 50% 0;}
+.header_inner{width:1200px; margin:0 auto; padding-top:50px;}
+.header_inner h1{position:absolute;width:242px;left:50%;margin-left:-121px;}
+.header_inner .header_sns{float:left;}
+.header_inner .header_sns ul li{float:left; border:1px solid #c7c7c7; border-right:0;}
+.header_inner .header_sns ul li:last-child{border-right:1px solid #c7c7c7}
+.header_inner .header_sns ul li a{display: block; padding:1px; transition:0.3s;}
+.header_inner .header_sns ul li a:hover{background:#eee;}
+.header_inner .header_tel{float:right; text-align:center;}
+.header_inner .header_tel ul li.home_btn{margin:10px 1px 0 0;padding-right:8px;}
+.header_inner p{margin-top:130px; text-align: center;}
+#popup{position:absolute; z-index: 1000; left:50%;top:190px; margin-left:-690px;box-shadow:10px 10px 30px rgba(0,0,0,0.4); border-radius:100%; font-size:0; line-height:0;background: #111;}
+.pop_close{position:absolute; width:29px;height: 29px;right:0; top:0; z-index: 1010;box-shadow:10px 10px 30px rgba(0,0,0,0.4);border-radius:100%; cursor:pointer}
+.move_pop{animation:move 0.6s 0s infinite ease-out alternate;}
+@keyframes move {
+	0%{margin-top:20px;}
+	100%{margin-top:0;}
+}
+
+#content{min-width:1200px;margin: 0 auto; text-align: center;}
+.content_inner{width:1200px; margin:0 auto;}
+#content .main1{height:680px; padding-top:130px; background:url(../image/main1_bg.jpg) no-repeat 50% 0;}
+#content .main1 span{display: block; margin-bottom:16px;}
+#content .main1 h2{margin-bottom:52px; }
+#content .main2{padding:54px 0 ;background:#2e2d29; overflow: hidden;}
+#content .main2 .title{float:left;width:300px; margin-top:52px;}
+#content .main2 .title a{display:block; margin-top:32px;}
+#content .main2 .movie{float:left; width:900px; border-radius:20px; overflow: hidden;}
+#content .main3{height:977px; background:url(../image/main3_bg.jpg) no-repeat 50% 0;}
+#content .main4{height:1000px; background:url(../image/main4_bg.jpg) no-repeat 50% 0;}
+#content .main5{height:1232px; background:url(../image/main5_bg.jpg?ver=1) no-repeat 50% 0;}
+#content .main6{height:1022px; background:url(../image/main6_bg.jpg) no-repeat 50% 0;}
+#content .main7{height:1083px; background:url(../image/main7_bg.jpg) no-repeat 50% 0;}
+#content .main8{height:1114px; background:url(../image/main8_bg.jpg) no-repeat 50% 0;}
+#content .main9{height:733px; background:url(../image/main9_bg.jpg) no-repeat 50% 0;}
+
+#footer{background:#222; text-align:center;  padding:60px 0; }
+#footer address{color: #fff; text-align:center; font-size: 12px; line-height:1.6; color: #bbb; opacity: 0.9; letter-spacing:0px;}
+#footer address span{display: inline-block; margin:0 12px; color: #555;}
+#footer address strong{color: #eee;font-weight:bold;}
+#footer small{display: block;margin-top:24px;color: #fff; font-size:10px;  letter-spacing:1px; opacity: 0.5;}
+
+/* 20200525추가 맴버십 */
+.main_new_member{height:2395px; background:url(../image/member_02.jpg) no-repeat 50% 0;}

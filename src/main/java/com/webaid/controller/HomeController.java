@@ -215,6 +215,37 @@ public class HomeController {
 		
 	}
 	
+	@RequestMapping(value = "/landing4", method = RequestMethod.GET)
+	public String landing4(HttpServletRequest req) {
+		logger.info("landing4 get");
+		
+		Device device=DeviceUtils.getCurrentDevice(req);
+		String deviceType="unknown";
+		
+		if(device == null){
+			deviceType="unknown";
+			logger.info("디바이스타입= "+deviceType);
+			SearchCriteria cri = new SearchCriteria();
+
+			return "landing4/web/index";
+		}
+		if(device.isMobile()){
+			deviceType="mobile";
+			logger.info("디바이스타입= "+deviceType);			
+			return "landing4/m/index";
+		}else if(device.isTablet()){
+			deviceType="mobile";
+			logger.info("디바이스타입= "+deviceType);			
+			return "landing4/m/index";
+		}else{
+			deviceType="normal";
+			logger.info("디바이스타입= "+deviceType);
+			
+			return "landing4/web/index";
+		}
+		
+	}
+	
 	@RequestMapping(value = "/menu01_01", method = RequestMethod.GET)
 	public String menu01_01(Model model) {
 		logger.info("menu01_01 get");
