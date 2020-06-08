@@ -108,7 +108,7 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup.png" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_20200529.png?ver=1" alt="" /></div>
 		</div>
 		<!-- content -->
 		<div id="content">

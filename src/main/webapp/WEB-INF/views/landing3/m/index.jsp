@@ -61,7 +61,7 @@
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing3/m/image/popup_close.png"></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing3/m/image/popup.png?ver=1"></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing3/m/image/popup_20200529.png?ver=1"></div>
 		</div>
 		<!-- 예약 -->
 		<div class="rev_wrap">
@@ -80,13 +80,13 @@
 			</ul>
 		</div>
 		<div id="content">
-			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main1.jpg" alt="메인1" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main1_new.jpg" alt="메인1" /></div>
 			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main2.jpg" alt="메인3" /></div>
 			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main3.jpg" alt="메인3" /></div>
 			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main4.jpg" alt="메인4" /></div>
 			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main5.jpg" alt="메인5" /></div>
 			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main6.jpg" alt="메인6" /></div>
-			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main7.jpg" alt="메인7" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing3/m/image/main7_new.jpg" alt="메인7" /></div>
 		</div>
 		<div id="footer">
 			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing3/m/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>

@@ -98,7 +98,7 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup.png?ver=1" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_20200529.png?ver=2" alt="" /></div>
 		</div>
 		<!-- 퀵 -->
 		<!-- <div id="quick">
@@ -113,7 +113,7 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1.jpg" alt="메인1" /></div>	
 
 			<!-- 20200525 맴버십추가 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/member_m01.jpg" alt="맴버십" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/member_m01.jpg?ver=1" alt="맴버십" /></div>
 
 			<div class="main2">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main2.jpg" alt="메인2" />

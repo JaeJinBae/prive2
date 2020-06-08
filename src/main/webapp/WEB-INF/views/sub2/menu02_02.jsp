@@ -116,6 +116,7 @@ $(function(){
 				<div class="s_content_wrap">
 					<div class="s2_txt">
 						<h2>가격 안내</h2>
+						<p class="s2_txt_vat">( VAT 10% 별도 )</p>
 					</div>
 					<div class="s2_content">
 						<div class="table_wrap">

@@ -98,7 +98,7 @@
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing2/image/popup_close.png" alt="팝업닫기" / ></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing2/image/popup.png?ver1" alt="울쎄라이벤트 팝업" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing2/image/popup_20200529.png?ver1" alt="울쎄라이벤트 팝업" /></div>
 		</div>
 		<!-- content -->
 		<div id="content">

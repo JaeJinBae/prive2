@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing3/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing3/css/main.css?ver=2" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing3/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing3/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing3/css/slick-theme.css" />
@@ -69,7 +69,7 @@
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing3/image/popup_close.png" alt="팝업닫기"></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing3/image/popup.png?ver1" alt="울쎄라이벤트 팝업"></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing3/image/popup_20200529.png?ver1" alt="울쎄라이벤트 팝업"></div>
 		</div>
 		<!-- content -->
 		<div id="content">
