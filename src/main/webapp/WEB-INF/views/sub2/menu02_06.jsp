@@ -214,6 +214,30 @@ $(function(){
 									</table>
 								</c:otherwise>
 							</c:choose>
+							
+							<!-- 싸이토케어 -->
+							<c:choose >
+								<c:when test="${fn:length(list5) == 0}">
+									
+								</c:when>
+								<c:otherwise>
+									<table>
+										<caption>■싸이토케어</caption>
+										<colgroup>
+											<col width="*">
+											<col width="18%">
+											<col width="12%">
+										</colgroup>
+										<c:forEach var="item" items="${list5}">
+											<tr>
+												<td><p class="t_title">${item.name}</p></td>
+												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
+												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
+											</tr>
+										</c:forEach>
+									</table>
+								</c:otherwise>
+							</c:choose>
 						</div>
 					</div>
 				</div>

@@ -34,6 +34,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/cookie.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.rwdImageMaps.js"></script><!-- #6 플러그인 rwdImageMaps -->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <!-- Facebook Pixel Code -->
 <script>
@@ -1152,6 +1153,7 @@ $(function(){
 		}
 	});
 	
+	$('img[usemap]').rwdImageMaps();//이미지맵
 	
 	$(".smallImg_wrap > img").click(function(){
 		var target = $(this).attr("src");

@@ -128,7 +128,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8.jpg" alt="메인8" /></div>	
 			<div><a href="http://prive.co.kr/landing1"><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main8_1.jpg" alt="" /></a></div>	
 			<!-- <div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9.jpg" alt="메인9" /></div>	 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9_new.jpg" alt="메인9" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing2/m/image/main9_new2.jpg" alt="메인9" /></div>
 			<!-- <div class="main12">
 				<img src="${pageContext.request.contextPath}/resources/landing2/m/image/main12.jpg" alt="메인12" />
 				<div class="slide_wrap">

@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing4/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing4/css/main.css?ver=3" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing4/css/animate.css" />
 	<script src="${pageContext.request.contextPath}/resources/landing4/js/wow.js"></script>
 	<!-- utf-8 환경 common.js -->
@@ -22,7 +22,7 @@
 		<!-- 20200408추가(예약하기추가-이미지) -->
 		<div class="rev_btn" style="position:fixed;width:100%; bottom:0;z-index:1000; font-size:0;	text-align:center;">
 			<a href="http://pf.kakao.com/_HbkxkT/chat"><img src="${pageContext.request.contextPath}/resources/landing4/image/reservation_btn01.png" alt="카카오톡 상담하기"></a>
-			<a href=""><img src="${pageContext.request.contextPath}/resources/landing4/image/reservation_btn02.png" alt="지금바로 예약하기"></a>
+			<a href="http://www.prive.co.kr/menu06_01?kind1no=4&no=59"><img src="${pageContext.request.contextPath}/resources/landing4/image/reservation_btn02.png" alt="지금바로 예약하기"></a>
 		</div>
 		<!-- header -->
 		<div id="header">

@@ -218,7 +218,7 @@ function makeCalendar(today){
 	var month = today.getMonth()+1;
 	var arrDow = ["일", "월", "화", "수", "목", "금", "토"];
 	var arrDow2 = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-	var arrLastDate = [31, 28, 31, 30, 31, 31, 30, 31, 30, 31, 30, 31];
+	var arrLastDate = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 	var lastDate;
 	var str = "<caption>예약날짜 및 시간선택 달력</caption><thead><tr><th class='sun'>일</th><th class='mon'>월</th><th class='the'>화</th><th class='wed'>수</th><th class='thu'>목</th><th class='fri'>금</th><th class='sat'>토</th></tr></thead>";
 	
@@ -322,6 +322,11 @@ $(function(){
 	}else{
 		
 	}
+	
+	$(".date_2020-08-13").addClass("closed");
+	$(".date_2020-08-14").addClass("closed");
+	$(".date_2020-08-15").addClass("closed");
+	
 });
 </script>
 </head>

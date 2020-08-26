@@ -37,7 +37,7 @@
 		<div class="rev_wrap">
 			<ul>
 				<li><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing4/m/image/icon_rev02.png">전화상담하기</a></li>
-				<li class="rev_btn"><a href=""><img src="${pageContext.request.contextPath}/resources/landing4/m/image/icon_rev01.png">지금예약하기</a></li>
+				<li class="rev_btn"><a href="http://www.prive.co.kr/menu06_01?kind1no=4&no=59"><img src="${pageContext.request.contextPath}/resources/landing4/m/image/icon_rev01.png">지금예약하기</a></li>
 			</ul>
 		</div>
 		<div id="header">
@@ -70,7 +70,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing4/m/image/main6.jpg" alt="메인6" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing4/m/image/main7.jpg" alt="메인7" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing4/m/image/main8.jpg" alt="메인8" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing4/m/image/main9.jpg" alt="메인9" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing4/m/image/main9_new.jpg?ver=1" alt="메인9" /></div>	
 		</div>
 		<div id="footer">
 			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing4/m/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>

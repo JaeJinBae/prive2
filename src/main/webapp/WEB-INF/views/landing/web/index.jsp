@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=4" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main.css?ver=7" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
@@ -108,7 +108,7 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_20200529.png?ver=1" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_20200701.png?ver=1" alt="" /></div>
 		</div>
 		<!-- content -->
 		<div id="content">

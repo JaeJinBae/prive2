@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/main.css?ver=2" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/main.css?ver=3" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing2/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing2/css/slick-theme.css" />
