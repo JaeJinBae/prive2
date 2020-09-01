@@ -127,7 +127,7 @@ $(function(){
 								</c:when>
 								<c:otherwise>
 									<table>
-										<caption>■레이저 토닝</caption>
+										<caption>■색소 프로그램</caption>
 										<colgroup>
 											<col width="*">
 											<col width="18%">
@@ -168,33 +168,9 @@ $(function(){
 								</c:otherwise>
 							</c:choose>
 							
-							<!-- 색소 프로그램 -->
-							<c:choose >
-								<c:when test="${fn:length(list3) == 0}">
-									
-								</c:when>
-								<c:otherwise>
-									<table>
-										<caption>■색소 프로그램</caption>
-										<colgroup>
-											<col width="*">
-											<col width="18%">
-											<col width="12%">
-										</colgroup>
-										<c:forEach var="item" items="${list3}">
-											<tr>
-												<td><p class="t_title">${item.name}</p></td>
-												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>
-												<td><p class="t_btn"><a href="${pageContext.request.contextPath}/menu06_01?kind1no=${item.kind1}&no=${item.no}">예약바로가기</a></p></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:otherwise>
-							</c:choose>
-							
 							<!-- 홍조 프로그램 -->
 							<c:choose >
-								<c:when test="${fn:length(list4) == 0}">
+								<c:when test="${fn:length(list3) == 0}">
 									
 								</c:when>
 								<c:otherwise>
@@ -205,7 +181,7 @@ $(function(){
 											<col width="18%">
 											<col width="12%">
 										</colgroup>
-										<c:forEach var="item" items="${list4}">
+										<c:forEach var="item" items="${list3}">
 											<tr>
 												<td><p class="t_title">${item.name}</p></td>
 												<td><p class="t_price"><fmt:formatNumber value="${item.price_after}" pattern="#,###" /><span class="fw300">원</span></p></td>

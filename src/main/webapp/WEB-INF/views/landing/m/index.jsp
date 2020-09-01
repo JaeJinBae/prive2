@@ -6,115 +6,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=3,user-scalable=yes">
-<meta name="format-detection" content="telephone=no">
-<meta name="HandheldFriendly" content="true">
-<title>::프라이브피부과::</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/main.css?ver=2" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/slick.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/m/css/slick-theme.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/landing/m/js/slick.js"></script>
-<!-- utf-8 환경 common.js -->
-<script type="text/javascript" src="http://www.linchdb.com/js/common.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=3,user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true">
+	<title>::프라이브피부과::</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/main.css?ver=1" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/m/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/m/css/slick-theme.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/landing/m/js/slick.js"></script>
+	<!-- utf-8 환경 common.js -->
+	<script type="text/javascript" src="http://www.linchdb.com/js/common.js"></script>
 
-<script>
-	// 개인정보 취급방침 보기
-	function openlayer() {
-		if ($(".layer").attr("class")=="layer on") {return;}
-		$(".layer").fadeIn(200).addClass("on");
-	}
-	// 개인정보 취급방침 닫기
-	function closelayer() {
-		$(".layer").css('display','none').removeClass("on");
-	}
-</script>
+	<script>
+		// 개인정보 취급방침 보기
+		function openlayer() {
+			if ($(".layer").attr("class")=="layer on") {return;}
+			$(".layer").fadeIn(200).addClass("on");
+		}
+		// 개인정보 취급방침 닫기
+		function closelayer() {
+			$(".layer").css('display','none').removeClass("on");
+		}
+	</script>
 
-<!--  LOG corp Web Analitics & Live Chat  START -->
-<script  type="text/javascript">
-//<![CDATA[
-function logCorpAScript_full(){
-	HTTP_MSN_MEMBER_NAME="";/*member name*/
-	var prtc=(document.location.protocol=="https:")?"https://":"http://";
-	var hst=prtc+"asp19.http.or.kr";
-	var rnd="r"+(new Date().getTime()*Math.random()*9);
-	this.ch=function(){
-		if(document.getElementsByTagName("head")[0]){logCorpAnalysis_full.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
-	}
-	this.dls=function(){
-		var h=document.getElementsByTagName("head")[0];
-		var s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
-		if(h){s.src=hst+"/HTTP_MSN/UsrConfig/prive1/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
-	}
-	this.init= function(){
-		document.write('<img src="'+hst+'/sr.gif?d='+rnd+'" style="width:1px;height:1px;position:absolute;display:none" onload="logCorpAnalysis_full.ch()" alt="" />');
-	}
-}
-if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
-//]]>
-</script>
-<noscript><img src="http://asp19.http.or.kr/HTTP_MSN/Messenger/Noscript.php?key=prive1" style="display:none;width:0;height:0;" alt="" /></noscript>
-<!-- LOG corp Web Analitics & Live Chat END -->
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '686450048565469');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '686450048565469');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=686450048565469&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 <body>
 	<div id="wrap">
-
+		<!-- 20200408추가(예약하기추가) -->
 		<div class="rev_wrap">
 			<ul>
-				<li><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev02.png">전화상담하기</a></li>
-				<li class="rev_btn"><a href="/menu06_01?kind1no=4&no=63"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev01.png">지금예약하기</a></li>
+				<li><a href=""><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev02.png">전화상담하기</a></li>
+				<li class="rev_btn"><a href=""><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev01.png">지금예약하기</a></li>
 			</ul>
 		</div>
-
 		<div id="header">
 			<ul class="header_img">
-				<li class="home"><a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/landing/m/image/home.jpg?ver=1" alt="프라이브피부과 홈페이지 바로가기" /></a></li>
+				<li class="home"><a href="http://www.prive.co.kr"><img src="${pageContext.request.contextPath}/resources/landing/m/image/home.jpg?ver=1" alt="프라이브피부과 홈페이지 바로가기" /></a></li>
 				<li class="logo"><img src="${pageContext.request.contextPath}/resources/landing/m/image/logo.jpg?ver=1" alt="프라이브피부과 로고" /></li>
 				<li class="tel"><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/tel.jpg?ver=1" alt="프라이브피부과 연락처 1800-5475" /></a></li>
 			</ul>
-			<p><img src="${pageContext.request.contextPath}/resources/landing/m/image/header.jpg" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
+			<p><img src="${pageContext.request.contextPath}/resources/landing/m/image/header_new0901.jpg" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
 		</div>
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_20200701.png?ver=2" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_new0901.png" alt="" /></div>
 		</div>
-		<!-- 퀵 -->
-		<!-- <div id="quick">
-			<div class="img"><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/quick_tel.png" alt=""></a></div>
-			<ul>
-				<li class="circle01"></li>
-				<li class="circle02"></li>
-				<li class="circle03"></li>
-			</ul>
-		</div> -->
 		<div id="content">
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1.jpg" alt="메인1" /></div>	
-
-			<!-- 20200525 맴버십추가 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/member_m01.jpg?ver=1" alt="맴버십" /></div>
-
+			<!-- 20200901 수정본 시작-->
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_new0901.jpg" alt="메인1" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_1_new0901.jpg" alt="" /></div>	
 			<div class="main2">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main2.jpg" alt="메인2" />
 				<div class="movie">
@@ -122,127 +84,17 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 				</div>
 				<a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg"><img src="${pageContext.request.contextPath}/resources/landing/m/image/main2_btn.jpg" alt="프라이브피부과 유튜브 링크이동" /></a>
 			</div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main3.jpg" alt="메인3" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main4.jpg" alt="메인4" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main5.jpg" alt="메인5" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main6.jpg" alt="메인6" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main7.jpg?ver=1" alt="메인7" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main8.jpg" alt="메인8" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main9.jpg" alt="메인9" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main10.jpg" alt="메인10" /></div>	
-			<!-- <div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11.jpg" alt="메인11" /></div>	 -->
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11_new3.jpg" alt="메인11" /></div>
-
-			<!-- <div class="main12">
-				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main12.jpg" alt="메인12" />
-				<div class="slide_wrap">
-					<ul class="slide">
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list01.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list02.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list03.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list04.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list05.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list06.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list07.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list08.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list09.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list10.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list11.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list12.jpg" alt="프라이브피부과 내부" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/landing/m/image/space_list13.jpg" alt="프라이브피부과 내부" /></li>
-					</ul>
-				</div>
-			</div>	 -->
-
-			<!-- <div class="main13">
-				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main13.jpg" alt="메인13" />
-				<div class="map_wrap">
-					<div id="daumRoughmapContainer1580782896280" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-				</div>
-				<div class="ha_info">
-					<ul class="info_detail">
-						<li><strong>주소</strong> 대구광역시 수성구 범어천로3 (구.아서원)</li>
-						<li><strong>진료시간</strong><span>	월 - 금 10:00 ~ 19:00(평일진료)<br/>점심시간 13:00 ~ 14:00<br/>토·공휴일 휴진</span></li>
-						<li><strong>지하철</strong>도시철도 3호선 어린이 회관역, 도보3분</li>
-						<li><strong>주차</strong>건물 뒷편 전용 주차공간</li>
-					</ul>
-					<div class="info_sns">
-						<ul>
-							<li><a href="https://blog.naver.com/priveprive" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/m/image/sns_list01.png" alt="프라이브피부과 블로그 링크이동" /></a></li>
-							<li><a href="https://www.facebook.com/priveskin1" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/m/image/sns_list02.png" alt="프라이브피부과 페이스북 링크이동" /></a></li>
-							<li><a href="https://www.instagram.com/priveskin" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/m/image/sns_list03.png" alt="프라이브피부과 인스타그램 링크이동" /></a></li>
-							<li><a href="https://www.youtube.com/channel/UCcoqaopSJHt4Ndh5Z8_MFkg" target="_blank"><img src="${pageContext.request.contextPath}/resources/landing/m/image/sns_list04.png" alt="프라이브피부과 유튜브 링크이동" /></a></li>
-						</ul>
-					</div>
-					<form id="event_form" name="event_form" method="post" onsubmit="return funcSubmit()">
-					  <input type="hidden" id="pr_no"      name="pr_no"      value="49"/>
-					  <input type="hidden" id="return_url" name="return_url" value=""/> 
-					  <input type="hidden" id="pi_referer" name="pi_referer" value=""/> 
-					  <input type="hidden" id="pi_banner"  name="pi_banner"  value=""/> 
-					<div class="db">
-						<ul class="db_input">
-							<li><input type="text" id="pp_data170" name="pp_data170" title="성함" placeholder="성함을 입력해주세요." class="required" /></li>
-							<li><input type="text" id="pp_data171" name="pp_data171" title="연락처" placeholder="연락처를 입력해주세요.(숫자)" class="required exp_numeric" /></li>
-							<li class="agree"><label><input type="checkbox"  name="is_agree" id="is_agree"/>개인정보처리방침 동의</label><a onclick="javascript:openlayer();">[ 자세히 ]</a></li>
-						</ul>
-						<div class="db_submit">
-							<input type="image" src="${pageContext.request.contextPath}/resources/landing/m/image/db_submit.png" />
-						</div>
-						<div class="kakao_btn">
-							<a href="http://pf.kakao.com/_HbkxkT/chat"><input type="image" src="${pageContext.request.contextPath}/resources/landing/m/image/db_kakao.png" /></a>
-						</div>
-					</div>
-					</form>
-				</div>
-			</div>	
-			<div class="layer">
-				<div class="layer_wrap">
-				<div class="close_btn" style="text-align:right"><a href="#self" onclick="closelayer();">X</a></div>	
-					<div class="DB_info_detail">
-						<h2>개인정보처리방침 안내</h2>
-						<div class="DB_info_detail_wrap">
-							<p>프라이브피부과의원은(는) 별도의 회원가입 절차 없이 대부분의 콘텐츠에 자유롭게 접근할 수 있습니다. <br/>프라이브피부과의원의 회원제 서비스를 이용하시고자 할 경우 다음의 정보를 입력해주셔야 하며 선택항목을 입력하시지 않았다 하여 서비스 이용에 제한은 없습니다.</p>
-							<dl>
-								<dt>수집하는 개인정보 항목</dt>
-								<dd>
-									회사는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br/>
-									○ 수집항목 : 성함, 연락처<br/>
-									○ 개인정보 수집방법 : 전화상담신청
-								</dd>
-								<dt>1) 회원 가입시 수집하는 개인정보의 범위</dt>
-								<dd>
-									- 필수항목 : 성함, 연락처<br/>
-								</dd>
-								<dt>개인정보의 수집 및 이용 목적</dt>
-								<dd>
-									① 프라이브피부과의원은(는) 회원님께 최대한으로 최적화되고 맞춤화된 서비스를 제공하기 위하여 다음과 같은 목적으로 개인정보를 수집하고 있습니다.<br/>
-									- 이름, 아이디, 비밀번호, 닉네임 : 회원제 서비스 이용에 따른 본인 식별 절차에 이용<br/>
-									- 이메일주소, 이메일 수신여부, SMS 수신여부, 휴대폰 번호: 고지사항 전달, 본인 의사 확인, 불만 처리 등 원활한 의사소통 경로의 확보, 새로운 서비스/신상품이나 이벤트 정보의 안내<br/>
-									- 주소: 경품과 쇼핑 물품 배송에 대한 정확한 배송지의 확보<br/>
-									- 그 외 선택항목 : 개인맞춤 서비스를 제공하기 위한 자료<br/>
-									② 단, 이용자의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 및 성생활 등)는 수집하지 않습니다.
-
-								</dd>
-								<dt>개인정보의 보유기간 및 이용기간</dt>
-								<dd>
-									① 귀하의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 상법 등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다.<br/>
-									- 회원가입정보의 경우, 회원가입을 탈퇴하거나 회원에서 제명된 경우 등 일정한 사전에 보유목적, 기간 및 보유하는 개인정보 항목을 명시하여 동의를 구합니다.<br/>
-									- 계약 또는 청약철회 등에 관한 기록 : 5년<br/>
-									- 대금결제 및 재화등의 공급에 관한 기록 : 5년<br/>
-									- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년<br/>
-									② 귀하의 동의를 받아 보유하고 있는 거래정보 등을 귀하께서 열람을 요구하는 경우 프라이브피부과의원은(는) 지체없이 그 열람,확인 할 수 있도록 조치합니다 
-								</dd>
-								<dt>필수 개인정보 수집을 동의하지 않는 경우</dt>
-								<dd>
-									① 귀하의 개인정보 수집을 거부할 수 있는 권리가 있으며 이 경우 당사의 회원전용 서비스 또는 고객 문의사항에 대한 답변이 필수인 코너를 이용하는데 있어 회원 가입 또는 게시물 등록이 불가능 할 수 있습니다.<br/>
-									② 필수 정보가 아닌 선택 정보의 경우 개인정보 수집에 동의하지 않을 수 있으며 서비스 이용에 제한은 없습니다.
-								</dd>
-							</dl>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/member_01_new0901.jpg" alt="맴버십" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main3_new0901.jpg" alt="메인3" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main4_new0901.jpg" alt="메인4" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main5_new0901.jpg" alt="메인5" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main6_new0901.jpg" alt="메인6" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main7_new0901.jpg?ver=1" alt="메인7" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main8_new0901.jpg" alt="메인8" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main9_new0901.jpg" alt="메인9" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main10_new0901.jpg" alt="메인10" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11_new0901.jpg" alt="메인11" /></div>
+			<!-- 20200901 수정본 끝-->
 		</div>
 		<div id="footer">
 			<div style="padding:16px 0 24px;"><img src="${pageContext.request.contextPath}/resources/landing/m/image/footer_logo.png" alt="프라이브피부과 로고" />	</div>
@@ -255,15 +107,6 @@ if(typeof logCorpAnalysis_full=="undefined"){var logCorpAnalysis_full=new logCor
 		</div>
 	</div>
 </body>
-	<script>
-		$(".slide").slick({
-			speed: 1000,
-			autoplay: true,	
-			arrows: true,
-			dots: false,
-			infinite: true,
-		  });
-	</script>
 	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 	<script charset="UTF-8">
 		new daum.roughmap.Lander({

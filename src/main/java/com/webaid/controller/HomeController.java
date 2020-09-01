@@ -378,6 +378,7 @@ public class HomeController {
 		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list3 = new ArrayList<ClinicVO>();
 		List<ClinicVO> list4 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list5 = new ArrayList<ClinicVO>();
 		
 		for(int i=0; i<listAll.size(); i++){
 			if(listAll.get(i).getPopular().equals("o")){
@@ -390,10 +391,12 @@ public class HomeController {
 				list1.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("울쎄라")){
 				list2.add(listAll.get(i));
-			}else if(listAll.get(i).getKind2nm().equals("튠페이스")){
-				list3.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("써마지FLX")){
+				list3.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("튠페이스")){
 				list4.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("리프팅 프로그램")){
+				list5.add(listAll.get(i));
 			}
 		}
 		
@@ -402,6 +405,7 @@ public class HomeController {
 		model.addAttribute("list2", list2);
 		model.addAttribute("list3", list3);
 		model.addAttribute("list4", list4);
+		model.addAttribute("list5", list5);
 		
 		return "sub2/menu02_04";
 	}
@@ -500,14 +504,12 @@ public class HomeController {
 		}
 		
 		for(int i=0; i<listAll.size(); i++){
-			if(listAll.get(i).getKind2nm().equals("레이저 토닝")){
+			if(listAll.get(i).getKind2nm().equals("색소 프로그램")){
 				list1.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("겨드랑이 토닝")){
 				list2.add(listAll.get(i));
-			}else if(listAll.get(i).getKind2nm().equals("색소 프로그램")){
-				list3.add(listAll.get(i));
 			}else if(listAll.get(i).getKind2nm().equals("홍조 프로그램")){
-				list4.add(listAll.get(i));
+				list3.add(listAll.get(i));
 			}
 		}
 		
@@ -515,7 +517,6 @@ public class HomeController {
 		model.addAttribute("list1", list1);
 		model.addAttribute("list2", list2);
 		model.addAttribute("list3", list3);
-		model.addAttribute("list4", list4);
 		
 		return "sub2/menu02_07";
 	}
@@ -617,6 +618,7 @@ public class HomeController {
 		List<ClinicVO> listAll = cService.selectByKind1(11);
 		List<ClinicVO> listPopular = new ArrayList<ClinicVO>();
 		List<ClinicVO> list1 = new ArrayList<ClinicVO>();
+		List<ClinicVO> list2 = new ArrayList<ClinicVO>();
 		
 		for(int i=0; i<listAll.size(); i++){
 			if(listAll.get(i).getPopular().equals("o")){
@@ -627,11 +629,14 @@ public class HomeController {
 		for(int i=0; i<listAll.size(); i++){
 			if(listAll.get(i).getKind2nm().equals("레이저 제모")){
 				list1.add(listAll.get(i));
+			}else if(listAll.get(i).getKind2nm().equals("맨즈 제모")){
+				list2.add(listAll.get(i));
 			}
 		}
 		
 		model.addAttribute("listPopular", listPopular);
 		model.addAttribute("list1", list1);
+		model.addAttribute("list2", list2);
 		
 		return "sub2/menu02_11";
 	}
