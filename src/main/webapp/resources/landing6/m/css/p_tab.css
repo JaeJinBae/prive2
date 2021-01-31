@@ -1,0 +1,109 @@
+
+a:hover{cursor:pointer;}
+button *{position:relative;}
+button img{left:-3px;*left:auto;}
+caption, summary, hr, legend{display:none;}
+legend{*width:0;}
+
+@font-face {font-family: 'GmarketSansMedium';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight: normal;font-style: normal; } 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+@font-face {
+    font-family: 'NEXON_L';
+    src:local('NEXONLv2GothicLight'),url('../fonts/NEXONLv2GothicLight.woff') format('woff'),url('../fonts/NNEXONLv2GothicLight.eot'),url('../fonts/NEXONLv2GothicLight.eot#iefix') format('embedded-opentype');
+    font-weight:200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXON_M';
+    src:local('NEXONLv2Gothic'),url('../fonts/NEXONLv2Gothic.woff') format('woff'),url('../fonts/NEXONLv2Gothic.eot'),url('../fonts/NEXONLv2Gothic.eot#iefix') format('embedded-opentype');
+    font-weight:400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NEXON_B';
+    src:local('NEXONLv2GothicBold'),url('../fonts/NEXONLv2GothicBold.woff') format('woff'),url('../fonts/NEXONLv2GothicBold.eot'),url('../fonts/NEXONLv2GothicBold.eot#iefix') format('embedded-opentype');
+    font-weight:600;
+    font-style: normal;
+    font-display: swap;
+}
+.main5{position:relative;}
+
+#mainSection2019{text-align:center;font-size:0;}
+#mainSection2019 .inner{position:relative;width:100%;margin:0 auto; background:#f8ebf2}
+#mainSection2019 .inner:after{content:'';display:block;clear:both;}
+
+
+#mainSection2019 .main_branch{text-align:center;position:relative;}
+#mainSection2019 .main_branch .inner{padding-bottom:60px;}
+#mainSection2019 .main_branch .titbox{width:410px;}
+#mainSection2019 .main_branch .map{position:relative;width:320px; margin:0 auto; border-radius:0 0  20px 20px;background:#171717 url(../image/main5_bt.jpg) no-repeat center 0; overflow:hidden; }
+#mainSection2019 .main_branch .map .s_tit{font-size:25px;}
+#mainSection2019 .main_branch .map .b_tit{font-size:65px;}
+
+#mainSection2019 .main_branch .map a{display:inline-block;line-height:14px;left:0px;top:0px; font-size:0; }
+#mainSection2019 .main_branch .map a:after{display:inline-block;line-height:14px;left:0px;top:0;}
+#mainSection2019 .main_branch .map a:after span{display:block; font-size:50px}
+#mainSection2019 .main_branch .map a .txt em{display:block;padding-left:10px;font-size:15px;color:#888;-webkit-transition:all .1s;transition:all .1s;}
+#mainSection2019 .main_branch .map a .txt span{display:block;padding-left:10px;font-size:15px;color:#bababa;font-family:Georgia, "Times New Roman", Times, serif;-webkit-transition:all .1s;transition:all .1s;}
+#mainSection2019 .main_branch .map a:after{content:'';position:absolute;display:block;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .1s;transition:all .1s; top:0}
+#mainSection2019 .main_branch .map a.p_01{left:0px;top:0px; }
+#mainSection2019 .main_branch .map a.p_02{left:0px;top:0px; }
+#mainSection2019 .main_branch .map a.p_03{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_04{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_05{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_06{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_07{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_08{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_01:after{left:0px;top:30px;width:320px;height:200px;background:url(../image/t_01.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_02:after{left:0px;top:30px;width:320px;height:200px;background:url(../image/t_02.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_03:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_03.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_04:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_04.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_05:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_05.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_06:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_06.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_07:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_07.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_08:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_08.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_09:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_09.png) no-repeat center 0; background-size:24%}
+#mainSection2019 .main_branch .map a.p_10:after{left:0px;top:30px;width:320px;height:455px;background:url(../image/t_10.png) no-repeat center 0; background-size:24%}
+
+
+
+
+
+#mainSection2019 .main_branch .map a.on:after{opacity:1;}
+#mainSection2019 .main_branch .map a.on {font-size:1.2rem; color:#fff;display:block;margin:67px 0 0; line-height:2.4rem; letter-spacing:-1px;font-family:'NEXON_M', top:0}
+#mainSection2019 .main_branch .map a.on span{font-size:2.5rem; display:block; font-weight:600; font-family:'NEXON_M',sans-serif; letter-spacing:-0px; }
+#mainSection2019 .main_branch .map a.on p{font-size:1rem;color:#2a2a2a;background:#fff; bordeR:5px solid #fe717c;margin:18px auto 0;bordER-radius:20px; padding:20px;width:86%;box-sizing:border-box;
+line-height:1.4rem;font-weight:400; font-family:'NEXON_M',sans-serif;letter-spacing:-0.4px;}
+
+
+
+#mainSection2019 .main_branch .map a.on .txt span{padding-left:0;font-size:19px;color:#222;position:absolute;}
+#mainSection2019 .main_branch .tab{display:block;text-align:center; width:320px;height:320px;background:url(../image/main5_bg.jpg) no-repeat center 0; background-size:cover; margin:0 auto; border-radius:20px 20px 0 0}
+
+#mainSection2019 .main_branch .tab ul{position:relative;display:inline-block;width:320px;height:320px;}
+#mainSection2019 .main_branch .tab ul:before{content:'';position:absolute;left:0;top:47px;;box-shadow:0 1px 10px rgba(0,0,0,.4);z-index:0;}
+#mainSection2019 .main_branch .tab li{display:inline-block;vertical-align:top;width:24px; height:24px; position:absolute}
+#mainSection2019 .main_branch .tab li a{display:block;position:relative;z-index:2; background:url(../image/p_off.png) no-repeat 0 0; width:18px; height:18px;background-size:cover}
+
+#mainSection2019 .main_branch .tab li:nth-child(1){top:92px; left:50%;margin-left:-20px;}/*관자놀이*/
+#mainSection2019 .main_branch .tab li:nth-child(2){top:125px; left:50%;margin-left:-24px;}/*눈가*/
+#mainSection2019 .main_branch .tab li:nth-child(3){top:155px; left:50%;margin-left:-10px;}/*앞광대*/
+
+#mainSection2019 .main_branch .tab li:nth-child(4){top:180px; left:50%;margin-left:-10px;}/*볼꺼짐*/
+#mainSection2019 .main_branch .tab li:nth-child(5){top:200px; left:50%;margin-left:54px;}/*팔자주름*/
+#mainSection2019 .main_branch .tab li:nth-child(6){top:235px; left:50%;margin-left:20px; }/*턱선*/
+
+
+
+#mainSection2019 .main_branch .tab li:first-child a{}
+#mainSection2019 .main_branch .tab li.on a{background:url(../image/p_on.png) no-repeat 0 0;  width:18px; height:18px;background-size:cover}
+
+
+
+.main_youtube{background:#634b4e}

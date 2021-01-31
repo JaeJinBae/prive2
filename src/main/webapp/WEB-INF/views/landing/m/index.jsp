@@ -56,8 +56,8 @@
 		<!-- 20200408추가(예약하기추가) -->
 		<div class="rev_wrap">
 			<ul>
-				<li><a href=""><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev02.png">전화상담하기</a></li>
-				<li class="rev_btn"><a href=""><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev01.png">지금예약하기</a></li>
+				<li><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev02.png">전화상담하기</a></li>
+				<li class="rev_btn"><a href="/menu06_01?kind1no=000&no=7"><img src="${pageContext.request.contextPath}/resources/landing/m/image/icon_rev01.png">지금예약하기</a></li>
 			</ul>
 		</div>
 		<div id="header">
@@ -66,17 +66,17 @@
 				<li class="logo"><img src="${pageContext.request.contextPath}/resources/landing/m/image/logo.jpg?ver=1" alt="프라이브피부과 로고" /></li>
 				<li class="tel"><a href="tel:1800-5475"><img src="${pageContext.request.contextPath}/resources/landing/m/image/tel.jpg?ver=1" alt="프라이브피부과 연락처 1800-5475" /></a></li>
 			</ul>
-			<p><img src="${pageContext.request.contextPath}/resources/landing/m/image/header_new0901.jpg" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
+			<p><img src="${pageContext.request.contextPath}/resources/landing/m/image/header_new0902.jpg" alt="프라이브가 최고라고 말할 수 없습니다. 하지만 프라이브는 최적의 진료 방법을 함께 고민하고 공감합니다." /></p>
 		</div>
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_new0901.png" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/m/image/popup_new1015.png" alt="" /></div>
 		</div>
 		<div id="content">
 			<!-- 20200901 수정본 시작-->
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_new0901.jpg" alt="메인1" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_1_new0901.jpg" alt="" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_new0902.jpg" alt="메인1" /></div>	
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main1_1_new1015.jpg" alt="" /></div>	
 			<div class="main2">
 				<img src="${pageContext.request.contextPath}/resources/landing/m/image/main2.jpg" alt="메인2" />
 				<div class="movie">
@@ -93,7 +93,7 @@
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main8_new0901.jpg" alt="메인8" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main9_new0901.jpg" alt="메인9" /></div>	
 			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main10_new0901.jpg" alt="메인10" /></div>	
-			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11_new0901.jpg" alt="메인11" /></div>
+			<div><img src="${pageContext.request.contextPath}/resources/landing/m/image/main11_new0910.jpg" alt="메인11" /></div>
 			<!-- 20200901 수정본 끝-->
 		</div>
 		<div id="footer">
@@ -164,26 +164,6 @@
 
 			frame.src = fr_src;
 		});
- 
-		// 저장
-		function funcSubmit(){
-			if(!check_form("event_form")){
-				return false;
-			}
-			var form = document.event_form;
-
-			// 개인정보취급방침 동의 체크
-			if( $("input[name='is_agree']:checked").length < 1 ) {
-				alert("[개인정보취급방침]에 동의하지 않았습니다.");
-				$("input[name='is_agree']").focus();
-				return false;
-			}
-
-			// 저장
-			form.pi_referer.value = escape(document.referrer); // event_form의 pi_referer에 값을 넣는 경우 삭제
-			form.action = "http://www.linchdb.com/event/event_proc.php";
-			return true;
-		}
 	</script>
 
 </html>

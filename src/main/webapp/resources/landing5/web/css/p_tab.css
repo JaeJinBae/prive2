@@ -1,0 +1,102 @@
+
+a:hover{cursor:pointer;}
+button *{position:relative;}
+button img{left:-3px;*left:auto;}
+caption, summary, hr, legend{display:none;}
+legend{*width:0;}
+
+@font-face {font-family: 'GmarketSansMedium';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight: normal;font-style: normal; } 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+@font-face {
+    font-family: 'NEXON_L';
+    src:local('NEXONLv2GothicLight'),url('../fonts/NEXONLv2GothicLight.woff') format('woff'),url('../fonts/NNEXONLv2GothicLight.eot'),url('../fonts/NEXONLv2GothicLight.eot#iefix') format('embedded-opentype');
+    font-weight:200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXON_M';
+    src:local('NEXONLv2Gothic'),url('../fonts/NEXONLv2Gothic.woff') format('woff'),url('../fonts/NEXONLv2Gothic.eot'),url('../fonts/NEXONLv2Gothic.eot#iefix') format('embedded-opentype');
+    font-weight:400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NEXON_B';
+    src:local('NEXONLv2GothicBold'),url('../fonts/NEXONLv2GothicBold.woff') format('woff'),url('../fonts/NEXONLv2GothicBold.eot'),url('../fonts/NEXONLv2GothicBold.eot#iefix') format('embedded-opentype');
+    font-weight:600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+#mainSection2019{text-align:center;font-size:0;}
+#mainSection2019 .inner{position:relative;width:1211px;margin:0 auto;}
+#mainSection2019 .inner:after{content:'';display:block;clear:both;}
+
+
+#mainSection2019 .main_branch{text-align:center;padding-bottom:140px;}
+#mainSection2019 .main_branch .inner{padding-bottom:88px;}
+#mainSection2019 .main_branch .titbox{width:410px;}
+#mainSection2019 .main_branch .map{float:right;position:relative;margin:380px 0 0 0;width:604px;height:455px; ;}
+#mainSection2019 .main_branch .map .s_tit{font-size:25px;}
+#mainSection2019 .main_branch .map .b_tit{font-size:65px;}
+
+#mainSection2019 .main_branch .map a{display:inline-block;line-height:14px;left:0px;top:60px; font-size:0}
+#mainSection2019 .main_branch .map a:after{display:inline-block;line-height:14px;left:0px;top:0;}
+#mainSection2019 .main_branch .map a:after span{display:block; font-size:50px}
+#mainSection2019 .main_branch .map a .txt em{display:block;padding-left:10px;font-size:15px;color:#888;-webkit-transition:all .1s;transition:all .1s;}
+#mainSection2019 .main_branch .map a .txt span{display:block;padding-left:10px;font-size:15px;color:#bababa;font-family:Georgia, "Times New Roman", Times, serif;-webkit-transition:all .1s;transition:all .1s;}
+#mainSection2019 .main_branch .map a:after{content:'';position:absolute;display:block;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .1s;transition:all .1s; top:0}
+#mainSection2019 .main_branch .map a.p_01{left:0px;top:0px; }
+#mainSection2019 .main_branch .map a.p_02{left:0px;top:0px; }
+#mainSection2019 .main_branch .map a.p_03{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_04{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_05{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_06{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_07{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_08{left:0px;top:0px;}
+#mainSection2019 .main_branch .map a.p_01:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_01.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_02:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_02.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_03:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_03.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_04:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_04.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_05:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_05.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_06:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_06.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_07:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_07.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_08:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_08.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_09:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_09.png) no-repeat center 0;}
+#mainSection2019 .main_branch .map a.p_10:after{left:0px;top:0px;width:604px;height:455px;background:url(../image/t_10.png) no-repeat center 0;}
+
+
+
+
+
+#mainSection2019 .main_branch .map a.on:after{opacity:1;}
+#mainSection2019 .main_branch .map a.on {font-size:22px; color:#fff;line-height:22px;display:block;margin-top:25px; line-height:54px; letter-spacing:-1px;font-family:'NEXON_M', top:0}
+#mainSection2019 .main_branch .map a.on span{font-size:54px; display:block; font-weight:600; font-family:'NEXON_M',sans-serif; letter-spacing:-0px; }
+#mainSection2019 .main_branch .map a.on p{font-size:25px;color:#2a2a2a;margin-top:120px; line-height:32px;font-weight:400; font-family:'NEXON_M',sans-serif;letter-spacing:-0.4px;}
+
+
+
+#mainSection2019 .main_branch .map a.on .txt span{padding-left:0;font-size:19px;color:#222;}
+#mainSection2019 .main_branch .tab{display:block;position:absolute;width:287px; height:364px; left:50%; top:310px; margin-lefT:-455px;}
+#mainSection2019 .main_branch .tab ul{position:relative;display:inline-block;}
+#mainSection2019 .main_branch .tab ul:before{content:'';position:absolute;left:0;top:47px;;box-shadow:0 1px 10px rgba(0,0,0,.4);z-index:0;}
+#mainSection2019 .main_branch .tab li{display:inline-block;vertical-align:top;width:24px; height:24px; position:absolute}
+#mainSection2019 .main_branch .tab li a{display:block;position:relative;z-index:2; background:url(../image/p_off.png) no-repeat 0 0; width:24px; height:24px;}
+#mainSection2019 .main_branch .tab li:nth-child(1){top:70px; left:70px}
+#mainSection2019 .main_branch .tab li:nth-child(2){top:140px; left:62px}
+#mainSection2019 .main_branch .tab li:nth-child(3){top:210px; left:55px}
+#mainSection2019 .main_branch .tab li:nth-child(4){top:180px; left:-60px}
+#mainSection2019 .main_branch .tab li:nth-child(5){top:220px; left:-15px}
+#mainSection2019 .main_branch .tab li:nth-child(6){top:270px; left:70px; }/*윗입술*/
+#mainSection2019 .main_branch .tab li:nth-child(7){top:280px; left:20px}
+#mainSection2019 .main_branch .tab li:nth-child(8){top:320px; left:10px}
+
+
+#mainSection2019 .main_branch .tab li:first-child a{}
+#mainSection2019 .main_branch .tab li.on a{background:url(../image/p_on.png) no-repeat 0 0; width:24px; height:24px;}

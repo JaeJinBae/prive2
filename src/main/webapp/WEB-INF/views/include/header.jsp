@@ -46,6 +46,13 @@
 					</ul>
 				</li>
 				<li class="gnb">
+					<span class="gnb-txt">진료내용</span>
+					<ul class="lnb-wrap">
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing5">필러</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing6">스컬트라</a></li>
+					</ul>
+				</li>
+				<li class="gnb">
 					<a href="${pageContext.request.contextPath}/menu04_01"><span class="gnb-txt">이벤트</span></a>
 				</li>
 				<li class="gnb">
@@ -68,7 +75,7 @@
 				</li>
 			</ul>
 			<div class="sns_icon_wrap">
-				<a href="https://blog.naver.com/priveskin"><img src="${pageContext.request.contextPath}/resources/img/common/icon_b.png"></a>
+				<a href="https://blog.naver.com/priveprive"><img src="${pageContext.request.contextPath}/resources/img/common/icon_b.png"></a>
 				<a href="https://www.instagram.com/priveskin"><img src="${pageContext.request.contextPath}/resources/img/common/icon_i.png"></a>
 				<a href="https://www.facebook.com/%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%94%BC%EB%B6%80%EA%B3%BC-113165293400268/"><img src="${pageContext.request.contextPath}/resources/img/common/icon_f.png"></a>
 			</div>
@@ -121,6 +128,13 @@
 						<%-- <li class="lnb"><a href="${pageContext.request.contextPath}/menu03_03">튠페이스</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_04">실루엣소프트</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu03_05">남성관리</a></li> --%>
+					</ul>
+				</li>
+				<li class="gnb">
+					<span class="gnb-txt">진료내용</span><span class="arrow">∨</span>
+					<ul class="lnb-wrap">
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing5">필러</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/landing6">스컬트라</a></li>
 					</ul>
 				</li>
 				<li class="gnb">

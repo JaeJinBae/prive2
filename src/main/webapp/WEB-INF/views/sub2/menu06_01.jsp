@@ -269,6 +269,12 @@ function makeCalendar(today){
 	$("#selectDate").val(year+"-"+((month>9?'':'0')+month)+"-01");
 	$("#calendar_tbl_tag").html("");
 	$("#calendar_tbl_tag").append(str);
+	
+	$(".date_2020-09-30").addClass("closed");
+	$(".date_2020-10-01").addClass("closed");
+	$(".date_2020-10-02").addClass("closed");
+	$(".date_2020-10-03").addClass("closed");
+	$(".date_2020-10-09").addClass("closed");
 }
 
 $(function(){
@@ -319,13 +325,11 @@ $(function(){
 		$("#surgery-item"+kind1no).css("display", "block");
 		$(tag_id).attr("checked", true);
 		$('#pop-order-list').append("<button id='basket"+clinicno+"' name='basket' _seq='"+clinicno+"' _category1='"+kind1no+"' _category2='"+clinicno+"' _category3='' _category1nm='"+kind1nm+"' _category2nm='"+clinicnm+"' _category3nm='' _pay='"+clinicprice+"'_name='"+clinicnm+"' >"+clinicnm+"<em><i class='fas fa-times'></i></em></button>");
+		
+		
 	}else{
 		
 	}
-	
-	$(".date_2020-08-13").addClass("closed");
-	$(".date_2020-08-14").addClass("closed");
-	$(".date_2020-08-15").addClass("closed");
 	
 });
 </script>

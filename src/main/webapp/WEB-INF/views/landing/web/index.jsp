@@ -11,7 +11,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<title>::프라이브피부과::</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main2020.css?ver=3" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/main2020.css?ver=5" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/animate.css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/landing/css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/landing/css/slick-theme.css" />
@@ -50,6 +50,13 @@
 </head>
 <body>
 	<div id="wrap">
+
+		<!-- 20200408추가(예약하기추가-이미지) -->
+		<div class="rev_btn" style="position:fixed;width:100%; bottom:0;z-index:1000; font-size:0; text-align:center; " >
+			<a href="http://pf.kakao.com/_HbkxkT/chat"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn01.png"></a>
+			<a href="/menu06_01?kind1no=000&no=7"><img src="${pageContext.request.contextPath}/resources/landing/image/reservation_btn02.png"></a>
+		</div>
+
 		<!-- header -->
 		<div id="header">
 		    <div class="header_inner">
@@ -75,17 +82,17 @@
 		<!-- 팝업-->
 		<div id="popup" class="move_pop">
 			<div class="pop_close"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_close.png" alt="" /></div>
-			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_new0901.png" alt="" /></div>
+			<div class="img"><img src="${pageContext.request.contextPath}/resources/landing/image/popup_new1015.png" alt="" /></div>
 		</div>
 		<!-- content -->
 		<div id="content">
 			<!-- 20200901 수정본 시작-->
-			<div class="main1_new0901">
-				<span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title01_new0901.png" alt="존중과공감으로부터 시작되는" /></span>
-				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title02_new0901.png" alt="써마지 리프팅 솔루션" /></h2>	
-				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title03_new0901.png" alt="대구에 단2대 밖에없는 4세대 최신 써마지" /></p>
+			<div class="main1_new0902">
+				<span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title01_new0902.png" alt="존중과공감으로부터 시작되는" /></span>
+				<h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title02_new0902.png" alt="써마지 리프팅 솔루션" /></h2>	
+				<p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><img src="${pageContext.request.contextPath}/resources/landing/image/main1_title03_new0902.png" alt="대구에 단2대 밖에없는 4세대 최신 써마지" /></p>
 			</div>
-			<div class="main1_1_new0901"></div>
+			<div class="main1_1_new1015"></div>
 			<div class="main2_new0901">
 				<div class="content_inner">
 					<div class="title">

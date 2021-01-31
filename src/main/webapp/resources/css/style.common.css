@@ -104,7 +104,7 @@ input[type='password']{
 	width: 100%;
 }
 .pc-menu-wrap > .gnb-wrap{
-	width: 1050px;
+	width: 1210px;/* 1050px; */
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;

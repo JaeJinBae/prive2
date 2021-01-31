@@ -120,3 +120,6 @@ input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: no
 #footer address span{display: inline-block; margin:0 12px; color: #555;}
 #footer address strong{color: #eee;font-weight:bold;}
 #footer small{display: block;margin-top:24px;color: #fff; font-size:10px;  letter-spacing:1px; opacity: 0.5;}
+
+/* 20201015수정 */
+#content .main1_1_new1015{height:791px; background:url(../image/main1_1_new1015.jpg) no-repeat 50%;}
